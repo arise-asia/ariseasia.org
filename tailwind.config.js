@@ -7,5 +7,5 @@ export default {
       heading: ["Unbounded", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
