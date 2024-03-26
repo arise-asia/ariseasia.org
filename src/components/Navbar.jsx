@@ -1,21 +1,22 @@
 import logo from "../assets/logo.svg";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <div className="absolute pt-20 w-full">
     <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-lg">
       <div className="hidden pl-16 lg:flex lg:flex-1">
-        <a
+        <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          href="#"
+          to="/"
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          href="#"
+          to="/about"
         >
           About Us
-        </a>
+        </Link>
       </div>
       <div>
         <img
@@ -28,18 +29,18 @@ const Navbar = () => (
         </p>
       </div>
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
-        <a
+        <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          href="#"
+          to="#"
         >
           Arise 2023
-        </a>
-        <a
+        </Link>
+        <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          href="#"
+          to="/movements"
         >
           Movements
-        </a>
+        </Link>
       </div>
       <div className="flex dropdown dropdown-end">
         <div
@@ -56,36 +57,36 @@ const Navbar = () => (
           tabIndex={0}
         >
           <li>
-            <a
+            <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              href="#"
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              href="#"
+              to="/about"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              href="#"
+              to="#"
             >
               Arise 2023
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              href="#"
+              to="/movements"
             >
               Movements
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
