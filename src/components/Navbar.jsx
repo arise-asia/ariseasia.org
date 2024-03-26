@@ -1,0 +1,96 @@
+import logo from "../assets/logo.svg";
+
+const Navbar = () => (
+  <div className="absolute pt-20 w-full">
+    <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-lg">
+      <div className="hidden pl-16 lg:flex lg:flex-1">
+        <a
+          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="#"
+        >
+          Home
+        </a>
+        <a
+          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="#"
+        >
+          About Us
+        </a>
+      </div>
+      <div>
+        <img
+          alt="Arise Logo"
+          className="absolute translate-x-1/2 -translate-y-1/3 lg:flex lg:-translate-x-1/2"
+          src={logo}
+        />
+        <p className="py-3.5 pl-32 text-xl text-white lg:hidden font-heading">
+          Arise Asia
+        </p>
+      </div>
+      <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
+        <a
+          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="#"
+        >
+          Arise 2023
+        </a>
+        <a
+          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="#"
+        >
+          Movements
+        </a>
+      </div>
+      <div className="flex dropdown dropdown-end">
+        <div
+          className="pr-10 my-auto text-white lg:hidden"
+          role="button"
+          tabIndex={0}
+        >
+          <svg className="w-8 h-8" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 6h20M4 12h20m-20 6h20" strokeWidth="2" />
+          </svg>
+        </div>
+        <ul
+          className="z-10 p-2 mt-16 bg-gray-500 shadow rounded-box menu dropdown-content"
+          tabIndex={0}
+        >
+          <li>
+            <a
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="#"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="#"
+            >
+              Arise 2023
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="#"
+            >
+              Movements
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+);
+
+export default Navbar;
