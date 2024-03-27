@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
-import logo from "../assets/logo.svg";
+
+import logo from "../../public/logo.svg";
 
 const Footer = () => (
   <footer className="bg-orange-50">

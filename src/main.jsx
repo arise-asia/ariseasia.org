@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import "./index.css";
 
+import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import MovementsPage from "./pages/MovementsPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
-import HomePage from "./pages/HomePage.jsx";
 
 const router = createBrowserRouter([
   {

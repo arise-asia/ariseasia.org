@@ -1,5 +1,6 @@
-import logo from "../assets/logo.svg";
 import { Link } from 'react-router-dom';
+
+import logo from "../../public/logo.svg";
 
 const Navbar = () => (
   <div className="absolute pt-20 w-full">
