@@ -31,7 +31,7 @@ const Navbar = () => (
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
         <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="#"
+          to="/arise2023"
         >
           Arise 2023
         </Link>
@@ -75,7 +75,7 @@ const Navbar = () => (
           <li>
             <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              to="#"
+              to="/arise2023"
             >
               Arise 2023
             </Link>
