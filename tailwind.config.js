@@ -10,5 +10,5 @@ export default {
       heading: ["Unbounded", "sans-serif"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
