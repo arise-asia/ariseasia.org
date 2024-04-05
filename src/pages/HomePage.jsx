@@ -11,23 +11,26 @@ const HomePage = () => (
     </div>
 
     {/* Body */}
-    {/* VERSE & MISSION */}
     <div className="bg-white">
       <div className="grid place-items-center gap-10">
-        <div className="absolute -bottom-10 bg-[#C26CB9] rounded-xl w-4/5">
-          <div className="px-20 py-5 text-center text-white">
-            However, I consider my life worth nothing to me; my only aim is to
-            finish the race and complete the task the Lord Jesus has given
-            me—the task of testifying to the good news of God’s grace.
+        {/* TO-DO: weird shapes for verse, mission*/}
+        {/* VERSE */}
+        <div className="absolute -bottom-10 bg-[#C26CB9] rounded-xl w-4/5 h-40">
+          <div className="text-center text-white text-xl italic">
+            <p className="mt-8 mb-6">
+              However, I consider my life worth nothing to me; my only aim is to
+              finish the race and complete the task the Lord Jesus has given
+              me—the task of testifying to the good news of God’s grace.
+            </p>
+            <p>Acts 20:24</p>
           </div>
-          <div className="pb-5 text-center text-white">Acts 20:24</div>
         </div>
 
         <div className="relative bg-[#DB6645] rounded-xl w-4/5 mt-20">
           <div className="absolute text-white text-3xl font-bold font-heading">
             MISSION
           </div>
-          <div className="p-20 py-8 text-center text-white">
+          <div className="p-20 py-8 text-center text-white text-xl italic">
             To inspire the next generation to take the gospel throughout Asia
             and to the world.
           </div>
@@ -49,11 +52,12 @@ const HomePage = () => (
             Click to find out more
           </div>
 
-          {/* TO-DO: Carousel */}
+          {/* TO-DO: location carousel */}
           <div></div>
         </div>
 
         {/* WHAT IS ARISE? */}
+        {/* TO-DO: title and weird shape for arise definition */}
         <div className="flex space-x-0">
           {/* VIDEO: Why Arise Asia Today? */}
           <div className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
@@ -154,7 +158,89 @@ const HomePage = () => (
           THE SUMMARY
         </div>
 
-        <div className="grid"></div>
+        <div className="grid grid-rows-6 grid-flow-col gap-4 text-white">
+          {/* 1st column */}
+          <div className="rounded-3xl bg-[#DB6645] row-span-3 flex flex-col justify-center items-center text-center">
+            <p className="font-heading font-bold text-3xl">37</p> countries
+            across Asia
+          </div>
+          <div className="rounded-3xl bg-[#DB6645] row-span-3 text-center flex flex-col justify-center items-center text-center">
+            <p className="font-heading font-bold text-3xl">1844</p> Arise Asia
+            2023 attendees
+          </div>
+
+          {/* 2nd column */}
+          <div className="rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">17</p> plenary
+            <br />
+            speakers
+          </div>
+          <div className="rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">9</p> speakers
+          </div>
+          <div className="rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">60</p> workshop
+            <br />
+            speakers
+          </div>
+
+          {/* 3rd column */}
+          <div className="rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">14</p> language
+            translations
+          </div>
+          <div className="rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">40</p>{' '}
+            sponsoring &<br />
+            endorsing partners
+          </div>
+          <div className="rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center p-3">
+            <p className="font-heading font-bold text-3xl mr-3">90</p>{' '}
+            international &<br />
+            local volunteers
+          </div>
+
+          {/* 4th column */}
+          <div className="rounded-3xl bg-[#EBD7FF] row-span-3 text-black flex flex-col justify-center items-center text-center p-3">
+            <span>Responding to Arise Asia</span>
+            <img
+              src="respond-aa2023.svg"
+              alt="Respond-AA2023"
+              className="mt-auto mb-auto"
+            />
+          </div>
+          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+            <p className="font-heading font-bold text-3xl">499</p> Praying for 3
+            people to come to know Christ
+          </div>
+
+          {/* 5th column */}
+          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+            <p className="font-heading font-bold text-3xl">402</p> Pledged at
+            least 1 year to a missions internship
+          </div>
+          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+            <p className="font-heading font-bold text-3xl">229</p> Committed for
+            long-term cross-cultural mission
+          </div>
+
+          {/* 6th column */}
+          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+            <p className="font-heading font-bold text-3xl">462</p> To partner
+            with 2 people for missions work
+          </div>
+          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+            <p className="font-heading font-bold text-3xl">169</p> Applied for
+            1-2 years to do missions internship
+          </div>
+        </div>
+
+        {/* THE MOMENTS */}
+        <div className="font-heading font-bold text-2xl mt-12 mb-3">
+          THE MOMENTS
+        </div>
+
+        {/* TO-DO: image carousel */}
       </div>
     </div>
   </>
