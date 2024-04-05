@@ -13,20 +13,33 @@ const HomePage = () => (
     {/* Body */}
     <div className="bg-white">
       <div className="grid place-items-center gap-10">
-        {/* TO-DO: weird shapes for verse, mission*/}
         {/* VERSE */}
-        <div className="absolute -bottom-10 bg-[#C26CB9] rounded-xl w-4/5 h-40">
-          <div className="text-center text-white text-xl italic">
-            <p className="mt-8 mb-6">
-              However, I consider my life worth nothing to me; my only aim is to
-              finish the race and complete the task the Lord Jesus has given
-              me—the task of testifying to the good news of God’s grace.
-            </p>
-            <p>Acts 20:24</p>
-          </div>
+        <div className="w-11/12 absolute -bottom-40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1323 287"
+            fill="none"
+          >
+            <path
+              d="M76.0345 14.6979C78.6679 6.0301 86.7986 0.214785 95.8524 0.52352L1281.22 40.9448C1290.7 41.2681 1298.65 48.2079 1300.25 57.5588L1322.23 185.999C1324.24 197.74 1315.61 208.624 1303.72 209.337L21.6894 286.278C7.7832 287.113 -2.69481 273.83 1.35499 260.5L76.0345 14.6979Z"
+              fill="#C26CB9"
+            />
+
+            <foreignObject x="160" y="70" width="80%" height="90%">
+              <div className="text-white text-xl italic font-bold flex justify-center items-center text-center rotate-[2deg] mt-4">
+                However, I consider my life worth nothing to me; my only aim is
+                to finish the race and complete the task the Lord Jesus has
+                given me—the task of testifying to the good news of God’s grace.
+                <br />
+                <br />
+                Acts 20:24
+              </div>
+            </foreignObject>
+          </svg>
         </div>
 
-        <div className="relative bg-[#DB6645] rounded-xl w-4/5 mt-20">
+        {/* MISSION */}
+        {/* <div className="relative bg-[#DB6645] rounded-xl w-4/5 mt-48">
           <div className="absolute text-white text-4xl font-bold font-heading">
             MISSION
           </div>
@@ -34,6 +47,28 @@ const HomePage = () => (
             To inspire the next generation to take the gospel throughout Asia
             and to the world.
           </div>
+        </div> */}
+        <div className="w-10/12 relative mt-28">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1253 215"
+            fill="none"
+          >
+            <path
+              d="M1247.75 38.678C1259.19 22.2078 1246.58 -0.194737 1226.57 1.0335L23.5133 74.8624C-1.67993 76.4084 -7.71875 110.804 15.441 120.839L208.854 204.646C224.581 211.461 241.642 214.642 258.768 213.952L1123.15 179.122C1140.69 178.415 1156.88 169.527 1166.9 155.11L1247.75 38.678Z"
+              fill="#DB6645"
+            />
+
+            <foreignObject x="60" y="50" width="80%" height="90%">
+              <div className="absolute top-1 left-12 text-white text-5xl font-bold font-heading rotate-[-4deg]">
+                MISSION
+              </div>
+              <div className="absolute top-12 left-60 text-center text-white text-xl italic rotate-[-3deg]">
+                To inspire the next generation to take the gospel throughout
+                Asia and to the world.
+              </div>
+            </foreignObject>
+          </svg>
         </div>
 
         {/* UPCOMING MOVEMENTS */}
