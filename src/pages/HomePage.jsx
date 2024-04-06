@@ -1,3 +1,5 @@
+import { MdOutlineNotificationsActive, MdOpenInNew } from 'react-icons/md';
+
 const HomePage = () => (
   <>
     {/* Header */}
@@ -74,9 +76,14 @@ const HomePage = () => (
             Check out where Arise Asia is heading to next!
           </div>
 
-          <div className="bg-[#B3ECFF] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black">
-            Click to find out more
-          </div>
+          <a href="/movements">
+            <div className="bg-[#B3ECFF] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black">
+              <div className="flex items-center">
+                Click to find out more
+                <MdOutlineNotificationsActive className="ml-2" size={24} />
+              </div>
+            </div>
+          </a>
 
           {/* TO-DO: location carousel */}
           <div></div>
@@ -86,7 +93,7 @@ const HomePage = () => (
         {/* TO-DO: title and weird shape for arise definition */}
         <div className="flex space-x-0 items-center justify-center w-11/12 relative">
           {/* VIDEO: Why Arise Asia Today? */}
-          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden absolute top-32 left-28 z-10">
+          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden absolute top-32 left-28 z-10">
             <iframe
               width="560"
               height="315"
@@ -128,9 +135,18 @@ const HomePage = () => (
                   </span>
                 </div>
 
-                <div className="bg-[#F3966B] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black ml-16">
-                  Learn more at goarise.org
-                </div>
+                <a
+                  href="https://www.goarise.org/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <div className="bg-[#F3966B] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black ml-16">
+                    <div className="flex items-center">
+                      Learn more at goarise.org
+                      <MdOpenInNew className="ml-2" size={24} />
+                    </div>
+                  </div>
+                </a>
 
                 <img
                   src="logo.svg"
@@ -144,10 +160,10 @@ const HomePage = () => (
       </div>
 
       {/* RECAP 2023 */}
-      <div className="bg-[#FCD369] px-20 py-10 rounded-tl-[80px] mt-10">
+      <div className="bg-[#FCD369] px-20 py-10 rounded-tl-[80px]">
         <div className="flex space-x-1">
           {/* left side section beside video */}
-          <div>
+          <div className="w-3/4">
             {/* TITLE */}
             <div className="italic text-lg mb-2">LOOKING BACK ON...</div>
             <div className="font-heading font-bold text-5xl leading-[3rem]">
@@ -177,12 +193,21 @@ const HomePage = () => (
               </p>
 
               {/* move button to the right with flex */}
-              <div className="flex-grow"></div>
-              <div className="flex justify-end">
-                <div className="bg-[#202020] rounded-full px-4 py-2 inline-block text-center font-bold mt-3">
-                  Conference Program
+              <a
+                href="https://drive.google.com/drive/u/0/folders/143Cu9OPjMmVmwMI9sg4qt42Dj2Z7E2BA"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <div className="flex-grow"></div>
+                <div className="flex justify-end">
+                  <div className="bg-[#202020] rounded-full px-4 py-2 inline-block text-center font-bold mt-3">
+                    <div className="flex items-center">
+                      Conference Program
+                      <MdOpenInNew className="ml-2" size={24} />
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
 
               {/* bottom left corner */}
               <div className="absolute -left-9 bottom-0 w-20 h-12 bg-[#FCD369] transform rotate-[35deg] origin-bottom-left" />
@@ -190,10 +215,11 @@ const HomePage = () => (
           </div>
 
           {/* VIDEO: The Summary */}
-          <div className="relative aspect-w-16 aspect-h-9">
+          <div className="relative aspect-w-16 aspect-h-9 w-screen rounded-xl overflow-hidden">
             <iframe
-              width="800"
-              height="475"
+              // width="800"
+              // height="475"
+              className="w-full h-full"
               src="https://www.youtube.com/embed/-V6a5qnJI5Q?si=ATfa8gW3vb6OOwHZ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
