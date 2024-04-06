@@ -39,15 +39,6 @@ const HomePage = () => (
         </div>
 
         {/* MISSION */}
-        {/* <div className="relative bg-[#DB6645] rounded-xl w-4/5 mt-48">
-          <div className="absolute text-white text-4xl font-bold font-heading">
-            MISSION
-          </div>
-          <div className="p-20 py-8 text-center text-white text-xl italic">
-            To inspire the next generation to take the gospel throughout Asia
-            and to the world.
-          </div>
-        </div> */}
         <div className="w-10/12 relative mt-28">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +84,9 @@ const HomePage = () => (
 
         {/* WHAT IS ARISE? */}
         {/* TO-DO: title and weird shape for arise definition */}
-        <div className="flex space-x-0">
+        <div className="flex space-x-0 items-center justify-center w-11/12 relative">
           {/* VIDEO: Why Arise Asia Today? */}
-          <div className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden absolute top-32 left-28 z-10">
             <iframe
               width="560"
               height="315"
@@ -107,23 +98,47 @@ const HomePage = () => (
             />
           </div>
 
-          <div className="bg-[#AA3638] rounded-xl w-1/2 p-10">
-            <div className="text-white mb-5">
-              It is almost two millennia since Jesus called His first disciples
-              to follow Him. Since that time, many followers of Jesus have taken
-              up the call to take the Gospel to the ends of the earth. Now, in
-              the 21 st century, the need for the Gospel to be shared and lived
-              out in Asia is tremendous, and God is setting the hearts of people
-              in Asia on fire for His glory and purpose.{' '}
-              <span className="text-amber-300">
-                The time has come for Asia to arise and participate in God’s
-                Great Commission.
-              </span>
+          <div className="w-1/2 relative absolute left-60">
+            <div className="font-heading font-bold text-5xl absolute top-20 left-28 rotate-[6.2deg] text-[#AA3638]">
+              WHAT IS ARISE?
             </div>
 
-            <div className="bg-[#F3966B] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black">
-              Learn more at goarise.org
-            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -100 770 689"
+              fill="none"
+            >
+              <path
+                d="M2.26567 34.2574C-5.37083 17.3364 8.27214 -1.47651 26.7283 0.52476L748.163 78.7526C761.903 80.2425 771.549 93.0002 769.238 106.627L728.752 345.3C724.334 371.344 701.092 389.938 674.713 388.53L183.537 362.316C162.63 361.201 144.091 348.515 135.479 329.432L2.26567 34.2574Z"
+                fill="#AA3638"
+              />
+
+              <foreignObject x="100" y="0" width="700" height="700">
+                <div className="text-white text-justify mb-3 mt-20 ml-16 w-8/12">
+                  It is almost two millennia since Jesus called His first
+                  disciples to follow Him. Since that time, many followers of
+                  Jesus have taken up the call to take the Gospel to the ends of
+                  the earth. Now, in the 21 st century, the need for the Gospel
+                  to be shared and lived out in Asia is tremendous, and God is
+                  setting the hearts of people in Asia on fire for His glory and
+                  purpose.{' '}
+                  <span className="text-amber-300">
+                    The time has come for Asia to arise and participate in God’s
+                    Great Commission.
+                  </span>
+                </div>
+
+                <div className="bg-[#F3966B] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black ml-16">
+                  Learn more at goarise.org
+                </div>
+
+                <img
+                  src="logo.svg"
+                  alt="What is Arise? Logo"
+                  className="absolute top-52 right-12 w-1/4"
+                />
+              </foreignObject>
+            </svg>
           </div>
         </div>
       </div>
