@@ -65,32 +65,84 @@ const HomePage = () => (
         </div>
 
         {/* UPCOMING MOVEMENTS */}
-        <div className="relative bg-[#406E7D] rounded-xl w-2/5 p-10">
-          <div className="text-white text-4xl text-left font-bold font-heading leading-10">
-            UPCOMING
-            <br />
-            MOVEMENTS
-          </div>
+        <div className="flex ml-20">
+          <div className="relative bg-[#406E7D] rounded-xl w-5/12 p-10">
+            <div className="text-white text-4xl text-left font-bold font-heading leading-10">
+              UPCOMING
+              <br />
+              MOVEMENTS
+            </div>
 
-          <div className="text-white mt-3 mb-12">
-            Check out where Arise Asia is heading to next!
-          </div>
+            <div className="text-white mt-3 mb-12">
+              Check out where Arise Asia is heading to next!
+            </div>
 
-          <a href="/movements">
-            <div className="bg-[#B3ECFF] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black">
-              <div className="flex items-center">
-                Click to find out more
-                <MdOutlineNotificationsActive className="ml-2" size={24} />
+            <a
+              role="button"
+              className="btn bg-[#B3ECFF] rounded-full border-4 border-black text-black"
+              href="/movements"
+            >
+              Click to find out more
+              <MdOutlineNotificationsActive className="ml-2" size={24} />
+            </a>
+
+            {/* Location Carousel */}
+            <div
+              className="carousel w-full mt-10 gap-4"
+              style={{ overflowX: 'scroll' }}
+            >
+              {/* hong kong */}
+              <div
+                className="carousel-item card card-compact w-[40vw] h-60"
+                style={{
+                  background:
+                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/hongkong.svg") lightgray 50% / cover no-repeat',
+                }}
+              >
+                <div className="card-body absolute bottom-0">
+                  <h2 className="card-title font-heading font-bold text-white">
+                    ARISE HONG KONG
+                  </h2>
+                  <p className="text-white italic">July 26-27, 2024</p>
+                </div>
+              </div>
+
+              {/* cebu */}
+              <div
+                className="carousel-item card card-compact w-[40vw] h-60"
+                style={{
+                  background:
+                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/cebu.svg") lightgray 50% / cover no-repeat',
+                }}
+              >
+                <div className="card-body absolute bottom-0">
+                  <h2 className="card-title font-heading font-bold text-white">
+                    ARISE CEBU
+                  </h2>
+                  <p className="text-white italic">December 2, 2023</p>
+                </div>
+              </div>
+
+              {/* indonesia */}
+              <div
+                className="carousel-item card card-compact w-[40vw] h-60"
+                style={{
+                  background:
+                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/indonesia.svg") lightgray 50% / cover no-repeat',
+                }}
+              >
+                <div className="card-body absolute bottom-0">
+                  <h2 className="card-title font-heading font-bold text-white">
+                    ARISE INDONESIA
+                  </h2>
+                  <p className="text-white italic">November 10-11, 2023</p>
+                </div>
               </div>
             </div>
-          </a>
-
-          {/* TO-DO: location carousel */}
-          <div></div>
+          </div>
         </div>
 
         {/* WHAT IS ARISE? */}
-        {/* TO-DO: title and weird shape for arise definition */}
         <div className="flex space-x-0 items-center justify-center w-11/12 relative">
           {/* VIDEO: Why Arise Asia Today? */}
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden absolute top-32 left-28 z-10">
@@ -136,16 +188,14 @@ const HomePage = () => (
                 </div>
 
                 <a
+                  role="button"
+                  className="btn bg-[#F3966B] rounded-full border-4 border-black text-black ml-16"
                   href="https://www.goarise.org/"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
-                  <div className="bg-[#F3966B] rounded-full py-2 px-4 inline-block text-center font-bold border-4 border-black ml-16">
-                    <div className="flex items-center">
-                      Learn more at goarise.org
-                      <MdOpenInNew className="ml-2" size={24} />
-                    </div>
-                  </div>
+                  Learn more at goarise.org
+                  <MdOpenInNew className="ml-2" size={24} />
                 </a>
 
                 <img
@@ -192,22 +242,19 @@ const HomePage = () => (
                 Arise Asia 2023.
               </p>
 
-              {/* move button to the right with flex */}
-              <a
-                href="https://drive.google.com/drive/u/0/folders/143Cu9OPjMmVmwMI9sg4qt42Dj2Z7E2BA"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <div className="flex-grow"></div>
-                <div className="flex justify-end">
-                  <div className="bg-[#202020] rounded-full px-4 py-2 inline-block text-center font-bold mt-3">
-                    <div className="flex items-center">
-                      Conference Program
-                      <MdOpenInNew className="ml-2" size={24} />
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div className="flex-grow"></div>
+              <div className="flex justify-end">
+                <a
+                  role="button"
+                  className="btn bg-[#202020] rounded-full text-white mt-3"
+                  href="https://drive.google.com/drive/u/0/folders/143Cu9OPjMmVmwMI9sg4qt42Dj2Z7E2BA"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  Conference Program
+                  <MdOpenInNew className="ml-2" size={24} />
+                </a>
+              </div>
 
               {/* bottom left corner */}
               <div className="absolute -left-9 bottom-0 w-20 h-12 bg-[#FCD369] transform rotate-[35deg] origin-bottom-left" />
