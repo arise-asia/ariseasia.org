@@ -65,8 +65,8 @@ const HomePage = () => (
         </div>
 
         {/* UPCOMING MOVEMENTS */}
-        <div className="flex ml-20">
-          <div className="relative bg-[#406E7D] rounded-xl w-5/12 p-10">
+        <div className="relative ml-20 w-11/12">
+          <div className="bg-[#406E7D] rounded-xl w-4/12 p-10 pb-80">
             <div className="text-white text-4xl text-left font-bold font-heading leading-10">
               UPCOMING
               <br />
@@ -85,58 +85,52 @@ const HomePage = () => (
               Click to find out more
               <MdOutlineNotificationsActive className="ml-2" size={24} />
             </a>
+          </div>
 
-            {/* Location Carousel */}
+          {/* Location Carousel */}
+          <div className="absolute bottom-8 left-10 carousel carousel-center w-11/12 gap-5">
             <div
-              className="carousel w-full mt-10 gap-4"
-              style={{ overflowX: 'scroll' }}
+              className="carousel-item card card-compact w-[40vw] h-60"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/hongkong.svg") lightgray 50% / cover no-repeat',
+              }}
             >
-              {/* hong kong */}
-              <div
-                className="carousel-item card card-compact w-[40vw] h-60"
-                style={{
-                  background:
-                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/hongkong.svg") lightgray 50% / cover no-repeat',
-                }}
-              >
-                <div className="card-body absolute bottom-0">
-                  <h2 className="card-title font-heading font-bold text-white">
-                    ARISE HONG KONG
-                  </h2>
-                  <p className="text-white italic">July 26-27, 2024</p>
-                </div>
+              <div className="card-body absolute bottom-0">
+                <h2 className="card-title font-heading font-bold text-white">
+                  ARISE HONG KONG
+                </h2>
+                <p className="text-white italic">July 26-27, 2024</p>
               </div>
+            </div>
 
-              {/* cebu */}
-              <div
-                className="carousel-item card card-compact w-[40vw] h-60"
-                style={{
-                  background:
-                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/cebu.svg") lightgray 50% / cover no-repeat',
-                }}
-              >
-                <div className="card-body absolute bottom-0">
-                  <h2 className="card-title font-heading font-bold text-white">
-                    ARISE CEBU
-                  </h2>
-                  <p className="text-white italic">December 2, 2023</p>
-                </div>
+            <div
+              className="carousel-item card card-compact w-[40vw] h-60"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/cebu.svg") lightgray 50% / cover no-repeat',
+              }}
+            >
+              <div className="card-body absolute bottom-0">
+                <h2 className="card-title font-heading font-bold text-white">
+                  ARISE CEBU
+                </h2>
+                <p className="text-white italic">December 2, 2023</p>
               </div>
+            </div>
 
-              {/* indonesia */}
-              <div
-                className="carousel-item card card-compact w-[40vw] h-60"
-                style={{
-                  background:
-                    'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/indonesia.svg") lightgray 50% / cover no-repeat',
-                }}
-              >
-                <div className="card-body absolute bottom-0">
-                  <h2 className="card-title font-heading font-bold text-white">
-                    ARISE INDONESIA
-                  </h2>
-                  <p className="text-white italic">November 10-11, 2023</p>
-                </div>
+            <div
+              className="carousel-item card card-compact w-[40vw] h-60"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/indonesia.svg") lightgray 50% / cover no-repeat',
+              }}
+            >
+              <div className="card-body absolute bottom-0">
+                <h2 className="card-title font-heading font-bold text-white">
+                  ARISE INDONESIA
+                </h2>
+                <p className="text-white italic">November 10-11, 2023</p>
               </div>
             </div>
           </div>
@@ -524,6 +518,17 @@ const HomePage = () => (
         </div>
 
         {/* TO-DO: image carousel */}
+        {/* <div className="carousel carousel-vertical carousel-center rounded-box h-96 gap-4">
+          <div className="carousel-item h-48 ">
+            <img src="/images/1.png" />
+          </div>
+          <div className="carousel-item h-48">
+            <img src="/images/2.png" />
+          </div>
+          <div className="carousel-item h-48">
+            <img src="/images/3.png" />
+          </div>
+        </div> */}
       </div>
     </div>
   </>
