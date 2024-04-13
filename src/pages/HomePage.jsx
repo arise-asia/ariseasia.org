@@ -41,7 +41,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION */}
-        <div className="w-10/12 relative mt-28">
+        <div className="w-10/12 relative mt-2 md:mt-28">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1253 215"
@@ -65,8 +65,8 @@ const HomePage = () => (
         </div>
 
         {/* UPCOMING MOVEMENTS */}
-        <div className="relative ml-20 w-11/12">
-          <div className="bg-[#406E7D] rounded-xl w-4/12 p-10 pb-80">
+        <div className="relative md:ml-20 w-11/12">
+          <div className="bg-[#406E7D] rounded-xl w-full md:w-4/12 p-10 pb-80">
             <div className="text-white text-4xl text-left font-bold font-heading leading-10">
               UPCOMING
               <br />
@@ -137,12 +137,13 @@ const HomePage = () => (
         </div>
 
         {/* WHAT IS ARISE? */}
-        <div className="flex space-x-0 items-center justify-center w-11/12 relative">
+        <div className="md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
           {/* VIDEO: Why Arise Asia Today? */}
-          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden absolute top-32 left-28 z-10">
+          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
             <iframe
-              width="560"
-              height="315"
+              // width="560"
+              // height="315"
+              className="w-full h-full"
               src="https://www.youtube.com/embed/-3ZE1rq-M8E?si=pfRxSmiCMF-PKCCg"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -151,8 +152,8 @@ const HomePage = () => (
             />
           </div>
 
-          <div className="w-1/2 relative absolute left-60">
-            <div className="font-heading font-bold text-5xl absolute top-20 left-28 rotate-[6.2deg] text-[#AA3638]">
+          <div className="w-1/2 relative absolute md:left-60">
+            <div className="font-heading font-bold text-xl md:text-5xl absolute top-20 left-28 rotate-[6.2deg] text-[#AA3638]">
               WHAT IS ARISE?
             </div>
 
@@ -205,15 +206,13 @@ const HomePage = () => (
 
       {/* RECAP 2023 */}
       <div className="bg-[#FCD369] px-20 py-10 rounded-tl-[80px]">
-        <div className="flex space-x-1">
-          {/* left side section beside video */}
-          <div className="w-3/4">
+        <div className="md:flex md:space-x-1">
+          {/* DESKTOP: left side section beside video */}
+          <div className="w-full md:w-3/4">
             {/* TITLE */}
             <div className="italic text-lg mb-2">LOOKING BACK ON...</div>
-            <div className="font-heading font-bold text-5xl leading-[3rem]">
-              ARISE ASIA
-              <br />
-              2023
+            <div className="font-heading font-bold text-3xl md:text-5xl leading-[3rem]">
+              ARISE ASIA 2023
             </div>
             <div className="flex space-x-3 mt-4">
               <div className="bg-[#406E7D] py-2 px-4 rounded-md text-white inline-block">
@@ -256,10 +255,8 @@ const HomePage = () => (
           </div>
 
           {/* VIDEO: The Summary */}
-          <div className="relative aspect-w-16 aspect-h-9 w-screen rounded-xl overflow-hidden">
+          <div className="relative aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden">
             <iframe
-              // width="800"
-              // height="475"
               className="w-full h-full"
               src="https://www.youtube.com/embed/-V6a5qnJI5Q?si=ATfa8gW3vb6OOwHZ"
               title="YouTube video player"
@@ -275,11 +272,11 @@ const HomePage = () => (
           THE SUMMARY
         </div>
 
-        <div className="grid grid-rows-6 grid-flow-col gap-4 text-white">
+        <div className="grid grid-cols-4 grid-rows-7 md:grid-rows-6 md:grid-flow-col md:grid-cols-12 gap-4 text-white">
           {/* 1st column */}
-          <div className="relative rounded-3xl bg-[#DB6645] row-span-3 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
-            <p className="font-heading font-bold text-4xl">37</p> countries
-            across Asia
+          <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
+            <p className="font-heading font-bold text-xl md:text-4xl">37</p>
+            countries across Asia
             {/* wave line 1 */}
             <div className="absolute -top-1 -right-1">
               <svg
@@ -316,7 +313,7 @@ const HomePage = () => (
             </div>
           </div>
 
-          <div className="relative rounded-3xl bg-[#DB6645] row-span-3 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
+          <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
             <p className="font-heading font-bold text-4xl">1844</p> Arise Asia
             2023 attendees
             {/* wave line */}
@@ -339,7 +336,7 @@ const HomePage = () => (
           </div>
 
           {/* 2nd column */}
-          <div className="relative rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">17</p> plenary
             <br />
             speakers
@@ -362,11 +359,11 @@ const HomePage = () => (
             </div>
           </div>
 
-          <div className="rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">9</p> speakers
           </div>
 
-          <div className="relative rounded-3xl bg-[#A04C34] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">60</p> workshop
             <br />
             speakers
@@ -407,7 +404,7 @@ const HomePage = () => (
           </div>
 
           {/* 3rd column */}
-          <div className="relative rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">14</p>
             language
             <br />
@@ -431,7 +428,7 @@ const HomePage = () => (
             </div>
           </div>
 
-          <div className="relative rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">40</p>
             sponsoring &<br />
             endorsing partners
@@ -454,7 +451,7 @@ const HomePage = () => (
             </div>
           </div>
 
-          <div className="relative rounded-3xl bg-[#A34D4D] row-span-2 flex justify-center items-center py-2 px-5">
+          <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">90</p>
             international &<br />
             local volunteers
@@ -478,7 +475,7 @@ const HomePage = () => (
           </div>
 
           {/* 4th column */}
-          <div className="rounded-3xl bg-[#EBD7FF] row-span-3 text-black flex flex-col justify-center items-center text-center p-3">
+          <div className="rounded-3xl bg-[#EBD7FF] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-black flex flex-col justify-center items-center text-center p-3">
             <span>Responding to Arise Asia</span>
             <img
               src="respond-aa2023.svg"
@@ -486,27 +483,27 @@ const HomePage = () => (
               className="mt-auto mb-auto"
             />
           </div>
-          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+          <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
             <p className="font-heading font-bold text-4xl">499</p> Praying for 3
             people to come to know Christ
           </div>
 
           {/* 5th column */}
-          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+          <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
             <p className="font-heading font-bold text-4xl">402</p> Pledged at
             least 1 year to a missions internship
           </div>
-          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+          <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
             <p className="font-heading font-bold text-4xl">229</p> Committed for
             long-term cross-cultural mission
           </div>
 
           {/* 6th column */}
-          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+          <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
             <p className="font-heading font-bold text-4xl">462</p> To partner
             with 2 people for missions work
           </div>
-          <div className="rounded-3xl bg-[#9045DB] row-span-3 p-3">
+          <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
             <p className="font-heading font-bold text-4xl">169</p> Applied for
             1-2 years to do missions internship
           </div>
