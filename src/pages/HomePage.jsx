@@ -16,7 +16,7 @@ const HomePage = () => (
     <div className="bg-white">
       <div className="grid place-items-center gap-5 md:gap-10">
         {/* VERSE: Desktop version */}
-        <div className="w-11/12 hidden md:block md:absolute md:-bottom-40">
+        <div className="w-11/12 hidden md:block md:-mt-16">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1323 287"
@@ -41,7 +41,8 @@ const HomePage = () => (
         </div>
 
         {/* VERSE: Mobile version */}
-        <div className="w-11/12 block absolute -bottom-20 md:hidden">
+        {/* <div className="w-11/12 block absolute -bottom-20 md:hidden"> */}
+        <div className="w-11/12 block -mt-24 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 410 223"
@@ -66,7 +67,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Desktop version */}
-        <div className="w-10/12 relative hidden md:block md:mt-28">
+        <div className="w-10/12 relative hidden md:block md:-mt-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1253 215"
@@ -90,7 +91,8 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Mobile version */}
-        <div className="w-10/12 relative block mt-36 md:hidden">
+        {/* <div className="w-10/12 relative block mt-36 md:hidden"> */}
+        <div className="w-10/12 relative block -mt-20 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 402 185"
