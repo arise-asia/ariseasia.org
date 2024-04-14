@@ -13,7 +13,7 @@ const HomePage = () => (
     </div>
 
     {/* Body */}
-    <div className="bg-white">
+    <div className="bg-white bg-center bg-no-repeat bg-cover bg-[url('bg-mobile.svg')] md:bg-[url('bg-desktop.svg')]">
       <div className="grid place-items-center gap-5 md:gap-10">
         {/* VERSE: Desktop version */}
         <div className="w-11/12 hidden md:block md:-mt-16">
@@ -41,7 +41,6 @@ const HomePage = () => (
         </div>
 
         {/* VERSE: Mobile version */}
-        {/* <div className="w-11/12 block absolute -bottom-20 md:hidden"> */}
         <div className="w-11/12 block -mt-24 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,6 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Mobile version */}
-        {/* <div className="w-10/12 relative block mt-36 md:hidden"> */}
         <div className="w-10/12 relative block -mt-20 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
