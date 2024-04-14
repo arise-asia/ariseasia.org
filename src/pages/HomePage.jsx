@@ -14,9 +14,9 @@ const HomePage = () => (
 
     {/* Body */}
     <div className="bg-white">
-      <div className="grid place-items-center gap-10">
-        {/* VERSE */}
-        <div className="w-11/12 absolute -bottom-40">
+      <div className="grid place-items-center gap-5 md:gap-10">
+        {/* VERSE: Desktop version */}
+        <div className="w-11/12 hidden md:block md:absolute md:-bottom-40">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1323 287"
@@ -40,8 +40,33 @@ const HomePage = () => (
           </svg>
         </div>
 
-        {/* MISSION */}
-        <div className="w-10/12 relative mt-2 md:mt-28">
+        {/* VERSE: Mobile version */}
+        <div className="w-11/12 block absolute -bottom-20 md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 410 223"
+            fill="none"
+          >
+            <path
+              d="M19.1791 18.4372C20.2902 7.70437 29.7148 -0.212146 40.4783 0.546139L382.522 24.6429C392.361 25.3361 400.226 33.0992 401.047 42.9287L409.038 138.597C409.903 148.958 402.686 158.253 392.435 159.983L23.5587 222.217C10.5219 224.417 -1.02362 213.587 0.337804 200.436L19.1791 18.4372Z"
+              fill="#C26CB9"
+            />
+
+            <foreignObject x="45" y="35" width="80%" height="90%">
+              <div className="text-white text-sm italic flex justify-center items-center text-center mt-4">
+                However, I consider my life worth nothing to me; my only aim is
+                to finish the race and complete the task the Lord Jesus has
+                given me—the task of testifying to the good news of God’s grace.
+                <br />
+                <br />
+                Acts 20:24
+              </div>
+            </foreignObject>
+          </svg>
+        </div>
+
+        {/* MISSION: Desktop version */}
+        <div className="w-10/12 relative hidden md:block md:mt-28">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1253 215"
@@ -64,16 +89,40 @@ const HomePage = () => (
           </svg>
         </div>
 
+        {/* MISSION: Mobile version */}
+        <div className="w-10/12 relative block mt-36 md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 402 185"
+            fill="none"
+          >
+            <path
+              d="M401.608 15.8239C403.679 7.41922 396.441 -0.346821 387.911 1.1283L11.6563 66.1991C1.08994 68.0265 -3.5834 80.5681 3.21063 88.8644L69.7682 170.14C78.3757 180.651 91.7298 186.074 105.229 184.541L341.087 157.758C356.883 155.965 369.893 144.528 373.696 129.093L401.608 15.8239Z"
+              fill="#DB6645"
+            />
+
+            <foreignObject x="0" y="20" width="80%" height="90%">
+              <div className="absolute top-6 left-4 text-white text-3xl font-bold font-heading rotate-[-10deg]">
+                MISSION
+              </div>
+              <div className="absolute top-14 left-24 text-center text-white text-sm italic rotate-[-2deg]">
+                To inspire the next generation to take the gospel throughout
+                Asia and to the world.
+              </div>
+            </foreignObject>
+          </svg>
+        </div>
+
         {/* UPCOMING MOVEMENTS */}
-        <div className="relative md:ml-20 w-11/12">
-          <div className="bg-[#406E7D] rounded-xl w-full md:w-4/12 p-10 pb-80">
-            <div className="text-white text-4xl text-left font-bold font-heading leading-10">
+        <div className="relative w-10/12 md:ml-20 md:w-11/12">
+          <div className="bg-[#406E7D] rounded-xl w-full md:w-4/12 p-5 pb-20 md:p-10 md:pb-80">
+            <div className="text-white text-2xl md:text-4xl text-left font-bold font-heading md:leading-10">
               UPCOMING
               <br />
               MOVEMENTS
             </div>
 
-            <div className="text-white mt-3 mb-12">
+            <div className="text-white mt-3 mb-3 text-sm md:text-md">
               Check out where Arise Asia is heading to next!
             </div>
 
@@ -88,9 +137,9 @@ const HomePage = () => (
           </div>
 
           {/* Location Carousel */}
-          <div className="absolute bottom-8 left-10 carousel carousel-center w-11/12 gap-5">
+          <div className="absolute -bottom-44 left-6 md:bottom-10 md:left-10 carousel carousel-center w-full md:w-11/12 gap-3 md:gap-5">
             <div
-              className="carousel-item card card-compact w-[40vw] h-60"
+              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/hongkong.svg") lightgray 50% / cover no-repeat',
@@ -105,7 +154,7 @@ const HomePage = () => (
             </div>
 
             <div
-              className="carousel-item card card-compact w-[40vw] h-60"
+              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/cebu.svg") lightgray 50% / cover no-repeat',
@@ -120,7 +169,7 @@ const HomePage = () => (
             </div>
 
             <div
-              className="carousel-item card card-compact w-[40vw] h-60"
+              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/indonesia.svg") lightgray 50% / cover no-repeat',
@@ -136,8 +185,8 @@ const HomePage = () => (
           </div>
         </div>
 
-        {/* WHAT IS ARISE? */}
-        <div className="md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
+        {/* WHAT IS ARISE?: Desktop version */}
+        <div className="hidden md:block md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
           {/* VIDEO: Why Arise Asia Today? */}
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
             <iframe
@@ -202,6 +251,71 @@ const HomePage = () => (
             </svg>
           </div>
         </div>
+
+        {/* WHAT IS ARISE?: Mobile version */}
+        <div className="relative mt-60 mb-10 w-11/12 md:hidden">
+          <div className="font-heading font-bold text-4xl absolute -top-[10.5px] left-12 rotate-[6.1deg] text-[#AA3638]">
+            WHAT IS ARISE?
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 401 526"
+              fill="none"
+            >
+              <path
+                d="M0.732192 18.8354C-0.165984 8.19812 8.85588 -0.620688 19.47 0.519386L385.83 39.8706C394.458 40.7974 401 48.0796 401 56.7576V512C401 519.732 394.732 526 387 526H79.9799C59.3857 526 42.2235 510.226 40.4908 489.705L0.732192 18.8354Z"
+                fill="#AA3638"
+              />
+
+              <foreignObject x="10" y="0" width="420" height="700">
+                <img
+                  src="logo.svg"
+                  alt="What is Arise? Logo"
+                  className="absolute top-20 w-1/5"
+                />
+
+                <div className="text-xs text-white text-justify mb-3 mt-16 ml-28 w-7/12">
+                  It is almost two millennia since Jesus called His first
+                  disciples to follow Him. Since that time, many followers of
+                  Jesus have taken up the call to take the Gospel to the ends of
+                  the earth. Now, in the 21 st century, the need for the Gospel
+                  to be shared and lived out in Asia is tremendous, and God is
+                  setting the hearts of people in Asia on fire for His glory and
+                  purpose.{' '}
+                  <span className="text-amber-300">
+                    The time has come for Asia to arise and participate in God’s
+                    Great Commission.
+                  </span>
+                </div>
+
+                {/* VIDEO: Why Arise Asia Today? */}
+                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 h-48 ml-4 z-10">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/-3ZE1rq-M8E?si=pfRxSmiCMF-PKCCg"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  />
+                </div>
+
+                <a
+                  role="button"
+                  className="btn bg-[#F3966B] rounded-full border-4 border-black text-black mt-4 text-xs absolute right-12"
+                  href="https://www.goarise.org/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  Learn more at goarise.org
+                  <MdOpenInNew size={20} />
+                </a>
+              </foreignObject>
+            </svg>
+          </div>
+        </div>
       </div>
 
       {/* RECAP 2023 */}
@@ -227,7 +341,7 @@ const HomePage = () => (
             <div className="font-heading font-bold text-2xl mt-8 mb-3">
               THE RECAP
             </div>
-            <div className="relative bg-[#B28000] p-5 w-11/12 text-white">
+            <div className="relative bg-[#B28000] p-5 w-full md:w-11/12 text-white">
               <p>
                 On July 25-29, 1844 people from all across Asia attended the
                 first ever Arise Asia in Bangkok, Thailand. Praise God for all
@@ -255,7 +369,7 @@ const HomePage = () => (
           </div>
 
           {/* VIDEO: The Summary */}
-          <div className="relative aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden">
+          <div className="relative aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden mt-5 md:mt-0 h-72 md:h-auto">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/-V6a5qnJI5Q?si=ATfa8gW3vb6OOwHZ"
