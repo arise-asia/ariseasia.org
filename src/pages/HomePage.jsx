@@ -192,8 +192,6 @@ const HomePage = () => (
           {/* VIDEO: Why Arise Asia Today? */}
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
             <iframe
-              // width="560"
-              // height="315"
               className="w-full h-full"
               src="https://www.youtube.com/embed/-3ZE1rq-M8E?si=pfRxSmiCMF-PKCCg"
               title="YouTube video player"
@@ -429,7 +427,7 @@ const HomePage = () => (
             </div>
           </div>
 
-          <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
+          <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1 p-2">
             <p className="font-heading font-bold text-4xl">1844</p> Arise Asia
             2023 attendees
             {/* wave line */}
@@ -546,8 +544,7 @@ const HomePage = () => (
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">40</p>
-            sponsoring &<br />
-            endorsing partners
+            sponsoring & endorsing partners
             {/* wave line */}
             <div className="absolute -bottom-2 -right-2">
               <svg
@@ -569,8 +566,7 @@ const HomePage = () => (
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
             <p className="font-heading font-bold text-4xl mr-3">90</p>
-            international &<br />
-            local volunteers
+            international & local volunteers
             {/* wave line */}
             <div className="absolute -top-1 -left-1">
               <svg
