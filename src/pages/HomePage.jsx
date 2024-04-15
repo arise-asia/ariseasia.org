@@ -317,7 +317,7 @@ const HomePage = () => (
       </div>
 
       {/* RECAP 2023 */}
-      <div className="bg-[#FCD369] px-20 py-10 rounded-tl-[80px]">
+      <div className="bg-[#FCD369] px-8 md:px-20 py-10 rounded-tl-[80px]">
         <div className="md:flex md:space-x-1">
           {/* DESKTOP: left side section beside video */}
           <div className="w-full md:w-3/4">
@@ -387,7 +387,7 @@ const HomePage = () => (
         <div className="grid grid-cols-4 grid-rows-7 md:grid-rows-6 md:grid-flow-col md:grid-cols-12 gap-4 text-white">
           {/* 1st column */}
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
-            <p className="font-heading font-bold text-xl md:text-4xl">37</p>
+            <p className="font-heading font-bold text-4xl">37</p>
             countries across Asia
             {/* wave line 1 */}
             <div className="absolute -top-1 -right-1">
