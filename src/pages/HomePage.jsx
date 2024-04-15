@@ -90,7 +90,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Mobile version */}
-        <div className="w-10/12 relative block -mt-20 md:hidden">
+        <div className="w-10/12 relative block -mt-16 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 402 185"
@@ -252,7 +252,7 @@ const HomePage = () => (
 
         {/* WHAT IS ARISE?: Mobile version */}
         <div className="relative mt-60 mb-10 w-11/12 md:hidden">
-          <div className="font-heading font-bold text-4xl absolute -top-[10.5px] left-12 rotate-[6.1deg] text-[#AA3638]">
+          <div className="font-heading font-bold text-3xl absolute -top-2 left-12 rotate-[6.1deg] text-[#AA3638]">
             WHAT IS ARISE?
           </div>
 
