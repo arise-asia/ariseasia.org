@@ -1,9 +1,10 @@
 import { MdOutlineNotificationsActive, MdOpenInNew } from 'react-icons/md';
+import MomentsCarousel from '../components/MomentsCarousel';
 
 const HomePage = () => (
   <>
     {/* Header */}
-    <div className="px-10 pt-80 bg-center bg-no-repeat bg-cover bg-[url('home.gif')]">
+    <div className="px-10 pt-80 bg-center bg-no-repeat bg-cover bg-[url('../public/home.gif')]">
       <h1 className="text-6xl font-bold text-center text-orange-500 uppercase sm:text-7xl font-heading">
         Arise Asia
       </h1>
@@ -13,7 +14,7 @@ const HomePage = () => (
     </div>
 
     {/* Body */}
-    <div className="bg-white bg-center bg-no-repeat bg-cover bg-[url('bg-mobile.svg')] md:bg-[url('bg-desktop.svg')]">
+    <div className="bg-white bg-center bg-no-repeat bg-cover bg-[url('../public/bg-mobile.svg')] md:bg-[url('../public/bg-desktop.svg')]">
       <div className="grid place-items-center gap-5 md:gap-10">
         {/* VERSE: Desktop version */}
         <div className="w-11/12 hidden md:block md:-mt-16">
@@ -195,7 +196,7 @@ const HomePage = () => (
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             />
           </div>
 
@@ -296,7 +297,7 @@ const HomePage = () => (
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
+                    allowFullScreen
                   />
                 </div>
 
@@ -374,7 +375,7 @@ const HomePage = () => (
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             />
           </div>
         </div>
@@ -624,18 +625,10 @@ const HomePage = () => (
           THE MOMENTS
         </div>
 
-        {/* TO-DO: image carousel */}
-        {/* <div className="carousel carousel-vertical carousel-center rounded-box h-96 gap-4">
-          <div className="carousel-item h-48 ">
-            <img src="/images/1.png" />
-          </div>
-          <div className="carousel-item h-48">
-            <img src="/images/2.png" />
-          </div>
-          <div className="carousel-item h-48">
-            <img src="/images/3.png" />
-          </div>
-        </div> */}
+        {/* Image Carousel */}
+        <div className="flex flex-col justify-center items-center gap-2 md:w-1/4">
+          <MomentsCarousel />
+        </div>
       </div>
     </div>
   </>
