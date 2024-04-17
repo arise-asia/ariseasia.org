@@ -14,8 +14,8 @@ const HomePage = () => (
     </div>
 
     {/* Body */}
-    <div className="bg-white bg-center bg-no-repeat bg-cover bg-[url('../public/bg-mobile.svg')] md:bg-[url('../public/bg-desktop.svg')]">
-      <div className="grid place-items-center gap-5 md:gap-10">
+    <div className="bg-white">
+      <div className="grid place-items-center gap-5 md:gap-10 bg-center bg-no-repeat bg-cover bg-[url('../public/bg-mobile.svg')] md:bg-[url('../public/bg-desktop.svg')]">
         {/* VERSE: Desktop version */}
         <div className="w-11/12 hidden md:block md:-mt-16">
           <svg
