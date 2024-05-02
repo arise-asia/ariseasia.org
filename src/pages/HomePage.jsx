@@ -192,7 +192,7 @@ const HomePage = () => (
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/-3ZE1rq-M8E?si=pfRxSmiCMF-PKCCg"
+              src="https://www.youtube.com/embed/4G4fQidFXro?si=pNkGhvuVCoCy8mz0"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -253,7 +253,7 @@ const HomePage = () => (
 
         {/* WHAT IS ARISE?: Mobile version */}
         <div className="relative mt-60 mb-10 w-11/12 md:hidden">
-          <div className="font-heading font-bold text-3xl absolute -top-2 left-12 rotate-[6.1deg] text-[#AA3638]">
+          <div className="font-heading font-bold text-[28px] absolute -top-3 left-12 rotate-[6.1deg] text-[#AA3638]">
             WHAT IS ARISE?
           </div>
 
@@ -388,8 +388,8 @@ const HomePage = () => (
         <div className="grid grid-cols-4 grid-rows-7 md:grid-rows-6 md:grid-flow-col md:grid-cols-12 gap-4 text-white">
           {/* 1st column */}
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
-            <p className="font-heading font-bold text-4xl">37</p>
-            countries across Asia
+            <p className="font-heading font-bold text-3xl md:text-4xl">37</p>
+            <p className="text-sm md:text-md">countries across Asia</p>
             {/* wave line 1 */}
             <div className="absolute -top-1 -right-1">
               <svg
@@ -427,8 +427,8 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1 p-2">
-            <p className="font-heading font-bold text-4xl">1844</p> Arise Asia
-            2023 attendees
+            <p className="font-heading font-bold text-3xl md:text-4xl">1844</p>{' '}
+            <p className="text-sm md:text-md">Arise Asia 2023 attendees</p>
             {/* wave line */}
             <div className="absolute -right-2 bottom-0">
               <svg
@@ -450,9 +450,14 @@ const HomePage = () => (
 
           {/* 2nd column */}
           <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">17</p> plenary
-            <br />
-            speakers
+            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+              17
+            </p>
+            <p className="text-sm md:text-md">
+              plenary
+              <br />
+              speakers
+            </p>
             {/* wave line */}
             <div className="absolute -top-1 -right-2">
               <svg
@@ -473,13 +478,21 @@ const HomePage = () => (
           </div>
 
           <div className="rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">9</p> speakers
+            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+              9
+            </p>
+            speakers
           </div>
 
           <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">60</p> workshop
-            <br />
-            speakers
+            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+              60
+            </p>
+            <p className="text-sm md:text-md">
+              workshop
+              <br />
+              speakers
+            </p>
             {/* wave line 1 */}
             <div className="absolute -top-1 -left-2">
               <svg
@@ -518,10 +531,14 @@ const HomePage = () => (
 
           {/* 3rd column */}
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">14</p>
-            language
-            <br />
-            translations
+            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+              14
+            </p>
+            <p className="text-sm md:text-md">
+              language
+              <br />
+              translations
+            </p>
             {/* wave line */}
             <div className="absolute -top-1 -right-3">
               <svg
@@ -542,8 +559,10 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">40</p>
-            sponsoring & endorsing partners
+            <p className="font-heading font-bold text-4xl mr-2 md:mr-3">40</p>
+            <p className="text-sm md:text-md">
+              sponsoring & endorsing partners
+            </p>
             {/* wave line */}
             <div className="absolute -bottom-2 -right-2">
               <svg
@@ -564,8 +583,12 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-3">90</p>
-            international & local volunteers
+            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+              90
+            </p>
+            <p className="text-sm md:text-md">
+              international & local volunteers
+            </p>
             {/* wave line */}
             <div className="absolute -top-1 -left-1">
               <svg
@@ -595,28 +618,36 @@ const HomePage = () => (
             />
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-4xl">499</p> Praying for 3
-            people to come to know Christ
+            <p className="font-heading font-bold text-3xl md:text-4xl">499</p>{' '}
+            Praying for 3 people to come to know Christ
           </div>
 
           {/* 5th column */}
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-4xl">402</p> Pledged at
-            least 1 year to a missions internship
+            <p className="font-heading font-bold text-3xl md:text-4xl">402</p>
+            <p className="text-sm md:text-md">
+              Pledged at least 1 year to a missions internship
+            </p>
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-4xl">229</p> Committed for
-            long-term cross-cultural mission
+            <p className="font-heading font-bold text-3xl md:text-4xl">229</p>
+            <p className="text-sm md:text-md">
+              Committed for long-term cross-cultural mission
+            </p>
           </div>
 
           {/* 6th column */}
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-4xl">462</p> To partner
-            with 2 people for missions work
+            <p className="font-heading font-bold text-3xl md:text-4xl">462</p>
+            <p className="text-sm md:text-md">
+              To partner with 2 people for missions work
+            </p>
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-4xl">169</p> Applied for
-            1-2 years to do missions internship
+            <p className="font-heading font-bold text-3xl md:text-4xl">169</p>{' '}
+            <p className="text-sm md:text-md">
+              Applied for 1-2 years to do missions internship
+            </p>
           </div>
         </div>
 
