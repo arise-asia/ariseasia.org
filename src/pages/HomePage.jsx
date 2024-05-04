@@ -1,5 +1,6 @@
-import { MdOutlineNotificationsActive, MdOpenInNew } from 'react-icons/md';
+import { MdOpenInNew } from 'react-icons/md';
 import MomentsCarousel from '../components/MomentsCarousel';
+import LocationCarousel from '../components/LocationCarousel';
 
 const HomePage = () => (
   <>
@@ -115,76 +116,7 @@ const HomePage = () => (
         </div>
 
         {/* UPCOMING MOVEMENTS */}
-        <div className="relative w-10/12 md:ml-20 md:w-11/12">
-          <div className="bg-[#406E7D] rounded-xl w-full md:w-4/12 p-5 pb-20 md:p-10 md:pb-80">
-            <div className="text-white text-2xl md:text-4xl text-left font-bold font-heading md:leading-10">
-              UPCOMING
-              <br />
-              MOVEMENTS
-            </div>
-
-            <div className="text-white mt-3 mb-3 text-sm md:text-md">
-              Check out where Arise Asia is heading to next!
-            </div>
-
-            <a
-              role="button"
-              className="btn bg-[#B3ECFF] rounded-full border-4 border-black text-black"
-              href="/movements"
-            >
-              Click to find out more
-              <MdOutlineNotificationsActive className="ml-2" size={24} />
-            </a>
-          </div>
-
-          {/* Location Carousel */}
-          <div className="absolute -bottom-44 left-6 md:bottom-10 md:left-10 carousel carousel-center w-full md:w-11/12 gap-3 md:gap-5">
-            <div
-              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/hongkong.svg") lightgray 50% / cover no-repeat',
-              }}
-            >
-              <div className="card-body absolute bottom-0">
-                <h2 className="card-title font-heading font-bold text-white">
-                  ARISE HONG KONG
-                </h2>
-                <p className="text-white italic">July 26-27, 2024</p>
-              </div>
-            </div>
-
-            <div
-              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/cebu.svg") lightgray 50% / cover no-repeat',
-              }}
-            >
-              <div className="card-body absolute bottom-0">
-                <h2 className="card-title font-heading font-bold text-white">
-                  ARISE CEBU
-                </h2>
-                <p className="text-white italic">December 2, 2023</p>
-              </div>
-            </div>
-
-            <div
-              className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("/locations/indonesia.svg") lightgray 50% / cover no-repeat',
-              }}
-            >
-              <div className="card-body absolute bottom-0">
-                <h2 className="card-title font-heading font-bold text-white">
-                  ARISE INDONESIA
-                </h2>
-                <p className="text-white italic">November 10-11, 2023</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <LocationCarousel />
 
         {/* WHAT IS ARISE?: Desktop version */}
         <div className="hidden md:block md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">

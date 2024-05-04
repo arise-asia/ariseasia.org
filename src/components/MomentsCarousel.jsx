@@ -64,9 +64,11 @@ function MomentsCarousel() {
   return (
     <>
       <div
-        className="btn btn-circle btn-outline"
+        className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleUpClick()}
       >
+        <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+
         <IoIosArrowUp />
       </div>
       {cards
@@ -76,9 +78,10 @@ function MomentsCarousel() {
           <Card key={index} image={card.image} />
         ))}
       <div
-        className="btn btn-circle btn-outline"
+        className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleDownClick()}
       >
+        <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
         <IoIosArrowDown />
       </div>
     </>
