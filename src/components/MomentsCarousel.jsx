@@ -1,7 +1,41 @@
 import { useState } from 'react';
-import Card from './Card';
 import { momentsCards } from '../constants/momentsData';
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+import PropTypes from 'prop-types';
+
+const MomentCard = ({ key, image, title, description }) => {
+  // return (
+  //   <div
+  //     className="
+  //       flex
+  //       justify-center
+  //       items-center
+  //       drop-shadow-md
+  //       rounded-md"
+  //   >
+  //     <img alt={key} src={image} />
+  //   </div>
+  // );
+  return (
+    <div id={key} className="carousel-item card card-compact w-full gap-4">
+      <figure>
+        <img src={image} alt={key} className="rounded-md" />
+      </figure>
+
+      <div className="card-body bg-[#C16CB9] rounded-md">
+        <p className="text-white italic">{title}</p>
+        <p className="text-white font-bold">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+MomentCard.propTypes = {
+  key: PropTypes.number,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
 
 function MomentsCarousel() {
   const [cards, setCards] = useState(momentsCards);
@@ -71,12 +105,21 @@ function MomentsCarousel() {
 
         <IoIosArrowUp />
       </div>
-      {cards
-        .filter((f) => f.active === true)
-        .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-        .map((card, index) => (
-          <Card key={index} image={card.image} />
-        ))}
+
+      <div className="carousel">
+        {cards
+          .filter((f) => f.active === true)
+          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
+          .map((card, index) => (
+            <MomentCard
+              key={index}
+              image={card.image}
+              title={card.title}
+              description={card.description}
+            />
+          ))}
+      </div>
+
       <div
         className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleDownClick()}
