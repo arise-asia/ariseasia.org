@@ -4,25 +4,13 @@ import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 import PropTypes from 'prop-types';
 
 const MomentCard = ({ key, image, title, description }) => {
-  // return (
-  //   <div
-  //     className="
-  //       flex
-  //       justify-center
-  //       items-center
-  //       drop-shadow-md
-  //       rounded-md"
-  //   >
-  //     <img alt={key} src={image} />
-  //   </div>
-  // );
   return (
     <div id={key} className="carousel-item card card-compact w-full gap-4">
       <figure>
         <img src={image} alt={key} className="rounded-md" />
       </figure>
 
-      <div className="card-body bg-[#C16CB9] rounded-md">
+      <div className="md:hidden card-body bg-[#C16CB9] rounded-md">
         <p className="text-white italic">{title}</p>
         <p className="text-white font-bold">{description}</p>
       </div>
@@ -102,11 +90,9 @@ function MomentsCarousel() {
         onClick={() => handleUpClick()}
       >
         <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
-
         <IoIosArrowUp />
       </div>
-
-      <div className="carousel">
+      <div className="carousel md:carousel-vertical w-full md:w-11/12 md:gap-3">
         {cards
           .filter((f) => f.active === true)
           .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
@@ -119,7 +105,6 @@ function MomentsCarousel() {
             />
           ))}
       </div>
-
       <div
         className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleDownClick()}
@@ -127,6 +112,9 @@ function MomentsCarousel() {
         <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
         <IoIosArrowDown />
       </div>
+
+      {/* thumbnail */}
+      <div className="hidden md:block md:w-1/3"></div>
     </>
   );
 }
