@@ -10,7 +10,8 @@ const MomentCard = ({ key, image, title, description }) => {
         <img src={image} alt={key} className="rounded-md" />
       </figure>
 
-      <div className="md:hidden card-body bg-[#C16CB9] rounded-md">
+      {/* <div className="md:hidden card-body bg-[#C16CB9] rounded-md"> */}
+      <div className="card-body bg-[#C16CB9] rounded-md">
         <p className="text-white italic">{title}</p>
         <p className="text-white font-bold">{description}</p>
       </div>
@@ -27,6 +28,7 @@ MomentCard.propTypes = {
 
 function MomentsCarousel() {
   const [cards, setCards] = useState(momentsCards);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleUpClick = () => {
     const prevState = [...cards];
@@ -60,6 +62,7 @@ function MomentsCarousel() {
       ) + 1;
 
     setCards(prevState);
+    setActiveIndex((prevIndex) => Math.max(0, prevIndex - 1));
   };
 
   const handleDownClick = () => {
@@ -81,10 +84,14 @@ function MomentsCarousel() {
     }
 
     setCards(prevState);
+    setActiveIndex((prevIndex) => Math.min(cards.length - 1, prevIndex + 1));
   };
 
   return (
     <>
+      {/* <div className="md:flex md:flex-row md:space-x-2 md:h-5/6 md:w-11/12"> */}
+      {/* carousel */}
+      {/* <div className="flex flex-col items-center space-y-2"> */}
       <div
         className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleUpClick()}
@@ -92,7 +99,9 @@ function MomentsCarousel() {
         <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
         <IoIosArrowUp />
       </div>
-      <div className="carousel md:carousel-vertical w-full md:w-11/12 md:gap-3">
+
+      {/* <div className="carousel md:carousel-vertical md:carousel-center w-full md:w-1/4 md:h-4/6 md:gap-3"> */}
+      <div className="carousel md:carousel-vertical md:carousel-center w-full md:w-1/4 md:h-4/6 md:gap-3">
         {cards
           .filter((f) => f.active === true)
           .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
@@ -102,9 +111,11 @@ function MomentsCarousel() {
               image={card.image}
               title={card.title}
               description={card.description}
+              isActive={index === activeIndex}
             />
           ))}
       </div>
+
       <div
         className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
         onClick={() => handleDownClick()}
@@ -112,9 +123,17 @@ function MomentsCarousel() {
         <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
         <IoIosArrowDown />
       </div>
+      {/* </div> */}
 
-      {/* thumbnail */}
-      <div className="hidden md:block md:w-1/3"></div>
+      {/* thumbnail
+        <div className="hidden md:block large-image h-60">
+          <img
+            src={cards[activeIndex].image}
+            alt={cards[activeIndex].title}
+            className="rounded-md"
+          />
+        </div> */}
+      {/* </div> */}
     </>
   );
 }

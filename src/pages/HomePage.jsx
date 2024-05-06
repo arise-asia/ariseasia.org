@@ -589,7 +589,7 @@ const HomePage = () => (
         </div>
 
         {/* Image Carousel */}
-        <div className="flex flex-col justify-center items-center gap-2 md:w-1/4">
+        <div className="flex flex-col justify-center items-center gap-2">
           <MomentsCarousel />
         </div>
       </div>
