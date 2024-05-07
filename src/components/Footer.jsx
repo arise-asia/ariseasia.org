@@ -1,6 +1,6 @@
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
 
-import logo from "../../public/logo.svg";
+import logo from '../../public/logo.svg';
 
 const Footer = () => (
   <footer className="bg-orange-50">
@@ -11,7 +11,8 @@ const Footer = () => (
             Arise Asia
           </h2>
           <p className="mb-4">
-            Arise Movement | About Us | Sponsor | Participate
+            <a href="/about">About Us</a> | <a href="/arise2023">Arise 2023</a>{' '}
+            | <a href="/movements">Movements</a>
           </p>
           <div className="flex gap-x-4 justify-center mb-6 sm:justify-start">
             <a

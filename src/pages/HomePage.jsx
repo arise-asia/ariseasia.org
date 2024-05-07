@@ -285,7 +285,7 @@ const HomePage = () => (
                 <a
                   role="button"
                   className="btn bg-[#202020] rounded-full text-white mt-3"
-                  href="https://drive.google.com/drive/u/0/folders/143Cu9OPjMmVmwMI9sg4qt42Dj2Z7E2BA"
+                  href="/arise2023"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
