@@ -29,7 +29,7 @@ export const momentsCards = [
     image: '/images/DAY2_Exhibition.jpg',
     title: 'Day 2',
     description: 'Missional Partners and Organizations Exhibitors',
-    active: true,
+    active: false,
   },
   {
     idx: 5,
@@ -37,7 +37,7 @@ export const momentsCards = [
     image: '/images/DAY2_INNOVATION_LAB.jpg',
     title: 'Day 2',
     description: 'Innovation Lab',
-    active: true,
+    active: false,
   },
   {
     idx: 6,
@@ -45,7 +45,7 @@ export const momentsCards = [
     image: '/images/DAY2_Performance-from-Mongolian-Dancers.jpg',
     title: 'Day 2',
     description: 'Performance from Mongolian Dance',
-    active: true,
+    active: false,
   },
   {
     idx: 7,
@@ -53,7 +53,7 @@ export const momentsCards = [
     image: '/images/DAY2_Workshops.jpg',
     title: 'Day 2',
     description: 'Workshops',
-    active: true,
+    active: false,
   },
   {
     idx: 8,
@@ -61,7 +61,7 @@ export const momentsCards = [
     image: '/images/DAY3_Group-Picture-Morning-Session.jpg',
     title: 'Day 3',
     description: 'Morning Session Congregation',
-    active: true,
+    active: false,
   },
   {
     idx: 9,
@@ -69,7 +69,7 @@ export const momentsCards = [
     image: '/images/DAY3_HISPOP.jpg',
     title: 'Day 3',
     description: 'HISPOP Worship Session',
-    active: true,
+    active: false,
   },
   {
     idx: 10,
@@ -77,7 +77,7 @@ export const momentsCards = [
     image: '/images/DAY4_Response-Time_Praying.jpg',
     title: 'Day 4',
     description: 'Praying at Response Time',
-    active: true,
+    active: false,
   },
   {
     idx: 11,
@@ -85,7 +85,7 @@ export const momentsCards = [
     image: '/images/DAY5_Pray-Closing.jpg',
     title: 'Day 5',
     description: 'Closing Session Prayer',
-    active: true,
+    active: false,
   },
 ];
 

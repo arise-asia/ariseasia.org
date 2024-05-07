@@ -10,8 +10,7 @@ const MomentCard = ({ key, image, title, description }) => {
         <img src={image} alt={key} className="rounded-md" />
       </figure>
 
-      {/* <div className="md:hidden card-body bg-[#C16CB9] rounded-md"> */}
-      <div className="card-body bg-[#C16CB9] rounded-md">
+      <div className="md:hidden card-body bg-[#C16CB9] rounded-md">
         <p className="text-white italic">{title}</p>
         <p className="text-white font-bold">{description}</p>
       </div>
@@ -30,7 +29,7 @@ function MomentsCarousel() {
   const [cards, setCards] = useState(momentsCards);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleUpClick = () => {
+  const handleDownClick = () => {
     const prevState = [...cards];
     // find first current active card - so we could make it inactive
     const firstCurrentActiveCardIdx = prevState // get the idx of the one with the highest number of pos from active cards
@@ -39,6 +38,7 @@ function MomentsCarousel() {
 
     // find next inactive card - so we could make it active
     let nextInactiveCardIdx;
+
     if (
       prevState.filter((ft) => ft.active === true)[2].idx !== prevState.length
     ) {
@@ -48,6 +48,7 @@ function MomentsCarousel() {
       nextInactiveCardIdx = prevState.filter((ft) => ft.active === false)[0]
         .idx;
     }
+
     // update
     prevState.find((f) => f.idx === firstCurrentActiveCardIdx).active = false;
     prevState.find((f) => f.idx === nextInactiveCardIdx).active = true;
@@ -62,10 +63,13 @@ function MomentsCarousel() {
       ) + 1;
 
     setCards(prevState);
-    setActiveIndex((prevIndex) => Math.max(0, prevIndex - 1));
+    setActiveIndex((prevIndex) => {
+      const maxIndex = cards.length - 1;
+      return prevIndex === maxIndex ? 0 : prevIndex + 1;
+    });
   };
 
-  const handleDownClick = () => {
+  const handleUpClick = () => {
     const prevState = [...cards];
     const activeCards = prevState.filter((ft) => ft.active === true);
     const inactiveCards = prevState.filter((ft) => ft.active === false);
@@ -84,56 +88,101 @@ function MomentsCarousel() {
     }
 
     setCards(prevState);
-    setActiveIndex((prevIndex) => Math.min(cards.length - 1, prevIndex + 1));
+    setActiveIndex((prevIndex) => {
+      const maxIndex = cards.length - 1;
+      return prevIndex === 0 ? maxIndex : prevIndex - 1;
+    });
   };
 
   return (
     <>
-      {/* <div className="md:flex md:flex-row md:space-x-2 md:h-5/6 md:w-11/12"> */}
-      {/* carousel */}
-      {/* <div className="flex flex-col items-center space-y-2"> */}
-      <div
-        className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-        onClick={() => handleUpClick()}
-      >
-        <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
-        <IoIosArrowUp />
+      {/* Carousel: Mobile version */}
+      <div className="block md:hidden w-full flex flex-col items-center gap-2">
+        {/* up arrow */}
+        <div
+          className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
+          onClick={() => handleUpClick()}
+        >
+          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <IoIosArrowUp />
+        </div>
+
+        <div className="carousel w-full">
+          {cards
+            .filter((f) => f.active === true)
+            .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
+            .map((card, index) => (
+              <MomentCard
+                key={index}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
+        </div>
+
+        {/* down arrow */}
+        <div
+          className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
+          onClick={() => handleDownClick()}
+        >
+          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <IoIosArrowDown />
+        </div>
       </div>
 
-      {/* <div className="carousel md:carousel-vertical md:carousel-center w-full md:w-1/4 md:h-4/6 md:gap-3"> */}
-      <div className="carousel md:carousel-vertical md:carousel-center w-full md:w-1/4 md:h-4/6 md:gap-3">
-        {cards
-          .filter((f) => f.active === true)
-          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-          .map((card, index) => (
-            <MomentCard
-              key={index}
-              image={card.image}
-              title={card.title}
-              description={card.description}
-              isActive={index === activeIndex}
-            />
-          ))}
-      </div>
+      {/* Carousel: Desktop version */}
+      <div className="hidden md:block md:flex md:flex-row md:w-10/12 md:place-content-evenly">
+        <div className="flex flex-col items-center gap-2 w-1/5">
+          {/* up arrow */}
+          <div
+            className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
+            onClick={() => handleUpClick()}
+          >
+            <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+            <IoIosArrowUp />
+          </div>
 
-      <div
-        className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-        onClick={() => handleDownClick()}
-      >
-        <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
-        <IoIosArrowDown />
-      </div>
-      {/* </div> */}
+          <div className="carousel md:carousel-vertical md:carousel-center md:w-full md:h-full md:gap-3">
+            {cards
+              .filter((f) => f.active === true)
+              .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
+              .map((card, index) => (
+                <MomentCard
+                  key={index}
+                  image={card.image}
+                  title={card.title}
+                  description={card.description}
+                  isActive={index === activeIndex}
+                />
+              ))}
+          </div>
 
-      {/* thumbnail
-        <div className="hidden md:block large-image h-60">
+          {/* down arrow */}
+          <div
+            className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
+            onClick={() => handleDownClick()}
+          >
+            <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+            <IoIosArrowDown />
+          </div>
+        </div>
+
+        {/* thumbnail */}
+        <div className="flex flex-col gap-4 w-3/5">
           <img
             src={cards[activeIndex].image}
             alt={cards[activeIndex].title}
             className="rounded-md"
           />
-        </div> */}
-      {/* </div> */}
+          <div className="hidden md:block bg-[#C16CB9] rounded-md p-8">
+            <p className="text-white italic">{cards[activeIndex].title}</p>
+            <p className="text-white font-bold">
+              {cards[activeIndex].description}
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
