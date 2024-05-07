@@ -8,7 +8,7 @@ const LocationCard = ({ key, image, title, date }) => {
   return (
     <div
       id={key}
-      className="carousel-item card card-compact w-5/6 md:w-[40vw] h-60"
+      className="carousel-item card card-compact w-5/6 md:w-[25vw] h-60"
       style={{
         background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("${image}") lightgray 50% / cover no-repeat`,
       }}
@@ -37,7 +37,7 @@ function LocationCarousel() {
     const carousel = document.querySelector('.carousel');
     carousel.scrollBy({
       left: carousel.offsetWidth, // Scroll by the width of the carousel container
-      behavior: 'smooth', // Optional: Add smooth scrolling behavior
+      behavior: 'smooth',
     });
 
     const prevState = [...cards];
@@ -77,7 +77,7 @@ function LocationCarousel() {
     const carousel = document.querySelector('.carousel');
     carousel.scrollBy({
       left: -carousel.offsetWidth, // Scroll by the negative width of the carousel container
-      behavior: 'smooth', // Optional: Add smooth scrolling behavior
+      behavior: 'smooth',
     });
 
     const prevState = [...cards];
