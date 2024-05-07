@@ -1,5 +1,5 @@
-import aboutUsImg from "../../public/about-us.png";
-import partnersImg from "../../public/partners.png";
+import aboutUsImg from '../../public/about-us.png';
+import partnersImg from '../../public/partners.png';
 
 const AboutPage = () => (
   <>
@@ -8,7 +8,7 @@ const AboutPage = () => (
         <h1 className="text-4xl font-bold text-center text-red-700 uppercase sm:text-5xl md:text-7xl font-heading">
           About Us
         </h1>
-        <div className="py-10 sm:p-12 xl:py-20 xl:px-60">
+        <div className="py-8 sm:p-12 xl:py-5 xl:px-60">
           <img alt="About Us" className="rounded-3xl" src={aboutUsImg} />
         </div>
         <div className="mx-auto font-bold text-center text-black prose">
@@ -56,7 +56,7 @@ const AboutPage = () => (
         d="M0,5 C40,9 60,11 110,5 C140,2 160,-3 200,8 L200,10 L0,10 Z"
       />
     </svg>
-    <div className="py-10 px-20 bg-red-100">
+    <div className="py-10 px-56 bg-red-100">
       <div className="container flex flex-col items-center xl:flex-row">
         <div>
           <h2 className="text-2xl font-bold text-center text-red-700 uppercase md:text-4xl font-heading">
@@ -64,7 +64,7 @@ const AboutPage = () => (
           </h2>
           <img
             alt="Endorsing Partners"
-            className="p-10 mx-auto max-w-lg rounded"
+            className="p-10 mx-auto max-w-md rounded"
             src={partnersImg}
           />
         </div>
@@ -85,7 +85,7 @@ const AboutPage = () => (
         d="M0,5 C40,9 60,11 110,5 C140,2 160,-3 200,8 L200,10 L0,10 Z"
       />
     </svg>
-    <div className="py-10 px-20 bg-red-50">
+    <div className="py-10 px-56 bg-red-50">
       <div className="container flex flex-col items-center xl:flex-row-reverse">
         <div>
           <h2 className="text-2xl font-bold text-center text-red-700 uppercase md:text-4xl font-heading">
@@ -93,7 +93,7 @@ const AboutPage = () => (
           </h2>
           <img
             alt="Sponsoring Partners"
-            className="p-10 mx-auto max-w-lg rounded"
+            className="p-10 mx-auto max-w-md rounded"
             src={partnersImg}
           />
         </div>
