@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import MovementsCard from '../components/MovementsCard';
-import { pastList, upcomingList, futureList } from '../data/data';
+import { pastList, upcomingList, futureList } from '../constants/movementsData';
 
 const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
