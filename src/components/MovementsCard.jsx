@@ -1,7 +1,7 @@
 const MovementsCard = ({ title, subtitle, links, description, imgUrl }) => (
   <div className="flex flex-col lg:flex-row gap-x-4 gap-y-6 p-6 bg-white rounded-3xl">
     <div className="mx-auto">
-      <img src={imgUrl} alt="" className="w-32 h-32 bg-green-500 rounded-xl" />
+      <img src={imgUrl} alt="" className="w-96 bg-green-500 rounded-xl" />
     </div>
     <div>
       <p className="text-2xl font-bold text-cyan-700 font-heading">{title}</p>
@@ -18,7 +18,7 @@ const MovementsCard = ({ title, subtitle, links, description, imgUrl }) => (
             </a>
           ))}
       </div>
-      <p className="pt-4">{description}</p>
+      <p className="pt-4 whitespace-pre-line">{description}</p>
     </div>
   </div>
 );

@@ -67,7 +67,7 @@ export const locationCards = [
     idx: 9,
     pos: 9,
     active: true,
-    image: '/locations/latino.svg',
+    image: '/locations/latino.jpg',
     title: 'ARISE LATINO',
     date: 'November 11-14, 2024',
   },
