@@ -107,7 +107,7 @@ export const upcomingList = [
       },
     ],
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/hongkong.svg',
   },
   {
     country: 'Indonesia',
@@ -124,7 +124,7 @@ export const upcomingList = [
       },
     ],
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/indonesia.svg',
   },
   {
     country: 'Philippines',
@@ -149,28 +149,28 @@ export const upcomingList = [
     title: 'Arise Myanmar',
     subtitle: 'October 15-17, 2024',
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/myanmar.svg',
   },
   {
     country: 'Nepal',
     title: 'Arise Nepal',
     subtitle: 'October 20-23, 2024',
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/nepal.svg',
   },
   {
     country: 'Mongolia',
     title: 'Arise Mongolia',
     subtitle: 'October 2024',
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/mongolia.svg',
   },
   {
     country: 'Orlando, US',
     title: 'Arise Latino',
     subtitle: 'November 11-14, 2024',
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/locations/latino.jpg',
   },
 ];
 
