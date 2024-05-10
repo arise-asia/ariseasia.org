@@ -110,7 +110,7 @@ function LocationCarousel() {
           MOVEMENTS
         </div>
 
-        <div className="text-white mt-3 mb-3 text-sm md:text-md">
+        <div className="text-white mt-3 mb-3 text-sm md:text-lg">
           Check out where Arise Asia is heading to next!
         </div>
 

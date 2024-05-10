@@ -86,7 +86,7 @@ export const upcomingList = [
       },
     ],
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/',
+    imgUrl: '/movements/arise-davao.png',
   },
   {
     country: 'Hong Kong, China',

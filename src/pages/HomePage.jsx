@@ -133,7 +133,7 @@ const HomePage = () => (
           </div>
 
           <div className="w-1/2 relative absolute md:left-60">
-            <div className="font-heading font-bold text-xl md:text-5xl absolute top-20 left-28 rotate-[6.2deg] text-[#AA3638]">
+            <div className="font-heading font-bold md:text-3xl lg:text-5xl absolute md:top-14 lg:top-20 left-28 rotate-[6.2deg] text-[#AA3638] text-nowrap">
               WHAT IS ARISE?
             </div>
 
@@ -185,7 +185,7 @@ const HomePage = () => (
 
         {/* WHAT IS ARISE?: Mobile version */}
         <div className="relative mt-60 mb-10 w-11/12 md:hidden">
-          <div className="font-heading font-bold text-[28px] absolute -top-3 left-12 rotate-[6.1deg] text-[#AA3638]">
+          <div className="font-heading font-bold text-[28px] absolute -top-3 left-12 rotate-[6.1deg] text-[#AA3638] text-nowrap">
             WHAT IS ARISE?
           </div>
 

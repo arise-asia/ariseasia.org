@@ -21,12 +21,13 @@ const MovementsPage = () => {
             for where Arise Movements are taking place!
           </p>
         </div>
+
         <div className="flex flex-col py-20 lg:flex-row">
           <div className="flex flex-col gap-y-4 px-6 xl:w-1/3">
             {['Past', 'Upcoming', 'Stay Tuned'].map((tabName, idx) => (
               <button
-                className={`py-2 pl-8 font-bold text-left text-black bg-white rounded-full border-4 border-purple-300 hover:bg-purple-300 ${
-                  tabIdx == idx && 'bg-purple-300'
+                className={`py-2 pl-8 font-bold text-left text-black bg-white rounded-full border-4 border-[#DC95D5] hover:bg-[#DC95D5] ${
+                  tabIdx == idx && 'bg-[#DC95D5]'
                 }`}
                 key={tabName}
                 onClick={() => {
@@ -60,7 +61,7 @@ const MovementsPage = () => {
           <div className="flex flex-col gap-y-4 xl:w-2/3">
             {tabIdx == 0 && (
               <>
-                <h2 className="text-3xl font-bold text-purple-700 font-heading">
+                <h2 className="text-3xl font-bold text-[#7B3774] font-heading">
                   Past Movements
                 </h2>
                 <MovementsCard {...pastList[countryIdx]} />
