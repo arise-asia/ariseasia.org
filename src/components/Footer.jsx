@@ -1,6 +1,7 @@
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-import logo from '../../public/logo.svg';
+import logo from "../../public/logo.svg";
 
 const Footer = () => (
   <footer className="bg-orange-50">
@@ -11,8 +12,9 @@ const Footer = () => (
             Arise Asia
           </h2>
           <p className="mb-4">
-            <a href="/about">About Us</a> | <a href="/arise2023">Arise 2023</a>{' '}
-            | <a href="/movements">Movements</a>
+            <Link to="/about">About Us</Link> |{" "}
+            <Link to="/arise2023">Arise 2023</Link> |{" "}
+            <Link to="/movements">Movements</Link>
           </p>
           <div className="flex gap-x-4 justify-center mb-6 sm:justify-start">
             <a

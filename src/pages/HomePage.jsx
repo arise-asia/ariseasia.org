@@ -1,6 +1,7 @@
 import { MdOpenInNew } from 'react-icons/md';
-import MomentsCarousel from '../components/MomentsCarousel';
+import { Link } from "react-router-dom";
 import LocationCarousel from '../components/LocationCarousel';
+import MomentsCarousel from '../components/MomentsCarousel';
 
 const HomePage = () => (
   <>
@@ -119,7 +120,7 @@ const HomePage = () => (
         <LocationCarousel />
 
         {/* WHAT IS ARISE?: Desktop version */}
-        <div className="hidden md:block md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
+        <div className="hidden md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
           {/* VIDEO: Why Arise Asia Today? */}
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
             <iframe
@@ -132,8 +133,8 @@ const HomePage = () => (
             />
           </div>
 
-          <div className="w-1/2 relative absolute md:left-60">
-            <div className="font-heading font-bold md:text-3xl lg:text-5xl absolute md:top-14 lg:top-20 left-28 rotate-[6.2deg] text-[#AA3638] text-nowrap">
+          <div className="w-1/2 relative md:left-60">
+            <div className="font-heading font-bold md:text-3xl lg:text-4xl absolute md:top-8 lg:top-12 left-8 rotate-[6.2deg] text-[#AA3638] text-nowrap">
               WHAT IS ARISE?
             </div>
 
@@ -282,16 +283,15 @@ const HomePage = () => (
 
               <div className="flex-grow"></div>
               <div className="flex justify-end">
-                <a
-                  role="button"
+                <Link
                   className="btn bg-[#202020] rounded-full text-white mt-3"
-                  href="/arise2023"
+                  to="/arise2023"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
                   Conference Program
                   <MdOpenInNew className="ml-2" size={24} />
-                </a>
+                </Link>
               </div>
 
               {/* bottom left corner */}
