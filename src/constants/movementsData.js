@@ -43,7 +43,7 @@ export const pastList = [
           'https://www.facebook.com/profile.php?id=61555870030732&mibextid=LQQJ4d',
       },
     ],
-    description: `Praise Report:\n\nNumber of delegates: 222 Participants\nNumber of response: 40+ Responses to the Call\n\n  
+    description: `Praise Report:\n\nNumber of delegates: 222 Participants\nNumber of response: 40+ Responses to the Call\n\n
     Arise Philippines Citywide Youth Missions Conference went to Northern Mindanao!\n
     Organized by the Philippine Missions Association (PMA), Cagayan De Oro City Evangelical Ministers Association, OM Philippines, YWAM and partners.\n\n
     Topics presented:\nThe Filipino Missionary Mandate\nThe Greatest Treasure\nThe Greatest Purpose\nThe Greatest Pursuit\nSynthesis & Final Challenge`,
@@ -95,19 +95,21 @@ export const upcomingList = [
     links: [
       {
         title: 'Signup',
-        target: '#',
-      },
-      {
-        title: 'Instagram',
-        target: '#',
-      },
-      {
-        title: 'Promo',
-        target: '#',
+        target: 'https://forms.gle/isPKqcSwKRzUqr6U8',
       },
     ],
-    description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/locations/hongkong.svg',
+    description: `
+2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
+Emptiness and Despair are devouring our city.
+While busy struggling with ourselves, how are we supposed to carry on with our future? Our calling? Even our Mission?
+
+Jesus, please lead our way…
+
+📅 20-21 / July (Sat-Sun)
+👥 Believers aged 18-29 (Mission-interested-newbies are welcomed!)
+💬 Language in Cantonese/ Mandarin
+📝 31/5 Early bird deadline`,
+    imgUrl: '/movements/arise-hongkong.jpeg',
   },
   {
     country: 'Indonesia',
