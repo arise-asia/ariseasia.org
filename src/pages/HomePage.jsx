@@ -1,7 +1,7 @@
-import { MdOpenInNew } from 'react-icons/md';
+import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LocationCarousel from '../components/LocationCarousel';
-import MomentsCarousel from '../components/MomentsCarousel';
+import LocationCarousel from "../components/LocationCarousel";
+import MomentsCarousel from "../components/MomentsCarousel";
 
 const HomePage = () => (
   <>
@@ -19,7 +19,7 @@ const HomePage = () => (
     <div className="bg-white">
       <div className="grid place-items-center gap-5 md:gap-10 bg-center bg-no-repeat bg-cover bg-[url('../public/bg-mobile.svg')] md:bg-[url('../public/bg-desktop.svg')]">
         {/* VERSE: Desktop version */}
-        <div className="w-11/12 hidden md:block md:-mt-16">
+        <div className="hidden w-11/12 md:block md:-mt-16">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1323 287"
@@ -31,7 +31,7 @@ const HomePage = () => (
             />
 
             <foreignObject x="160" y="70" width="80%" height="90%">
-              <div className="text-white text-xl italic font-bold flex justify-center items-center text-center rotate-[2deg] mt-4">
+              <div className="flex justify-center items-center mt-4 text-xl italic font-bold text-center text-white rotate-[2deg]">
                 However, I consider my life worth nothing to me; my only aim is
                 to finish the race and complete the task the Lord Jesus has
                 given me—the task of testifying to the good news of God’s grace.
@@ -44,7 +44,7 @@ const HomePage = () => (
         </div>
 
         {/* VERSE: Mobile version */}
-        <div className="w-11/12 block -mt-24 md:hidden">
+        <div className="block -mt-24 w-11/12 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 410 223"
@@ -56,7 +56,7 @@ const HomePage = () => (
             />
 
             <foreignObject x="45" y="35" width="80%" height="90%">
-              <div className="text-white text-sm italic flex justify-center items-center text-center mt-4">
+              <div className="flex justify-center items-center mt-4 text-sm italic text-center text-white">
                 However, I consider my life worth nothing to me; my only aim is
                 to finish the race and complete the task the Lord Jesus has
                 given me—the task of testifying to the good news of God’s grace.
@@ -69,7 +69,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Desktop version */}
-        <div className="w-10/12 relative hidden md:block md:-mt-24">
+        <div className="hidden relative w-10/12 md:block md:-mt-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1253 215"
@@ -81,10 +81,10 @@ const HomePage = () => (
             />
 
             <foreignObject x="60" y="50" width="80%" height="90%">
-              <div className="absolute top-1 left-12 text-white text-5xl font-bold font-heading rotate-[-4deg]">
+              <div className="absolute top-1 left-12 text-5xl font-bold text-white font-heading rotate-[-4deg]">
                 MISSION
               </div>
-              <div className="absolute top-12 left-60 text-center text-white text-xl italic rotate-[-3deg]">
+              <div className="absolute top-12 left-60 text-xl italic text-center text-white rotate-[-3deg]">
                 To inspire the next generation to take the gospel throughout
                 Asia and to the world.
               </div>
@@ -93,7 +93,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Mobile version */}
-        <div className="w-10/12 relative block -mt-16 md:hidden">
+        <div className="block relative -mt-16 w-10/12 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 402 185"
@@ -105,10 +105,10 @@ const HomePage = () => (
             />
 
             <foreignObject x="0" y="20" width="80%" height="90%">
-              <div className="absolute top-6 left-4 text-white text-3xl font-bold font-heading rotate-[-10deg]">
+              <div className="absolute left-4 top-6 text-3xl font-bold text-white font-heading rotate-[-10deg]">
                 MISSION
               </div>
-              <div className="absolute top-14 left-24 text-center text-white text-sm italic rotate-[-2deg]">
+              <div className="absolute top-14 left-24 text-sm italic text-center text-white rotate-[-2deg]">
                 To inspire the next generation to take the gospel throughout
                 Asia and to the world.
               </div>
@@ -120,12 +120,12 @@ const HomePage = () => (
         <LocationCarousel />
 
         {/* WHAT IS ARISE?: Desktop version */}
-        <div className="hidden md:flex md:space-x-0 md:items-center md:justify-center w-full md:w-11/12 md:relative">
+        <div className="hidden w-full md:flex md:relative md:justify-center md:items-center md:space-x-0 md:w-11/12">
           {/* VIDEO: Why Arise Asia Today? */}
-          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 md:w-5/12 md:h-80 md:absolute md:top-32 md:left-28 z-10">
+          <div className="overflow-hidden z-10 w-5/6 rounded-xl md:absolute md:left-28 md:top-32 md:w-5/12 md:h-80">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/4G4fQidFXro?si=pNkGhvuVCoCy8mz0"
+              src="https://www.youtube.com/embed/4G4fQidFXro"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -133,7 +133,7 @@ const HomePage = () => (
             />
           </div>
 
-          <div className="w-1/2 relative md:left-60">
+          <div className="relative w-1/2 md:left-60">
             <div className="font-heading font-bold md:text-3xl lg:text-4xl absolute md:top-8 lg:top-12 left-8 rotate-[6.2deg] text-[#AA3638] text-nowrap">
               WHAT IS ARISE?
             </div>
@@ -149,14 +149,14 @@ const HomePage = () => (
               />
 
               <foreignObject x="100" y="0" width="700" height="700">
-                <div className="text-white text-justify mb-3 mt-20 ml-16 w-8/12">
+                <div className="mt-20 mb-3 ml-16 w-8/12 text-justify text-white">
                   It is almost two millennia since Jesus called His first
                   disciples to follow Him. Since that time, many followers of
                   Jesus have taken up the call to take the Gospel to the ends of
                   the earth. Now, in the 21 st century, the need for the Gospel
                   to be shared and lived out in Asia is tremendous, and God is
                   setting the hearts of people in Asia on fire for His glory and
-                  purpose.{' '}
+                  purpose.{" "}
                   <span className="text-amber-300">
                     The time has come for Asia to arise and participate in God’s
                     Great Commission.
@@ -177,7 +177,7 @@ const HomePage = () => (
                 <img
                   src="logo.svg"
                   alt="What is Arise? Logo"
-                  className="absolute top-52 right-12 w-1/4"
+                  className="absolute right-12 top-52 w-1/4"
                 />
               </foreignObject>
             </svg>
@@ -208,25 +208,25 @@ const HomePage = () => (
                   className="absolute top-20 w-1/5"
                 />
 
-                <div className="text-xs text-white text-justify mb-3 mt-16 ml-28 w-7/12">
+                <p className="mt-16 mb-3 ml-28 w-7/12 text-xs text-justify text-white">
                   It is almost two millennia since Jesus called His first
                   disciples to follow Him. Since that time, many followers of
                   Jesus have taken up the call to take the Gospel to the ends of
                   the earth. Now, in the 21 st century, the need for the Gospel
                   to be shared and lived out in Asia is tremendous, and God is
                   setting the hearts of people in Asia on fire for His glory and
-                  purpose.{' '}
+                  purpose.{" "}
                   <span className="text-amber-300">
                     The time has come for Asia to arise and participate in God’s
                     Great Commission.
                   </span>
-                </div>
+                </p>
 
                 {/* VIDEO: Why Arise Asia Today? */}
-                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden w-5/6 h-48 ml-4 z-10">
+                <div className="overflow-hidden z-10 ml-4 w-5/6 h-48 rounded-xl">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/-3ZE1rq-M8E?si=pfRxSmiCMF-PKCCg"
+                    src="https://www.youtube.com/embed/4G4fQidFXro"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
@@ -256,11 +256,11 @@ const HomePage = () => (
           {/* DESKTOP: left side section beside video */}
           <div className="w-full md:w-3/4">
             {/* TITLE */}
-            <div className="italic text-lg mb-2">LOOKING BACK ON...</div>
-            <div className="font-heading font-bold text-3xl md:text-5xl leading-[3rem]">
+            <div className="mb-2 text-lg italic">LOOKING BACK ON...</div>
+            <div className="text-3xl font-bold md:text-5xl font-heading leading-[3rem]">
               ARISE ASIA 2023
             </div>
-            <div className="flex space-x-3 mt-4">
+            <div className="flex mt-4 space-x-3">
               <div className="bg-[#406E7D] py-2 px-4 rounded-md text-white inline-block">
                 Thailand
               </div>
@@ -270,7 +270,7 @@ const HomePage = () => (
             </div>
 
             {/* THE RECAP */}
-            <div className="font-heading font-bold text-2xl mt-8 mb-3">
+            <div className="mt-8 mb-3 text-2xl font-bold font-heading">
               THE RECAP
             </div>
             <div className="relative bg-[#B28000] p-5 w-full md:w-11/12 text-white">
@@ -300,10 +300,10 @@ const HomePage = () => (
           </div>
 
           {/* VIDEO: The Summary */}
-          <div className="relative aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden mt-5 md:mt-0 h-72 md:h-auto">
+          <div className="overflow-hidden relative mt-5 w-full h-72 rounded-xl md:mt-0 md:h-auto">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/-V6a5qnJI5Q?si=ATfa8gW3vb6OOwHZ"
+              src="https://www.youtube.com/embed/-V6a5qnJI5Q"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -313,14 +313,14 @@ const HomePage = () => (
         </div>
 
         {/* THE SUMMARY */}
-        <div className="font-heading font-bold text-2xl mt-12 mb-3">
+        <div className="mt-12 mb-3 text-2xl font-bold font-heading">
           THE SUMMARY
         </div>
 
-        <div className="grid grid-cols-4 grid-rows-7 md:grid-rows-6 md:grid-flow-col md:grid-cols-12 gap-4 text-white">
+        <div className="grid grid-cols-4 gap-4 text-white md:grid-cols-12 md:grid-rows-6 md:grid-flow-col grid-rows-7">
           {/* 1st column */}
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
-            <p className="font-heading font-bold text-3xl md:text-4xl">37</p>
+            <p className="text-3xl font-bold md:text-4xl font-heading">37</p>
             <p className="text-sm md:text-md">countries across Asia</p>
             {/* wave line 1 */}
             <div className="absolute -top-1 -right-1">
@@ -359,10 +359,10 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 text-center flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1 p-2">
-            <p className="font-heading font-bold text-3xl md:text-4xl">1844</p>{' '}
+            <p className="text-3xl font-bold md:text-4xl font-heading">1844</p>{" "}
             <p className="text-sm md:text-md">Arise Asia 2023 attendees</p>
             {/* wave line */}
-            <div className="absolute -right-2 bottom-0">
+            <div className="absolute bottom-0 -right-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -382,7 +382,7 @@ const HomePage = () => (
 
           {/* 2nd column */}
           <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+            <p className="mr-2 text-3xl font-bold md:mr-3 md:text-4xl font-heading">
               17
             </p>
             <p className="text-sm md:text-md">
@@ -410,14 +410,14 @@ const HomePage = () => (
           </div>
 
           <div className="rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+            <p className="mr-2 text-3xl font-bold md:mr-3 md:text-4xl font-heading">
               9
             </p>
             speakers
           </div>
 
           <div className="relative rounded-3xl bg-[#A04C34] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+            <p className="mr-2 text-3xl font-bold md:mr-3 md:text-4xl font-heading">
               60
             </p>
             <p className="text-sm md:text-md">
@@ -443,7 +443,7 @@ const HomePage = () => (
               </svg>
             </div>
             {/* wave line 2 */}
-            <div className="absolute -bottom-1 -right-1">
+            <div className="absolute -right-1 -bottom-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="51"
@@ -463,7 +463,7 @@ const HomePage = () => (
 
           {/* 3rd column */}
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+            <p className="mr-2 text-3xl font-bold md:mr-3 md:text-4xl font-heading">
               14
             </p>
             <p className="text-sm md:text-md">
@@ -491,12 +491,12 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-4xl mr-2 md:mr-3">40</p>
+            <p className="mr-2 text-4xl font-bold md:mr-3 font-heading">40</p>
             <p className="text-sm md:text-md">
               sponsoring & endorsing partners
             </p>
             {/* wave line */}
-            <div className="absolute -bottom-2 -right-2">
+            <div className="absolute -right-2 -bottom-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
@@ -515,7 +515,7 @@ const HomePage = () => (
           </div>
 
           <div className="relative rounded-3xl bg-[#A34D4D] col-span-2 row-span-1 md:row-span-2 md:col-span-2 flex justify-center items-center py-2 px-5">
-            <p className="font-heading font-bold text-3xl md:text-4xl mr-2 md:mr-3">
+            <p className="mr-2 text-3xl font-bold md:mr-3 md:text-4xl font-heading">
               90
             </p>
             <p className="text-sm md:text-md">
@@ -550,19 +550,19 @@ const HomePage = () => (
             />
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-3xl md:text-4xl">499</p>{' '}
+            <p className="text-3xl font-bold md:text-4xl font-heading">499</p>{" "}
             Praying for 3 people to come to know Christ
           </div>
 
           {/* 5th column */}
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-3xl md:text-4xl">402</p>
+            <p className="text-3xl font-bold md:text-4xl font-heading">402</p>
             <p className="text-sm md:text-md">
               Pledged at least 1 year to a missions internship
             </p>
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-3xl md:text-4xl">229</p>
+            <p className="text-3xl font-bold md:text-4xl font-heading">229</p>
             <p className="text-sm md:text-md">
               Committed for long-term cross-cultural mission
             </p>
@@ -570,13 +570,13 @@ const HomePage = () => (
 
           {/* 6th column */}
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-3xl md:text-4xl">462</p>
+            <p className="text-3xl font-bold md:text-4xl font-heading">462</p>
             <p className="text-sm md:text-md">
               To partner with 2 people for missions work
             </p>
           </div>
           <div className="rounded-3xl bg-[#9045DB] col-span-2 row-span-1 md:row-span-3 md:col-span-2 p-3">
-            <p className="font-heading font-bold text-3xl md:text-4xl">169</p>{' '}
+            <p className="text-3xl font-bold md:text-4xl font-heading">169</p>{" "}
             <p className="text-sm md:text-md">
               Applied for 1-2 years to do missions internship
             </p>
@@ -584,12 +584,12 @@ const HomePage = () => (
         </div>
 
         {/* THE MOMENTS */}
-        <div className="font-heading font-bold text-2xl mt-12 mb-3">
+        <div className="mt-12 mb-3 text-2xl font-bold font-heading">
           THE MOMENTS
         </div>
 
         {/* Image Carousel */}
-        <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex flex-col gap-2 justify-center items-center">
           <MomentsCarousel />
         </div>
       </div>
