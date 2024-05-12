@@ -40,14 +40,17 @@ const HomePage = () => (
             />
 
             <foreignObject x="160" y="70" width="80%" height="90%">
-              <div className="flex justify-center items-center mt-4 text-xl italic font-bold text-center text-white rotate-[2deg]">
-                However, I consider my life worth nothing to me; my only aim is
-                to finish the race and complete the task the Lord Jesus has
-                given me—the task of testifying to the good news of God’s grace.
-                <br />
-                <br />
-                Acts 20:24
-              </div>
+              <body xmlns="http://www.w3.org/1999/xhtml">
+                <div className="flex justify-center items-center mt-4 text-xl italic font-bold text-center text-white rotate-[2deg]">
+                  However, I consider my life worth nothing to me; my only aim
+                  is to finish the race and complete the task the Lord Jesus has
+                  given me—the task of testifying to the good news of God’s
+                  grace.
+                  <br />
+                  <br />
+                  Acts 20:24
+                </div>
+              </body>
             </foreignObject>
           </svg>
         </div>
@@ -102,26 +105,29 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Mobile version */}
-        <div className="block relative -mt-16 w-10/12 md:hidden">
+        <div className="relative -mt-16 w-10/12 md:hidden">
+          <div className="flex absolute z-10 flex-col gap-y-8 px-20 pt-10">
+            <div className="text-3xl font-bold text-white font-heading rotate-[-10deg]">
+              MISSION
+            </div>
+            <div className="text-sm italic text-center text-white rotate-[-2deg]">
+              To inspire the next generation to take the gospel throughout Asia
+              and to the world.
+            </div>
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 393 228"
             fill="none"
+            className="relative"
+            width="100%"
+            height="250"
+            preserveAspectRatio="none"
           >
             <path
               d="M391.978 15.1524C393.54 6.89963 386.359 -0.363542 378.089 1.10532L11.9376 66.1389C2.5831 67.8004 -2.43494 78.0986 2.02124 86.4896L65.398 205.829C73.2681 220.648 89.5509 228.98 106.174 226.695L331.423 195.723C347.6 193.499 360.547 181.189 363.584 165.145L391.978 15.1524Z"
               fill="#DB6645"
             />
-
-            <foreignObject x="0" y="20" width="80%" height="90%">
-              <div className="absolute left-4 top-6 text-3xl font-bold text-white font-heading rotate-[-10deg]">
-                MISSION
-              </div>
-              <div className="absolute top-20 left-20 text-sm italic text-center text-white rotate-[-2deg]">
-                To inspire the next generation to take the gospel throughout
-                Asia and to the world.
-              </div>
-            </foreignObject>
           </svg>
         </div>
 
@@ -194,66 +200,68 @@ const HomePage = () => (
         </div>
 
         {/* WHAT IS ARISE?: Mobile version */}
-        <div className="relative mt-60 mb-10 w-11/12 md:hidden">
-          <div className="font-heading font-bold text-[28px] absolute -top-3 left-12 rotate-[6.1deg] text-[#AA3638] text-nowrap">
+        <div className="relative mt-72 mb-10 w-11/12 md:hidden">
+          <div className="font-heading font-bold text-[28px] absolute -top-6 left-12 rotate-[8deg] text-[#AA3638] text-nowrap">
             WHAT IS ARISE?
           </div>
 
-          <div>
+          <div className="relative">
+            <div className="flex absolute z-10 flex-col sm:gap-y-20">
+              <img
+                src="logo.svg"
+                alt="What is Arise? Logo"
+                className="absolute top-28 w-20"
+              />
+
+              <p className="pt-16 pr-12 pb-3 pl-28 mx-auto text-sm text-justify text-white sm:pt-20">
+                It is almost two millennia since Jesus called His first
+                disciples to follow Him. Since that time, many followers of
+                Jesus have taken up the call to take the Gospel to the ends of
+                the earth. Now, in the 21 st century, the need for the Gospel to
+                be shared and lived out in Asia is tremendous, and God is
+                setting the hearts of people in Asia on fire for His glory and
+                purpose.{" "}
+                <span className="text-amber-300">
+                  The time has come for Asia to arise and participate in God’s
+                  Great Commission.
+                </span>
+              </p>
+
+              {/* VIDEO: Why Arise Asia Today? */}
+              <div className="overflow-hidden mx-auto w-2/3 h-40 rounded-xl">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/4G4fQidFXro"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+
+              <a
+                className="btn bg-[#F3966B] rounded-full border-4 border-black text-black mt-4 text-xs right-12 w-60 ml-auto mr-10"
+                href="https://www.goarise.org/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Learn more at goarise.org
+                <MdOpenInNew size={20} />
+              </a>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 406 579"
               fill="none"
+              className="relative"
+              width="100%"
+              height="600"
+              preserveAspectRatio="none"
             >
               <path
                 d="M0.73463 18.8375C-0.164775 8.19951 8.85741 -0.620523 19.4723 0.519632L385.958 39.8844C394.532 40.8053 401.055 48.0051 401.128 56.628L405.42 564.882C405.486 572.66 399.199 579 391.42 579H84.5152C63.9226 579 46.7612 563.228 45.0263 542.709L0.73463 18.8375Z"
                 fill="#AA3638"
               />
-
-              <foreignObject x="10" y="0" width="420" height="700">
-                <img
-                  src="logo.svg"
-                  alt="What is Arise? Logo"
-                  className="absolute top-28 w-1/5"
-                />
-
-                <p className="mt-24 mb-3 ml-28 w-7/12 text-xs text-justify text-white">
-                  It is almost two millennia since Jesus called His first
-                  disciples to follow Him. Since that time, many followers of
-                  Jesus have taken up the call to take the Gospel to the ends of
-                  the earth. Now, in the 21 st century, the need for the Gospel
-                  to be shared and lived out in Asia is tremendous, and God is
-                  setting the hearts of people in Asia on fire for His glory and
-                  purpose.{" "}
-                  <span className="text-amber-300">
-                    The time has come for Asia to arise and participate in God’s
-                    Great Commission.
-                  </span>
-                </p>
-
-                {/* VIDEO: Why Arise Asia Today? */}
-                <div className="overflow-hidden z-10 mx-auto w-2/3 h-40 rounded-xl">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/4G4fQidFXro"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
-                </div>
-
-                <a
-                  role="button"
-                  className="btn bg-[#F3966B] rounded-full border-4 border-black text-black mt-4 text-xs absolute right-12"
-                  href="https://www.goarise.org/"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  Learn more at goarise.org
-                  <MdOpenInNew size={20} />
-                </a>
-              </foreignObject>
             </svg>
           </div>
         </div>
