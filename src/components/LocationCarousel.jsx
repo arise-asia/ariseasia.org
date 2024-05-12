@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import { locationCards } from '../constants/locationData';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { MdOutlineNotificationsActive } from 'react-icons/md';
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import { locationCards } from "../constants/locationData";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { MdOutlineNotificationsActive } from "react-icons/md";
+import PropTypes from "prop-types";
 
 const LocationCard = ({ key, image, title, date }) => {
   return (
     <div
       id={key}
-      className="carousel-item card card-compact w-5/6 md:w-[25vw] h-60"
+      className="w-5/6 h-60 carousel-item card card-compact md:w-[25vw]"
       style={{
         background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(42, 15, 0, 0.69) 80.4%), url("${image}") lightgray 50% / cover no-repeat`,
       }}
     >
-      <div className="card-body absolute bottom-0">
-        <h2 className="card-title font-heading font-bold text-white">
+      <div className="absolute bottom-0 card-body">
+        <h2 className="font-bold text-white card-title font-heading">
           {title}
         </h2>
-        <p className="text-white italic">{date}</p>
+        <p className="italic text-white">{date}</p>
       </div>
     </div>
   );
@@ -34,10 +34,10 @@ function LocationCarousel() {
   const [cards, setCards] = useState(locationCards);
 
   const handleRightClick = () => {
-    const carousel = document.querySelector('.carousel');
+    const carousel = document.querySelector(".carousel");
     carousel.scrollBy({
       left: carousel.offsetWidth, // Scroll by the width of the carousel container
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
     const prevState = [...cards];
@@ -67,17 +67,17 @@ function LocationCarousel() {
         null,
         prevState.map(function (o) {
           return o.pos;
-        })
+        }),
       ) + 1;
 
     setCards(prevState);
   };
 
   const handleLeftClick = () => {
-    const carousel = document.querySelector('.carousel');
+    const carousel = document.querySelector(".carousel");
     carousel.scrollBy({
       left: -carousel.offsetWidth, // Scroll by the negative width of the carousel container
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
     const prevState = [...cards];
@@ -86,7 +86,7 @@ function LocationCarousel() {
 
     if (activeCards.length > 0 && inactiveCards.length > 0) {
       const lastCurrentActiveCard = activeCards.sort(
-        (a, b) => b.pos - a.pos
+        (a, b) => b.pos - a.pos,
       )[0];
       const previousInactiveCard = inactiveCards[2] || inactiveCards[0];
 
@@ -103,14 +103,14 @@ function LocationCarousel() {
   return (
     <div className="relative w-10/12 md:ml-20 md:w-11/12">
       {/* Dark blue green box */}
-      <div className="bg-[#406E7D] rounded-xl w-full md:w-4/12 p-5 pb-20 md:p-10 md:pb-80">
-        <div className="text-white text-2xl md:text-4xl text-left font-bold font-heading md:leading-10">
+      <div className="bg-[#406E7D] rounded-xl w-full md:w-3/5 lg:w-2/3 p-5 pb-20 md:p-10 md:pb-80">
+        <div className="text-2xl font-bold text-left text-white md:text-4xl md:leading-10 font-heading">
           UPCOMING
           <br />
           MOVEMENTS
         </div>
 
-        <div className="text-white mt-3 mb-3 text-sm md:text-lg">
+        <div className="mt-3 mb-3 text-sm text-white md:text-lg">
           Check out where Arise Asia is heading to next!
         </div>
 
@@ -125,7 +125,7 @@ function LocationCarousel() {
       </div>
 
       {/* Location Carousel */}
-      <div className="absolute -bottom-44 left-6 md:bottom-10 md:left-10 carousel carousel-center w-full md:w-11/12 gap-3 md:gap-5">
+      <div className="absolute left-6 -bottom-44 gap-3 w-full md:bottom-10 md:left-10 md:gap-5 md:w-11/12 carousel carousel-center">
         {cards
           .filter((f) => f.active === true)
           .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
@@ -140,12 +140,12 @@ function LocationCarousel() {
       </div>
 
       {/* Carousel Arrows: Desktop version */}
-      <div className="absolute hidden md:block md:top-10 md:right-28">
+      <div className="hidden absolute md:block md:top-10 md:right-28">
         <div
           className="btn btn-circle border-0 bg-[#406E7D] text-white relative"
           onClick={() => handleLeftClick()}
         >
-          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
           <IoIosArrowBack />
         </div>
 
@@ -153,7 +153,7 @@ function LocationCarousel() {
           className="btn btn-circle border-0 bg-[#406E7D] text-white relative ml-5"
           onClick={() => handleRightClick()}
         >
-          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
           <IoIosArrowForward />
         </div>
       </div>
@@ -164,7 +164,7 @@ function LocationCarousel() {
           className="btn btn-circle border-0 bg-[#406E7D] text-white relative ml-24"
           onClick={() => handleLeftClick()}
         >
-          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
           <IoIosArrowBack />
         </div>
 
@@ -172,7 +172,7 @@ function LocationCarousel() {
           className="btn btn-circle border-0 bg-[#406E7D] text-white relative ml-10"
           onClick={() => handleRightClick()}
         >
-          <span className="inner-circle absolute inset-1 border-2 border-white rounded-full" />
+          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
           <IoIosArrowForward />
         </div>
       </div>

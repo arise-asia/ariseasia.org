@@ -69,7 +69,7 @@ const HomePage = () => (
         </div>
 
         {/* MISSION: Desktop version */}
-        <div className="hidden relative w-10/12 md:block md:-mt-24">
+        <div className="hidden relative w-10/12 md:block md:-mt-16">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1253 215"
@@ -96,11 +96,11 @@ const HomePage = () => (
         <div className="block relative -mt-16 w-10/12 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 402 185"
+            viewBox="0 0 393 228"
             fill="none"
           >
             <path
-              d="M401.608 15.8239C403.679 7.41922 396.441 -0.346821 387.911 1.1283L11.6563 66.1991C1.08994 68.0265 -3.5834 80.5681 3.21063 88.8644L69.7682 170.14C78.3757 180.651 91.7298 186.074 105.229 184.541L341.087 157.758C356.883 155.965 369.893 144.528 373.696 129.093L401.608 15.8239Z"
+              d="M391.978 15.1524C393.54 6.89963 386.359 -0.363542 378.089 1.10532L11.9376 66.1389C2.5831 67.8004 -2.43494 78.0986 2.02124 86.4896L65.398 205.829C73.2681 220.648 89.5509 228.98 106.174 226.695L331.423 195.723C347.6 193.499 360.547 181.189 363.584 165.145L391.978 15.1524Z"
               fill="#DB6645"
             />
 
@@ -108,7 +108,7 @@ const HomePage = () => (
               <div className="absolute left-4 top-6 text-3xl font-bold text-white font-heading rotate-[-10deg]">
                 MISSION
               </div>
-              <div className="absolute top-14 left-24 text-sm italic text-center text-white rotate-[-2deg]">
+              <div className="absolute top-20 left-20 text-sm italic text-center text-white rotate-[-2deg]">
                 To inspire the next generation to take the gospel throughout
                 Asia and to the world.
               </div>
@@ -193,11 +193,11 @@ const HomePage = () => (
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 401 526"
+              viewBox="0 0 406 579"
               fill="none"
             >
               <path
-                d="M0.732192 18.8354C-0.165984 8.19812 8.85588 -0.620688 19.47 0.519386L385.83 39.8706C394.458 40.7974 401 48.0796 401 56.7576V512C401 519.732 394.732 526 387 526H79.9799C59.3857 526 42.2235 510.226 40.4908 489.705L0.732192 18.8354Z"
+                d="M0.73463 18.8375C-0.164775 8.19951 8.85741 -0.620523 19.4723 0.519632L385.958 39.8844C394.532 40.8053 401.055 48.0051 401.128 56.628L405.42 564.882C405.486 572.66 399.199 579 391.42 579H84.5152C63.9226 579 46.7612 563.228 45.0263 542.709L0.73463 18.8375Z"
                 fill="#AA3638"
               />
 
@@ -205,10 +205,10 @@ const HomePage = () => (
                 <img
                   src="logo.svg"
                   alt="What is Arise? Logo"
-                  className="absolute top-20 w-1/5"
+                  className="absolute top-28 w-1/5"
                 />
 
-                <p className="mt-16 mb-3 ml-28 w-7/12 text-xs text-justify text-white">
+                <p className="mt-24 mb-3 ml-28 w-7/12 text-xs text-justify text-white">
                   It is almost two millennia since Jesus called His first
                   disciples to follow Him. Since that time, many followers of
                   Jesus have taken up the call to take the Gospel to the ends of
@@ -223,7 +223,7 @@ const HomePage = () => (
                 </p>
 
                 {/* VIDEO: Why Arise Asia Today? */}
-                <div className="overflow-hidden z-10 ml-4 w-5/6 h-48 rounded-xl">
+                <div className="overflow-hidden z-10 mx-auto w-2/3 h-40 rounded-xl">
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/4G4fQidFXro"
