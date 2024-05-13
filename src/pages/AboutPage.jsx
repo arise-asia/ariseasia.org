@@ -1,5 +1,5 @@
-import aboutUsImg from '../../public/about-us.png';
-import partnersImg from '../../public/partners.png';
+import aboutUsImg from "../../public/about-us.png";
+import partnersImg from "../../public/partners.png";
 
 const AboutPage = () => (
   <>
@@ -42,10 +42,9 @@ const AboutPage = () => (
             arise and participate in God&apos;s Great Commission.
           </p>
           <p>
-            We invite you to join us in this historic gathering of young people
-            to worship Jesus, hear God&apos;s voice, experiencing community, and
-            to journey with thousands of young people from Asia who want to live
-            for the purposes of God in this generation!
+            We invite you to join us in this historic movement with thousands of
+            young people from Asia who want to live for the purposes of God in
+            this generation!
           </p>
         </div>
       </div>
@@ -57,7 +56,7 @@ const AboutPage = () => (
       />
     </svg>
 
-    <div className="py-10 px-10 md:px-56 bg-red-100">
+    <div className="py-10 px-10 bg-red-100 md:px-56">
       <div className="container flex flex-col items-center xl:flex-row">
         <div>
           <h2 className="text-2xl font-bold text-center text-red-700 uppercase md:text-4xl font-heading">
@@ -65,7 +64,7 @@ const AboutPage = () => (
           </h2>
           <img
             alt="Endorsing Partners"
-            className="py-10 px-20 md:p-10 mx-auto max-w-md rounded"
+            className="py-10 px-20 mx-auto max-w-md rounded md:p-10"
             src={partnersImg}
           />
         </div>
@@ -87,7 +86,7 @@ const AboutPage = () => (
       />
     </svg>
 
-    <div className="py-10 px-10 md:px-56 bg-red-50">
+    <div className="py-10 px-10 bg-red-50 md:px-56">
       <div className="container flex flex-col items-center xl:flex-row-reverse">
         <div>
           <h2 className="text-2xl font-bold text-center text-red-700 uppercase md:text-4xl font-heading">
@@ -95,7 +94,7 @@ const AboutPage = () => (
           </h2>
           <img
             alt="Sponsoring Partners"
-            className="py-10 px-20 md:p-10 mx-auto max-w-md rounded"
+            className="py-10 px-20 mx-auto max-w-md rounded md:p-10"
             src={partnersImg}
           />
         </div>

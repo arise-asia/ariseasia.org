@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
-import { locationCards } from "../constants/locationData";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdOutlineNotificationsActive } from "react-icons/md";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import { locationCards } from "../constants/locationData";
 
 const LocationCard = ({ key, image, title, date }) => {
   return (
@@ -114,14 +115,13 @@ function LocationCarousel() {
           Check out where Arise Asia is heading to next!
         </div>
 
-        <a
-          role="button"
+        <Link
           className="btn bg-[#B3ECFF] rounded-full border-4 border-black text-black"
-          href="/movements"
+          to="/movements"
         >
           Click to find out more
           <MdOutlineNotificationsActive className="ml-2" size={24} />
-        </a>
+        </Link>
       </div>
 
       {/* Location Carousel */}
