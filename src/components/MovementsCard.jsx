@@ -1,7 +1,11 @@
 const MovementsCard = ({ title, subtitle, links, description, imgUrl }) => (
   <div className="flex flex-col lg:flex-row gap-x-4 gap-y-6 p-6 bg-white rounded-3xl">
     <div className="mx-2 self-center lg:self-start">
-      <img src={imgUrl} alt="" className="w-72 bg-gray-500 rounded-xl" />
+      <img
+        src={imgUrl}
+        alt=""
+        className="w-72 h-40 bg-white rounded-xl object-cover"
+      />
     </div>
     <div>
       <p className="text-2xl font-bold text-cyan-700 font-heading">{title}</p>

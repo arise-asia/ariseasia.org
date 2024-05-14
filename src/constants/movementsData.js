@@ -99,7 +99,7 @@ export const upcomingList = [
       },
       {
         title: 'Poster',
-        target: '/movements/arise-hongkong.jpeg',
+        target: '/movements/arise-hongkong-full.jpeg',
       },
     ],
     description: `
@@ -113,7 +113,7 @@ Jesus, please lead our way…
 👥 Believers aged 18-29 (Mission-interested-newbies are welcomed!)
 💬 Language in Cantonese/ Mandarin
 📝 31/5 Early bird deadline`,
-    imgUrl: '/movements/arise-hongkong.jpeg',
+    imgUrl: '/movements/arise-hongkong.png',
   },
   {
     country: 'Indonesia',
@@ -130,11 +130,11 @@ Jesus, please lead our way…
       },
       {
         title: 'Poster',
-        target: '/movements/arise-indonesia.jpeg',
+        target: '/movements/arise-indonesia-full.jpeg',
       },
     ],
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/movements/arise-indonesia.jpeg',
+    imgUrl: '/movements/arise-indonesia.png',
   },
   {
     country: 'Philippines',
