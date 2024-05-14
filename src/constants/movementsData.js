@@ -97,6 +97,10 @@ export const upcomingList = [
         title: 'Signup',
         target: 'https://forms.gle/isPKqcSwKRzUqr6U8',
       },
+      {
+        title: 'Poster',
+        target: '/movements/arise-hongkong.jpeg',
+      },
     ],
     description: `
 2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
@@ -124,9 +128,13 @@ Jesus, please lead our way…
         title: 'Instagram',
         target: 'https://www.instagram.com/ariseindonesia',
       },
+      {
+        title: 'Poster',
+        target: '/movements/arise-indonesia.jpeg',
+      },
     ],
     description: 'More information is coming soon. Stay tuned!',
-    imgUrl: '/locations/indonesia.svg',
+    imgUrl: '/movements/arise-indonesia.jpeg',
   },
   {
     country: 'Philippines',

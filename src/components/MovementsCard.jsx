@@ -13,6 +13,8 @@ const MovementsCard = ({ title, subtitle, links, description, imgUrl }) => (
               className="py-1 px-6 font-bold bg-purple-50 rounded-3xl border-2 border-purple-300 hover:bg-purple-300"
               href={item.target}
               key={item.title}
+              target="_blank"
+              rel="noreferrer"
             >
               {item.title}
             </a>

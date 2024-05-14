@@ -5,8 +5,8 @@ import day4Img from '../../public/schedule/day-4.jpg';
 import day5Img from '../../public/schedule/day-5.jpg';
 
 const Arise2023Page = () => (
-  <div className="px-10 pt-60 bg-cyan-50">
-    <h1 className="text-4xl font-bold text-center text-cyan-700 uppercase sm:text-5xl md:text-7xl font-heading">
+  <div className="px-10 pt-60 bg-[#FCEDFD]">
+    <h1 className="text-4xl font-bold text-center text-[#C26CB9] uppercase sm:text-5xl md:text-7xl font-heading">
       Arise 2023 Program
     </h1>
 
