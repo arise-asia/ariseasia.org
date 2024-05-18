@@ -1,6 +1,6 @@
-import { useState } from "react";
-import MovementsCard from "../components/MovementsCard";
-import { pastList, upcomingList, futureList } from "../constants/movementsData";
+import { useState } from 'react';
+import MovementsCard from '../components/MovementsCard';
+import { pastList, upcomingList, futureList } from '../constants/movementsData';
 
 const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
@@ -14,20 +14,20 @@ const MovementsPage = () => {
         </h1>
         <div className="flex justify-center pt-6">
           <p className="py-2 px-6 font-bold bg-white rounded-full">
-            Check out{" "}
+            Check out{' '}
             <a className="underline" href="https://goarise.org">
               goarise.org
-            </a>{" "}
+            </a>{' '}
             for where Arise Movements are taking place!
           </p>
         </div>
 
         <div className="flex flex-col py-20 lg:flex-row">
           <div className="flex flex-col gap-y-4 px-6 pb-8 xl:w-1/3">
-            {["Past", "Upcoming", "Stay Tuned"].map((tabName, idx) => (
+            {['Past', 'Upcoming', 'Stay Tuned'].map((tabName, idx) => (
               <button
                 className={`py-2 pl-8 font-bold text-left text-black bg-white rounded-full border-4 border-[#DC95D5] hover:bg-[#DC95D5] ${
-                  tabIdx == idx && "bg-[#DC95D5]"
+                  tabIdx === idx && 'bg-[#DC95D5]'
                 }`}
                 key={tabName}
                 onClick={() => {
@@ -37,25 +37,29 @@ const MovementsPage = () => {
                 {tabName}
               </button>
             ))}
-            <h3 className="text-2xl font-bold text-center font-heading">
-              Country/City
-            </h3>
-            <div className="flex flex-col gap-y-3 p-3 bg-white rounded-xl">
-              <button className="hidden" />
-              {pastList.map((item, idx) => (
-                <button
-                  className={`py-3 font-bold text-black uppercase bg-white rounded-2xl border-2 border-purple-300 lg:text-lg hover:bg-purple-300 font-heading ${
-                    tabIdx == 0 && countryIdx == idx && "bg-purple-300"
-                  }`}
-                  key={item.country}
-                  onClick={() => {
-                    setTabIdx(0);
-                    setCountryIdx(idx);
-                  }}
-                >
-                  {item.country}
-                </button>
-              ))}
+
+            {/* country/city list buttons - hide in mobile version*/}
+            <div className="hidden md:block">
+              <h3 className="text-2xl font-bold text-center font-heading">
+                Country/City
+              </h3>
+              <div className="flex flex-col gap-y-3 p-3 bg-white rounded-xl">
+                <button className="hidden" />
+                {pastList.map((item, idx) => (
+                  <button
+                    className={`py-3 font-bold text-black uppercase bg-white rounded-2xl border-2 border-purple-300 lg:text-lg hover:bg-purple-300 font-heading ${
+                      tabIdx == 0 && countryIdx == idx && 'bg-purple-300'
+                    }`}
+                    key={item.country}
+                    onClick={() => {
+                      setTabIdx(0);
+                      setCountryIdx(idx);
+                    }}
+                  >
+                    {item.country}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-y-4 xl:w-2/3">

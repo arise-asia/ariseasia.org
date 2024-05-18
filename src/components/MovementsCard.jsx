@@ -7,7 +7,7 @@ const MovementsCard = ({ title, subtitle, links, description, imgUrl }) => (
         className="w-72 h-40 bg-white rounded-xl object-cover"
       />
     </div>
-    <div>
+    <div className="w-2/3">
       <p className="text-2xl font-bold text-cyan-700 font-heading">{title}</p>
       <p className="pt-2 text-gray-500">{subtitle}</p>
       <div className="flex flex-wrap gap-x-4 gap-y-2 pt-4">
