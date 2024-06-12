@@ -11,7 +11,7 @@ const Arise2023Page = () => (
     </h1>
 
     {/* Desktop version */}
-    <div className="hidden md:block md:py-10">
+    <div className="hidden md:block md:py-10 md:flex md:justify-center">
       <img alt="Program full" src="/program.png" />
     </div>
 
