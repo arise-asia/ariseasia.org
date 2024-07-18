@@ -110,13 +110,14 @@ function MomentsCarousel() {
             alt={momentsCards[activeIndex].title}
             className="rounded-md"
           />
-          <div className="hidden md:block bg-[#C16CB9] rounded-md p-8">
+          <div className="relative hidden md:block bg-[#C16CB9] rounded-md p-8">
             <p className="italic text-white">
               {momentsCards[activeIndex].title}
             </p>
             <p className="font-bold text-white">
               {momentsCards[activeIndex].description}
             </p>
+            <div className="absolute -bottom-2 -right-10 w-24 h-12 bg-[#FCD369] rotate-[130deg] transform" />
           </div>
         </div>
       </div>
