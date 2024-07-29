@@ -1,0 +1,181 @@
+upcomingConferencesList:
+  - country: Indonesia
+    title: Arise Indonesia
+    subtitle: July 31 - August 3, 2024
+    posterSrc: /movements/arise-indonesia.png
+    links:
+      - title: Sign Up
+        target: https://reborn.id/app/event?id=S85F-XYHS-MJRO
+      - title: Instagram
+        target: https://www.instagram.com/ariseindonesia
+    description: More information is coming soon. Stay tuned!
+
+  - country: Philippines
+    title: Arise Bicol
+    subtitle: August 16-17, 2024
+    posterSrc: /movements/arise-bicol.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+    description: More information is coming soon. Stay tuned!
+
+  - country: Philippines
+    title: Arise Baguio
+    subtitle: September 14, 2024
+    backgroundSrc: /locations/baguio.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+    description: More information is coming soon. Stay tuned!
+
+  - country: Myanmar
+    title: Arise Myanmar
+    subtitle: October 15-17. 2024
+    posterSrc: /movements/arise-myanmar.png
+    description: More information is coming soon. Stay tuned!
+
+  - country: Nepal
+    title: Arise Nepal
+    subtitle: October 20-23, 2024
+    posterSrc: /movements/arise-nepal.png
+    description: More information is coming soon. Stay tuned!
+
+  - country: Mongolia
+    title: Arise Mongolia
+    subtitle: October 2024
+    posterSrc: /movements/arise-mongolia.png
+    description: More information is coming soon. Stay tuned!
+
+  - country: Latin America
+    title: Arise Latino
+    subtitle: November 11-14, 2024
+    posterSrc: /movements/arise-latino.png
+    description: More information is coming soon. Stay tuned!
+
+pastConferencesList:
+  - country: Philippines
+    title: Arise Cebu
+    subtitle: December 2, 2023
+    posterSrc: /movements/arise-cebu.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-cebu-praise-report
+      - title: Photos
+        target: https://drive.google.com/drive/folders/1wsxRdBJLDOWkq-LFIWC9XHDKm5t412jb
+      - title: Summary Video
+        target: https://drive.google.com/file/d/1VgGc-93P2JQAP32mQ97dsb6lL5M8sZVx
+    description: |
+      Praise Report:
+
+      Number of delegates: 202 Participants
+      Number of response: 12 Commitment Responses
+
+      Organized by the Philippine Missions Association (PMA) and Haggai Cebu in partnership with Arise Movement and 12 Mission Organizations.
+
+      Topics presented:
+      The Filipino Missionary Mandate
+      The Greatest Treasure
+      The Greatest Purpose
+      The Greatest Pursuit
+      Synthesis & Final Challenge
+
+  - country: Philippines
+    title: Arise Cagayan De Oro
+    subtitle: March 2, 2024
+    posterSrc: /movements/arise-cagayan-de-oro.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-cagayan-de-oro-praise-report
+      - title: Summary Video
+        target: https://www.youtube.com/watch?v=e-UR-vODHd8
+    description: |
+      Praise Report:
+
+      Number of delegates: 222 Participants
+      Number of response: 40+ Responses to the Call
+
+      Arise Philippines Citywide Youth Missions Conference went to Northern Mindanao!
+      Organized by the Philippine Missions Association (PMA), Cagayan De Oro City Evangelical Ministers Association, OM Philippines, YWAM and partners.
+
+      Topics presented:
+      The Filipino Missionary Mandate
+      The Greatest Treasure
+      The Greatest Purpose
+      The Greatest Pursuit
+      Synthesis & Final Challenge
+
+  - country: Philippines
+    title: Arise Butuan
+    subtitle: May 26, 2024
+    posterSrc: /movements/arise-butuan.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-butuan-praise-report
+      - title: Summary Video
+        target: https://www.facebook.com/watch/?v=1123052522218073
+
+  - country: Philippines
+    title: Arise Davao
+    subtitle: June 1, 2024
+    posterSrc: /movements/arise-davao.png
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-butuan-praise-report
+      - title: Summary Video
+        target: https://www.facebook.com/watch/?v=1121729785772125
+
+  - country: Hong Kong
+    title: Arise Hong Kong
+    subtitle: July 20-21, 2024
+    posterSrc: /movements/arise-hong-kong.png
+    description: |
+      2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
+      Emptiness and Despair are devouring our city.
+      While busy struggling with ourselves, how are we supposed to carry on with our future? Our calling? Even our Mission?
+
+      Jesus, please lead our way…
+
+      📅 20-21 / July (Sat-Sun)
+      👥 Believers aged 18-29 (Mission-interested-newbies are welcomed!)
+      💬 Language in Cantonese/ Mandarin
+      📝 31/5 Early bird deadline`,
+
+futureConferencesList:
+  - title: Arise Bangladesh
+  - title: Arise Japan
+  - title: Arise Macau
+  - title: Arise Mumbai
+  - title: Arise Sri Lanka
+  - title: Arise Cambodia
+  - title: Arise Philippines
+  - title: Arise Leaders' Summit
+  - title: Arise Asia
+  - title: Arise Global
+  - title: Arise Singapore
+  - title: Arise Vietnam
+  - title: Arise India
+  - title: Arise Bhutan
+  - title: Arise Laos
+  - title: Arise Malaysia
+  - title: Arise Central Asia
+  - title: Arise MENA

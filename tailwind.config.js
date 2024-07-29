@@ -5,6 +5,15 @@ export default {
     container: {
       center: true,
     },
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.black"),
+          },
+        },
+      }),
+    },
     fontFamily: {
       sans: ['"DM Sans"', "sans-serif"],
       heading: ["Unbounded", "sans-serif"],
