@@ -22,7 +22,7 @@ const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
 
   return (
-    <div className="py-60 px-10 bg-cyan-50">
+    <div className="py-60 px-10 bg-cyan-50 bg-[url('/bg-movements-page.svg')] bg-contain">
       <div className="container">
         <h1 className="text-3xl font-bold text-center text-cyan-700 uppercase sm:text-5xl md:text-7xl font-heading">
           Movements
@@ -60,6 +60,19 @@ const MovementsPage = () => {
             {tabs[tabIdx].data.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
+            {tabIdx == 2 && (
+              <p>
+                Don&apos;t see your country here? Contact
+                <a
+                  className="mx-1 text-cyan-700 underline"
+                  href="mailto:admin@ariseasia.org"
+                >
+                  admin@ariseasia.org
+                </a>
+                to find out more about hosting an Arise Movement in your
+                country/city!
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -78,7 +91,7 @@ const ConferenceCard = ({
   const imgSrc = posterSrc || backgroundSrc;
 
   return (
-    <div className="flex flex-col gap-6 p-6 bg-white rounded-3xl 2xl:flex-row">
+    <article className="flex flex-col gap-6 p-6 bg-white rounded-3xl 2xl:flex-row">
       {imgSrc && (
         <img
           alt={`Image for the ${title} conference`}
@@ -88,9 +101,9 @@ const ConferenceCard = ({
       )}
       <div className="flex flex-col gap-y-4 w-full">
         <div>
-          <h2 className="font-bold text-cyan-700 sm:text-2xl font-heading">
+          <h3 className="font-bold text-cyan-700 sm:text-2xl font-heading">
             {title}
-          </h2>
+          </h3>
           <p className="text-sm italic text-gray-500 sm:text-base">
             {subtitle}
           </p>
@@ -111,12 +124,12 @@ const ConferenceCard = ({
           </div>
         )}
         {description && (
-          <article className="whitespace-pre-line prose prose-sm sm:prose-base">
+          <p className="whitespace-pre-line prose prose-sm sm:prose-base">
             {description}
-          </article>
+          </p>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

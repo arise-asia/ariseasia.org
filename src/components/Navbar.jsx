@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom';
-
-import logo from "../../public/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => (
-  <div className="absolute pt-20 w-full">
+  <div className="absolute z-10 pt-20 w-full">
     <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-lg">
       <div className="hidden pl-16 lg:flex lg:flex-1">
         <Link
@@ -20,11 +18,13 @@ const Navbar = () => (
         </Link>
       </div>
       <div>
-        <img
-          alt="Arise Logo"
-          className="absolute translate-x-1/2 -translate-y-1/3 lg:flex lg:-translate-x-1/2"
-          src={logo}
-        />
+        <Link to="/">
+          <img
+            alt="Arise logo"
+            className="absolute translate-x-1/2 -translate-y-1/3 lg:flex lg:-translate-x-1/2"
+            src="/logo.svg"
+          />
+        </Link>
         <p className="py-3.5 pl-32 text-xl text-white lg:hidden font-heading">
           Arise Asia
         </p>
@@ -54,7 +54,7 @@ const Navbar = () => (
           </svg>
         </div>
         <ul
-          className="z-10 p-2 mt-16 bg-gray-500 shadow rounded-box menu dropdown-content"
+          className="p-2 mt-16 bg-gray-500 shadow rounded-box menu dropdown-content"
           tabIndex={0}
         >
           <li>
