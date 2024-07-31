@@ -1,127 +1,130 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { momentsCards } from "../constants/momentsData";
+import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
-const MomentCard = ({ key, image, title, description }) => {
-  return (
-    <div id={key} className="gap-4 w-full carousel-item card card-compact">
-      <figure>
-        <img src={image} alt={key} className="rounded-md" />
-      </figure>
-
-      <div className="md:hidden card-body bg-[#C16CB9] rounded-md">
-        <p className="italic text-white">{title}</p>
-        <p className="font-bold text-white">{description}</p>
-      </div>
-    </div>
-  );
-};
-
-MomentCard.propTypes = {
-  key: PropTypes.number,
-  image: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-};
+const moments = [
+  {
+    title: "IBIS Fellowship Night",
+    subtitle: "Day 1",
+    image: "/images/DAY1_IBIS-Fellowship-Night.jpg",
+  },
+  {
+    title: "Justice Issues Panel",
+    subtitle: "Day 1",
+    image: "/images/DAY1_PANEL.jpg",
+  },
+  {
+    title: "Night Session Worship",
+    subtitle: "Day 1",
+    image: "/images/DAY1_WORSHIP.jpg",
+  },
+  {
+    title: "Missional Partners and Organizations Exhibitors",
+    subtitle: "Day 2",
+    image: "/images/DAY2_Exhibition.jpg",
+  },
+  {
+    title: "Innovation Lab",
+    subtitle: "Day 2",
+    image: "/images/DAY2_INNOVATION_LAB.jpg",
+  },
+  {
+    title: "Performance from Mongolian Dance",
+    subtitle: "Day 2",
+    image: "/images/DAY2_Performance-from-Mongolian-Dancers.jpg",
+  },
+  {
+    title: "Workshops",
+    subtitle: "Day 2",
+    image: "/images/DAY2_Workshops.jpg",
+  },
+  {
+    title: "Morning Session Congregation",
+    subtitle: "Day 3",
+    image: "/images/DAY3_Group-Picture-Morning-Session.jpg",
+  },
+  {
+    title: "HISPOP Worship Session",
+    subtitle: "Day 3",
+    image: "/images/DAY3_HISPOP.jpg",
+  },
+  {
+    title: "Praying at Response Time",
+    subtitle: "Day 4",
+    image: "/images/DAY4_Response-Time_Praying.jpg",
+  },
+  {
+    title: "Closing Session Prayer",
+    subtitle: "Day 5",
+    image: "/images/DAY5_Pray-Closing.jpg",
+  },
+];
+const numItems = moments.length;
 
 function MomentsCarousel() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const len = momentsCards.length;
+  const [activeIdx, setActiveIdx] = useState(0);
 
-  const handleDown = () => {
-    setActiveIndex((activeIndex + 1) % len);
-  };
-
-  const handleUp = () => {
-    setActiveIndex((activeIndex - 1 + len) % len);
-  };
+  const handleDown = () => setActiveIdx((activeIdx + 1) % numItems);
+  const handleUp = () => setActiveIdx((activeIdx - 1 + numItems) % numItems);
 
   return (
-    <>
-      {/* Carousel: Mobile version */}
-      <div className="flex flex-col gap-2 items-center w-full md:hidden">
-        {/* up arrow */}
-        <div
-          className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-          onClick={handleUp}
-        >
-          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
-          <IoIosArrowUp />
-        </div>
-
-        <div className="w-full carousel">
-          <MomentCard
-            image={momentsCards[activeIndex]["image"]}
-            title={momentsCards[activeIndex]["title"]}
-            description={momentsCards[activeIndex]["description"]}
-          />
-        </div>
-        <div
-          className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-          onClick={handleDown}
-        >
-          <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
-          <IoIosArrowDown />
-        </div>
-      </div>
-
-      {/* Carousel: Desktop version */}
-      <div className="hidden md:flex md:flex-row md:place-content-evenly md:w-10/12">
-        <div className="flex flex-col gap-2 items-center w-1/5">
-          {/* up arrow */}
-          <div
-            className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-            onClick={handleUp}
-          >
-            <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
-            <IoIosArrowUp />
+    <div>
+      <div className="flex gap-x-10 items-center">
+        <div className="hidden gap-y-4 items-center lg:flex lg:flex-col">
+          <div className="relative">
+            <IoIosArrowDropup
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl"
+              onClick={handleUp}
+              size={48}
+            />
+            <img
+              src={moments[(activeIdx - 1 + numItems) % numItems].image}
+              className="w-72 rounded-3xl aspect-video"
+            />
           </div>
-
-          <div className="md:gap-3 md:w-full md:h-full carousel md:carousel-vertical md:carousel-center">
-            {[
-              (activeIndex - 1 + len) % len,
-              activeIndex,
-              (activeIndex + 1) % len,
-            ].map((activeIdx, idx) => (
-              <MomentCard
-                key={idx}
-                image={momentsCards[activeIdx]["image"]}
-                title={momentsCards[activeIdx]["title"]}
-                description={momentsCards[activeIdx]["description"]}
-              />
-            ))}
-          </div>
-
-          {/* down arrow */}
-          <div
-            className="btn btn-circle border-0 bg-[#C26CB9] text-white relative"
-            onClick={handleDown}
-          >
-            <span className="absolute inset-1 rounded-full border-2 border-white inner-circle" />
-            <IoIosArrowDown />
-          </div>
-        </div>
-
-        {/* thumbnail */}
-        <div className="flex flex-col gap-4 w-3/5">
           <img
-            src={momentsCards[activeIndex].image}
-            alt={momentsCards[activeIndex].title}
-            className="rounded-md"
+            src={moments[activeIdx].image}
+            className="w-96 rounded-3xl aspect-video"
           />
-          <div className="relative hidden md:block bg-[#C16CB9] rounded-md p-8">
-            <p className="italic text-white">
-              {momentsCards[activeIndex].title}
-            </p>
-            <p className="font-bold text-white">
-              {momentsCards[activeIndex].description}
-            </p>
-            <div className="absolute -bottom-2 -right-10 w-24 h-12 bg-[#FCD369] rotate-[130deg] transform" />
+          <div className="relative">
+            <img
+              src={moments[(activeIdx + 1) % numItems].image}
+              className="w-72 rounded-3xl aspect-video"
+            />
+            <IoIosArrowDropdown
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 drop-shadow-2xl"
+              onClick={handleDown}
+              size={48}
+            />
           </div>
         </div>
+        <div className="flex flex-col gap-y-8 items-center mt-2 lg:mt-0">
+          <div className="relative">
+            <IoIosArrowDropup
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden drop-shadow-2xl"
+              onClick={handleUp}
+              size={36}
+            />
+            <img
+              src={moments[activeIdx].image}
+              className="w-full max-w-screen-lg rounded-3xl aspect-video"
+            />
+            <IoIosArrowDropdown
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden drop-shadow-2xl"
+              onClick={handleDown}
+              size={36}
+            />
+          </div>
+          <article className="py-4 sm:py-8 pr-20 pl-6 sm:pl-8 w-full bg-purple-500 rounded-xl [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_60%,_100%_0)]">
+            <p className="mb-1 text-xs italic text-white sm:text-base">
+              {moments[activeIdx].subtitle}
+            </p>
+            <h4 className="font-bold leading-tight text-white sm:text-2xl">
+              {moments[activeIdx].title}
+            </h4>
+          </article>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

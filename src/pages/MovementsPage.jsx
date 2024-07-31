@@ -22,16 +22,18 @@ const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
 
   return (
-    <div className="py-60 px-10 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
+    <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
       <div className="container">
         <h1 className="text-3xl font-bold text-center text-cyan-700 uppercase sm:text-5xl md:text-7xl font-heading">
           Movements
         </h1>
-        <p className="py-2 px-10 mx-auto mt-10 font-bold text-center bg-white rounded-full w-fit">
+        <p className="py-2 px-10 mx-auto mt-10 text-sm font-bold text-center bg-white rounded-full sm:text-base w-fit">
           Check out
           <a
             className="mx-1 text-cyan-700 underline"
             href="https://goarise.org"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             goarise.org
           </a>
@@ -115,8 +117,8 @@ const ConferenceCard = ({
                 className="py-1 px-4 text-xs font-bold bg-purple-50 rounded-full border border-purple-300 sm:px-6 sm:text-base sm:border-2 hover:bg-purple-300"
                 href={item.target}
                 key={item.title}
+                rel="noreferrer noopener"
                 target="_blank"
-                rel="noreferrer"
               >
                 {item.title}
               </a>

@@ -1,87 +1,62 @@
 import { MdOpenInNew } from "react-icons/md";
-import { Link } from "react-router-dom";
-import day1Img from "../../public/schedule/day-1.jpg";
-import day2Img from "../../public/schedule/day-2.jpg";
-import day3Img from "../../public/schedule/day-3.jpg";
-import day4Img from "../../public/schedule/day-4.jpg";
-import day5Img from "../../public/schedule/day-5.jpg";
 import MomentsCarousel from "../components/MomentsCarousel";
 
 const Arise2023Page = () => (
-  <div className="pt-60 bg-yellow-100">
-    <h1 className="pb-20 text-4xl font-bold text-center text-yellow-500 uppercase sm:text-5xl md:text-7xl font-heading">
+  <div className="pt-60 bg-yellow-50">
+    <h1 className="pb-20 text-3xl font-bold text-center text-yellow-700 uppercase sm:text-5xl md:text-7xl font-heading">
       Arise 2023
     </h1>
-
-    {/* RECAP 2023 */}
-    <div className="bg-[#FCD369] px-8 md:px-20 py-10 rounded-tl-[80px]">
-      <div className="container">
-        <div className="md:flex md:space-x-1">
-          {/* DESKTOP: left side section beside video */}
-          <div className="w-full md:w-3/4">
-            {/* TITLE */}
-            <div className="mb-2 text-lg italic">LOOKING BACK ON...</div>
-            <div className="text-3xl font-bold md:text-5xl font-heading leading-[3rem]">
-              ARISE ASIA 2023
-            </div>
-            <div className="flex mt-4 space-x-3">
-              <div className="bg-[#406E7D] py-2 px-4 rounded-md text-white inline-block">
+    <div className="py-20 px-4 bg-amber-300 md:px-20 rounded-tl-[2.5rem] sm:rounded-tl-[5rem]">
+      <div className="container flex flex-col gap-y-6">
+        <div className="flex flex-col gap-8 mb-6 xl:flex-row">
+          <div className="flex flex-col gap-y-4">
+            <p className="italic font-bold uppercase sm:text-lg">
+              Looking Back On...
+            </p>
+            <h2 className="text-3xl font-bold uppercase sm:text-5xl font-heading">
+              Arise Asia 2023
+            </h2>
+            <div className="flex gap-4 my-4">
+              <span className="py-2 px-4 text-white bg-cyan-700 rounded-md">
                 Thailand
-              </div>
-              <div className="bg-[#406E7D] py-2 px-5 rounded-md text-white inline-block">
+              </span>
+              <span className="py-2 px-4 text-white bg-cyan-700 rounded-md">
                 July 25-29, 2023
-              </div>
+              </span>
             </div>
-
-            {/* THE RECAP */}
-            <div className="mt-8 mb-3 text-2xl font-bold font-heading">
-              THE RECAP
-            </div>
-            <div className="relative bg-[#B28000] p-5 w-full md:w-11/12 text-white">
-              <p>
+            <h3 className="font-bold uppercase sm:text-2xl font-heading">
+              The Recap
+            </h3>
+            <div className="flex flex-col justify-between py-6 px-8 h-full bg-yellow-700 [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
+              <p className="text-white prose prose-sm sm:prose-base">
                 On July 25-29, 1844 people from all across Asia attended the
                 first ever Arise Asia in Bangkok, Thailand. Praise God for all
                 He did during this conference. Check out the recap video about
                 Arise Asia 2023.
               </p>
-
-              <div className="flex-grow"></div>
-              <div className="flex justify-end">
-                <Link
-                  className="btn bg-[#202020] rounded-full text-white mt-3"
-                  to="/arise2023"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  Conference Program
-                  <MdOpenInNew className="ml-2" size={24} />
-                </Link>
-              </div>
-
-              {/* bottom left corner */}
-              <div className="absolute -left-9 bottom-0 w-20 h-12 bg-[#FCD369] transform rotate-[35deg] origin-bottom-left" />
+              <a
+                className="flex gap-x-2 items-center py-2 px-4 mt-6 ml-auto text-sm font-bold text-white bg-gray-700 rounded-full border-4 border-gray-700 sm:text-base hover:bg-gray-500 w-fit"
+                href="#conference-program"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Conference Program <MdOpenInNew size={20} />
+              </a>
             </div>
           </div>
-
-          {/* VIDEO: The Summary */}
-          <div className="overflow-hidden relative mt-5 w-full h-72 rounded-xl md:mt-0 md:h-auto">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/-V6a5qnJI5Q"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
+          <iframe
+            allowFullScreen
+            className="w-full rounded-xl sm:rounded-3xl aspect-video"
+            src="https://www.youtube.com/embed/-V6a5qnJI5Q"
+            title="YouTube recap video of the Arise Asia conference"
+          />
         </div>
 
-        {/* THE SUMMARY */}
-        <div className="mt-12 mb-3 text-2xl font-bold font-heading">
-          THE SUMMARY
-        </div>
+        <h3 className="font-bold uppercase sm:text-2xl font-heading">
+          The Summary
+        </h3>
 
-        <div className="grid grid-cols-4 gap-4 text-white md:grid-cols-12 md:grid-rows-6 md:grid-flow-col grid-rows-7">
+        <div className="grid grid-cols-4 gap-4 mb-6 text-white md:grid-cols-12 md:grid-rows-6 md:grid-flow-col grid-rows-7">
           {/* 1st column */}
           <div className="relative rounded-3xl bg-[#DB6645] col-span-2 row-span-1 md:row-span-3 md:col-span-2 flex flex-col justify-center items-center text-center aspect-w-1 aspect-h-1">
             <p className="text-3xl font-bold md:text-4xl font-heading">37</p>
@@ -347,31 +322,28 @@ const Arise2023Page = () => (
           </div>
         </div>
 
-        {/* THE MOMENTS */}
-        <div className="mt-12 mb-3 text-2xl font-bold font-heading">
-          THE MOMENTS
-        </div>
-
-        {/* Image Carousel */}
-        <div className="flex flex-col gap-2 justify-center items-center">
+        <h3 className="font-bold uppercase sm:text-2xl font-heading">
+          The Moments
+        </h3>
+        <div className="flex justify-center mb-6">
           <MomentsCarousel />
         </div>
 
-        <div className="mt-12 mb-3 text-2xl font-bold uppercase font-heading">
+        <h3
+          className="font-bold uppercase sm:text-2xl font-heading"
+          id="conference-program"
+        >
           Conference Program
-        </div>
-        {/* Desktop version */}
-        <div className="hidden md:flex md:justify-center md:py-10">
-          <img alt="Program full" src="/program.png" className="rounded-3xl" />
-        </div>
-
-        {/* Mobile version */}
-        <div className="flex flex-col gap-8 justify-center items-center py-10 rounded-xl md:hidden xl:flex-row">
-          <img alt="Program day 1" src={day1Img} className="xl:w-1/6" />
-          <img alt="Program day 2" src={day2Img} className="xl:w-1/6" />
-          <img alt="Program day 3" src={day3Img} className="xl:w-1/6" />
-          <img alt="Program day 4" src={day4Img} className="xl:w-1/6" />
-          <img alt="Program day 5" src={day5Img} className="xl:w-1/6" />
+        </h3>
+        <div className="flex overflow-hidden flex-col self-center rounded-3xl xl:flex-row">
+          {[1, 2, 3, 4, 5].map((idx) => (
+            <img
+              alt={`Arise Asia conference day ${idx} program`}
+              className="w-full xl:w-1/5 max-w-96"
+              key={idx}
+              src={`/schedule/day-${idx}.jpg`}
+            />
+          ))}
         </div>
       </div>
     </div>
