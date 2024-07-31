@@ -22,7 +22,7 @@ const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
 
   return (
-    <div className="py-60 px-10 bg-cyan-50 bg-[url('/bg-movements-page.svg')] bg-contain">
+    <div className="py-60 px-10 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
       <div className="container">
         <h1 className="text-3xl font-bold text-center text-cyan-700 uppercase sm:text-5xl md:text-7xl font-heading">
           Movements

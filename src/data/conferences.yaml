@@ -2,6 +2,7 @@ upcomingConferencesList:
   - country: Indonesia
     title: Arise Indonesia
     subtitle: July 31 - August 3, 2024
+    backgroundSrc: /locations/indonesia.png
     posterSrc: /movements/arise-indonesia.png
     links:
       - title: Sign Up
@@ -13,6 +14,7 @@ upcomingConferencesList:
   - country: Philippines
     title: Arise Bicol
     subtitle: August 16-17, 2024
+    backgroundSrc: /locations/bicol.png
     posterSrc: /movements/arise-bicol.png
     links:
       - title: Facebook
@@ -35,24 +37,28 @@ upcomingConferencesList:
   - country: Myanmar
     title: Arise Myanmar
     subtitle: October 15-17. 2024
+    backgroundSrc: /locations/myanmar.png
     posterSrc: /movements/arise-myanmar.png
     description: More information is coming soon. Stay tuned!
 
   - country: Nepal
     title: Arise Nepal
     subtitle: October 20-23, 2024
+    backgroundSrc: /locations/nepal.png
     posterSrc: /movements/arise-nepal.png
     description: More information is coming soon. Stay tuned!
 
   - country: Mongolia
     title: Arise Mongolia
     subtitle: October 2024
+    backgroundSrc: /locations/mongolia.png
     posterSrc: /movements/arise-mongolia.png
     description: More information is coming soon. Stay tuned!
 
   - country: Latin America
     title: Arise Latino
     subtitle: November 11-14, 2024
+    backgroundSrc: /locations/latino.png
     posterSrc: /movements/arise-latino.png
     description: More information is coming soon. Stay tuned!
 
