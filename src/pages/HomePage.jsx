@@ -5,7 +5,7 @@ import MovementsCarousel from "../components/MovementsCarousel";
 
 const HomePage = () => (
   <>
-    <div className="relative px-10 pt-52 sm:pt-80">
+    <div className="relative px-4 pt-52 sm:pt-80">
       <h1 className="text-6xl font-bold text-center text-orange-500 uppercase sm:text-7xl font-heading">
         Arise Asia
       </h1>
