@@ -1,4 +1,11 @@
 import { useState } from "react";
+import {
+  RiArrowDropDownLine,
+  RiArrowDropRightLine,
+  RiFileList3Line,
+  RiGift2Line,
+  RiGlobalLine,
+} from "react-icons/ri";
 
 import conferenceData from "../data/conferences.yaml";
 
@@ -29,7 +36,7 @@ const MovementsPage = () => {
         <p className="py-2 px-10 mx-auto mt-10 font-bold text-center bg-white rounded-full w-fit text-p">
           Check out
           <a
-            className="mx-1 text-cyan-700 underline"
+            className="mx-1 text-cyan-700 underline hover:text-cyan-500"
             href="https://goarise.org"
             rel="noreferrer noopener"
             target="_blank"
@@ -41,17 +48,37 @@ const MovementsPage = () => {
         <div className="flex flex-col gap-10 mt-10 sm:mt-20 lg:flex-row">
           <div className="flex gap-x-2 gap-y-4 mx-auto w-full sm:gap-x-6 lg:flex-col lg:max-w-64 xl:max-w-96">
             {["Upcoming", "Past", "Stay Tuned"].map((tabName, idx) => (
-              <button
-                className={`py-2 w-full text-xs font-bold text-black rounded-full border-2 border-purple-300 sm:text-base sm:border-4 lg:pl-8 lg:text-left xl:text-xl ${
-                  tabIdx === idx
-                    ? "bg-purple-300"
-                    : "bg-purple-50 hover:bg-purple-300"
-                }`}
-                key={tabName}
-                onClick={() => setTabIdx(idx)}
-              >
-                {tabName}
-              </button>
+              <>
+                <button
+                  className={`flex justify-center items-center py-2 w-full rounded-full border-2 border-purple-300 sm:px-8 sm:border-4 lg:justify-between ${
+                    tabIdx === idx
+                      ? "bg-purple-300"
+                      : "bg-purple-50 hover:bg-purple-300"
+                  }`}
+                  key={tabName}
+                  onClick={() => setTabIdx(idx)}
+                >
+                  <p className="text-xs font-bold text-black sm:text-base xl:text-xl">
+                    {tabName}
+                  </p>
+                  {tabIdx === idx ? (
+                    <RiArrowDropDownLine
+                      className="hidden lg:block"
+                      size={28}
+                    />
+                  ) : (
+                    <RiArrowDropRightLine
+                      className="hidden lg:block"
+                      size={28}
+                    />
+                  )}
+                </button>
+                {tabIdx === idx && (
+                  <MovementsDropdown
+                    data={tabs[tabIdx].data.map((item) => item.title)}
+                  />
+                )}
+              </>
             ))}
           </div>
           <div className="flex flex-col gap-y-4 w-full">
@@ -65,7 +92,7 @@ const MovementsPage = () => {
               <p className="text-p">
                 Don&apos;t see your country here? Contact
                 <a
-                  className="mx-1 text-cyan-700 underline"
+                  className="mx-1 text-cyan-700 underline hover:text-cyan-500"
                   href="mailto:admin@ariseasia.org"
                 >
                   admin@ariseasia.org
@@ -81,18 +108,38 @@ const MovementsPage = () => {
   );
 };
 
+const MovementsDropdown = ({ data }) => (
+  <div className="hidden py-4 px-10 ml-10 text-lg font-bold bg-white rounded-xl lg:flex lg:flex-col">
+    {data.map((item) => (
+      <a
+        className="py-1 border-b-2 last:border-0 hover:text-purple-500"
+        href={`#${getFragmentName(item)}`}
+        key={item}
+      >
+        {item}
+      </a>
+    ))}
+  </div>
+);
+
 const ConferenceCard = ({
   title,
   subtitle,
-  posterSrc,
   backgroundSrc,
+  posterSrc,
+  donateTarget,
+  signupTarget,
+  websiteTarget,
   links,
   description,
 }) => {
   const imgSrc = posterSrc || backgroundSrc;
 
   return (
-    <article className="flex flex-col gap-6 p-6 bg-white rounded-3xl 2xl:flex-row">
+    <article
+      className="flex flex-col gap-6 p-6 bg-white rounded-3xl 2xl:flex-row"
+      id={getFragmentName(title)}
+    >
       {imgSrc && (
         <img
           alt={`Image for the ${title} conference`}
@@ -105,6 +152,29 @@ const ConferenceCard = ({
           <h3 className="text-cyan-700 text-h4">{title}</h3>
           <p className="italic text-gray-500 text-p">{subtitle}</p>
         </div>
+        {(donateTarget || signupTarget || websiteTarget) && (
+          <div className="flex gap-x-4">
+            {[
+              { title: "Donate", target: donateTarget, Icon: RiGift2Line },
+              { title: "Signup", target: signupTarget, Icon: RiFileList3Line },
+              { title: "Website", target: websiteTarget, Icon: RiGlobalLine },
+            ].map(
+              ({ title, target, Icon }) =>
+                target && (
+                  <a
+                    className="flex gap-x-2 justify-center items-center py-1 w-full bg-teal-500 rounded-full border border-teal-500 sm:px-6 sm:border-2 hover:bg-teal-100 max-w-72"
+                    href={target}
+                    key={title}
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    <Icon className="hidden sm:block" size={24} />
+                    <p className="text-xs font-bold sm:text-base">{title}</p>
+                  </a>
+                ),
+            )}
+          </div>
+        )}
         {links && (
           <div className="flex flex-wrap gap-y-2 gap-x-4">
             {links.map((item) => (
@@ -129,5 +199,7 @@ const ConferenceCard = ({
     </article>
   );
 };
+
+const getFragmentName = (id) => id.toLowerCase().replace(/ /g, "-");
 
 export default MovementsPage;
