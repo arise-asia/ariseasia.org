@@ -2,20 +2,18 @@ import { useState } from "react";
 
 import conferenceData from "../data/conferences.yaml";
 
-const { upcomingConferencesList, pastConferencesList, futureConferencesList } =
-  conferenceData;
 const tabs = [
   {
     title: "Upcoming Movements",
-    data: upcomingConferencesList,
+    data: conferenceData.upcomingConferencesList,
   },
   {
     title: "Past Movements",
-    data: pastConferencesList,
+    data: conferenceData.pastConferencesList,
   },
   {
     title: "Stay Tuned For...",
-    data: futureConferencesList,
+    data: conferenceData.futureConferencesList,
   },
 ];
 
@@ -25,10 +23,10 @@ const MovementsPage = () => {
   return (
     <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
       <div className="container">
-        <h1 className="text-3xl font-bold text-center text-cyan-700 uppercase sm:text-5xl md:text-7xl font-heading">
+        <h1 className="text-center text-cyan-700 uppercase text-h1">
           Movements
         </h1>
-        <p className="py-2 px-10 mx-auto mt-10 text-sm font-bold text-center bg-white rounded-full sm:text-base w-fit">
+        <p className="py-2 px-10 mx-auto mt-10 font-bold text-center bg-white rounded-full w-fit text-p">
           Check out
           <a
             className="mx-1 text-cyan-700 underline"
@@ -57,14 +55,14 @@ const MovementsPage = () => {
             ))}
           </div>
           <div className="flex flex-col gap-y-4 w-full">
-            <h2 className="text-xl font-bold text-center text-purple-900 sm:text-3xl lg:text-left font-heading">
+            <h2 className="text-center text-purple-900 lg:text-left text-h3">
               {tabs[tabIdx].title}
             </h2>
             {tabs[tabIdx].data.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
             {tabIdx == 2 && (
-              <p>
+              <p className="text-p">
                 Don&apos;t see your country here? Contact
                 <a
                   className="mx-1 text-cyan-700 underline"
@@ -104,12 +102,8 @@ const ConferenceCard = ({
       )}
       <div className="flex flex-col gap-y-4 w-full">
         <div>
-          <h3 className="font-bold text-cyan-700 sm:text-2xl font-heading">
-            {title}
-          </h3>
-          <p className="text-sm italic text-gray-500 sm:text-base">
-            {subtitle}
-          </p>
+          <h3 className="text-cyan-700 text-h4">{title}</h3>
+          <p className="italic text-gray-500 text-p">{subtitle}</p>
         </div>
         {links && (
           <div className="flex flex-wrap gap-y-2 gap-x-4">

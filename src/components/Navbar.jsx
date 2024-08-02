@@ -25,7 +25,7 @@ const Navbar = () => (
             src="/logo.svg"
           />
         </Link>
-        <p className="py-3.5 pl-32 text-xl text-white lg:hidden font-heading">
+        <p className="my-3.5 ml-32 text-white sm:text-xl lg:hidden font-heading">
           Arise Asia
         </p>
       </div>
@@ -49,8 +49,8 @@ const Navbar = () => (
           role="button"
           tabIndex={0}
         >
-          <svg className="w-8 h-8" stroke="currentColor" viewBox="0 0 24 24">
-            <path d="M4 6h20M4 12h20m-20 6h20" strokeWidth="2" />
+          <svg className="size-8" stroke="currentColor" viewBox="0 0 12 12">
+            <path d="M2 3H12M2 6H12M2 9H12" />
           </svg>
         </div>
         <ul

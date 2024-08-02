@@ -3,7 +3,7 @@ import { MdOpenInNew } from "react-icons/md";
 const AboutArise = () => (
   <div className="flex flex-col gap-6 justify-between items-center xl:flex-row-reverse xl:items-end">
     <div>
-      <h2 className="text-3xl font-bold text-center text-red-700 uppercase translate-y-2 sm:text-5xl font-heading">
+      <h2 className="-mt-4 text-center text-red-700 uppercase translate-y-4 sm:-mt-6 sm:translate-y-6 text-h2">
         What Is Arise?
       </h2>
       <div className="relative p-10 bg-red-700 rounded-3xl">

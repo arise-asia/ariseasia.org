@@ -115,7 +115,7 @@ function MomentsCarousel() {
             />
           </div>
           <article className="py-4 sm:py-8 pr-20 pl-6 sm:pl-8 w-full bg-purple-500 rounded-xl [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_60%,_100%_0)]">
-            <p className="mb-1 text-xs italic text-white sm:text-base">
+            <p className="italic text-white text-p">
               {moments[activeIdx].subtitle}
             </p>
             <h4 className="font-bold leading-tight text-white sm:text-2xl">

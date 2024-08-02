@@ -4,20 +4,18 @@ import MomentsCarousel from "../components/MomentsCarousel";
 
 const Arise2023Page = () => (
   <div className="pt-60 bg-yellow-50">
-    <h1 className="pb-20 text-3xl font-bold text-center text-yellow-700 uppercase sm:text-5xl md:text-7xl font-heading">
+    <h1 className="pb-20 text-center text-yellow-700 uppercase text-h1">
       Arise 2023
     </h1>
-    <div className="py-20 px-4 bg-amber-300 md:px-20 rounded-tl-[2.5rem] sm:rounded-tl-[5rem]">
+    <div className="py-10 px-4 bg-amber-300 sm:py-10 md:px-20 rounded-tl-[2.5rem] md:rounded-tl-[5rem]">
       <div className="container flex flex-col gap-y-6">
         <div className="flex flex-col gap-8 mb-6 xl:flex-row">
           <div className="flex flex-col gap-y-4">
             <p className="italic font-bold uppercase sm:text-lg">
               Looking Back On...
             </p>
-            <h2 className="text-3xl font-bold uppercase sm:text-5xl font-heading">
-              Arise Asia 2023
-            </h2>
-            <div className="flex gap-4 my-4">
+            <h2 className="uppercase text-h2">Arise Asia 2023</h2>
+            <div className="flex gap-4 sm:my-4">
               <span className="py-2 px-4 text-white bg-cyan-700 rounded-md">
                 Thailand
               </span>
@@ -25,9 +23,7 @@ const Arise2023Page = () => (
                 July 25-29, 2023
               </span>
             </div>
-            <h3 className="font-bold uppercase sm:text-2xl font-heading">
-              The Recap
-            </h3>
+            <h3 className="uppercase text-h4">The Recap</h3>
             <div className="flex flex-col justify-between py-6 px-8 h-full bg-yellow-700 [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
               <div className="text-white prose prose-sm sm:prose-base">
                 <p>
@@ -55,9 +51,7 @@ const Arise2023Page = () => (
           />
         </div>
 
-        <h3 className="font-bold uppercase sm:text-2xl font-heading">
-          The Summary
-        </h3>
+        <h3 className="uppercase text-h4">The Summary</h3>
 
         <div className="grid grid-cols-4 gap-4 mb-6 text-white md:grid-cols-12 md:grid-rows-6 md:grid-flow-col grid-rows-7">
           {/* 1st column */}
@@ -325,17 +319,12 @@ const Arise2023Page = () => (
           </div>
         </div>
 
-        <h3 className="font-bold uppercase sm:text-2xl font-heading">
-          The Moments
-        </h3>
+        <h3 className="uppercase text-h4">The Moments</h3>
         <div className="flex justify-center mb-6">
           <MomentsCarousel />
         </div>
 
-        <h3
-          className="font-bold uppercase sm:text-2xl font-heading"
-          id="conference-program"
-        >
+        <h3 className="uppercase text-h4" id="conference-program">
           Conference Program
         </h3>
         <div className="flex overflow-hidden flex-col self-center rounded-3xl xl:flex-row">

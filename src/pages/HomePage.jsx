@@ -7,18 +7,18 @@ import MovementsCarousel from "../components/MovementsCarousel";
 const HomePage = () => (
   <>
     <div className="relative px-4 pt-52 sm:pt-80">
-      <h1 className="text-6xl font-bold text-center text-orange-500 uppercase sm:text-7xl font-heading">
+      <h1 className="text-center text-orange-500 uppercase text-h1">
         Arise Asia
       </h1>
-      <p className="pt-2 pb-36 text-xl text-center text-white sm:pb-80 font-heading">
+      <p className="pb-36 text-center text-white sm:pb-80 sm:text-xl font-heading">
         Go to where there is no Gospel
       </p>
       <video
         autoPlay
+        className="object-cover absolute inset-0 w-full h-full z-[-1]"
         loop
         muted
         playsInline
-        className="object-cover absolute inset-0 w-full h-full z-[-1]"
       >
         <source src="home.mp4" type="video/mp4" />
       </video>
@@ -40,52 +40,42 @@ const HomePage = () => (
               </div>
             </div>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 18"
-              fill="none"
-              width="100%"
-              className="h-44 sm:h-44 lg:h-52"
+              className="w-full h-44 text-purple-500 sm:h-48 lg:h-52"
               preserveAspectRatio="none"
+              viewBox="0 0 100 18"
             >
               <path
-                className="sm:hidden"
+                className="fill-current sm:hidden"
                 d="M5 3Q6 0 11 0L85 2Q93 3 94 6L98 14Q100 18 94 18L6 18Q0 18 1 15Z"
-                fill="#A855F7"
               />
               <path
-                className="hidden sm:block"
+                className="hidden fill-current sm:block"
                 d="M5 3Q6 0 8 0L90 3Q93 3 94 6L99 16Q100 18 98 18L3 18Q0 18 1 15Z"
-                fill="#A855F7"
               />
             </svg>
           </div>
           <div className="relative">
             <div className="flex absolute inset-0 flex-col">
-              <h2 className="-m-1 ml-10 text-2xl font-bold text-white uppercase sm:ml-20 sm:text-5xl lg:ml-36 font-heading">
+              <h2 className="-m-1 ml-10 text-white uppercase sm:ml-20 lg:ml-36 text-h2">
                 Mission
               </h2>
-              <p className="self-center mx-16 mt-4 text-xs italic text-center text-white sm:mx-36 sm:mt-6 sm:text-base sm:font-bold sm:-rotate-6 md:-rotate-2 lg:text-xl">
+              <p className="self-center mx-16 mt-4 text-xs italic text-center text-white sm:mx-36 sm:mt-6 sm:text-base sm:font-bold sm:-rotate-3 md:-rotate-2 lg:text-xl">
                 To inspire the next generation to take the gospel throughout
                 Asia and to the world.
               </p>
             </div>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 18"
-              fill="none"
-              width="100%"
-              className="h-32 sm:h-48"
+              className="w-full h-32 text-orange-500 sm:h-48"
               preserveAspectRatio="none"
+              viewBox="0 0 100 18"
             >
               <path
-                className="sm:hidden"
+                className="fill-current sm:hidden"
                 d="M97 4Q99 0 93 0H7Q1 0 8 7L16 15Q19 18 31 17L83 13Q93 12 95 8Z"
-                fill="#F97316"
               />
               <path
-                className="hidden sm:block"
+                className="hidden fill-current sm:block"
                 d="M98 2Q99 0 97 0H5Q1 0 5 4L17 16Q19 18 25 17L90 11Q94 10 95 8Z"
-                fill="#F97316"
               />
             </svg>
           </div>
@@ -97,11 +87,11 @@ const HomePage = () => (
 
         <article className="flex relative flex-col gap-10 p-10 mt-6 bg-amber-300 rounded-3xl xl:flex-row">
           <div className="absolute left-0 -top-6 w-48 h-12 bg-amber-300 rounded-t-xl [clip-path:path('M173_10Q168_0_156_0H0L0_48_192_48Z')]" />
-          <div>
-            <p className="mb-4">Check out what happened in...</p>
-            <h2 className="my-4 text-3xl font-bold uppercase font-heading">
-              Arise Asia 2023
-            </h2>
+          <div className="flex flex-col gap-y-2">
+            <div className="text-p">
+              <p>Check out what happened in...</p>
+            </div>
+            <h2 className="uppercase text-h3">Arise Asia 2023</h2>
             <div className="prose prose-sm sm:prose-base">
               <p>
                 On July 25-29, 1844 people from all across Asia attended the

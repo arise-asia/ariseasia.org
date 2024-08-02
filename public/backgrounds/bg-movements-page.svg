@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-<g fill="#BAE6FD" fill-opacity=".2" filter="url(#a)">
-<path d="m900 100h423l134 171-96 163-355 58-906-149 800-243z"/>
-<path d="m100 343h423l134 171-96 163-355 58-105-149v-243z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<g fill="#06b6d4" fill-opacity=".1" filter="url(#a)">
+<path d="m88 378 824-278h288v318l-194 74-561-72a1 1 0 0 1-355 59z"/>
 </g>
 <defs>
 <filter id="a">
