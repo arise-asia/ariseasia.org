@@ -126,9 +126,9 @@ const ConferenceCard = ({
           </div>
         )}
         {description && (
-          <p className="whitespace-pre-line prose prose-sm sm:prose-base">
+          <div className="whitespace-pre-line prose prose-sm sm:prose-base">
             {description}
-          </p>
+          </div>
         )}
       </div>
     </article>

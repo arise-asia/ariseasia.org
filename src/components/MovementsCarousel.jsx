@@ -47,19 +47,10 @@ const MovementsCarousel = () => {
               />
             </div>
           </div>
-          <div className="flex overflow-hidden gap-x-10 pt-10">
-            {
-              // fetch only the first four since the rest aren't visible due to limited width
-              getElements(upcomingConferencesList, activeIdx).map(
-                (item, idx) => (
-                  <ConferenceCard
-                    hidden={idx != 0}
-                    key={item.title}
-                    {...item}
-                  />
-                ),
-              )
-            }
+          <div className="flex gap-x-10 mt-10 sm:overflow-hidden sm:-mr-10 sm:bg-gradient-to-l sm:from-black justify-ceter sm:via-black/50 sm:via-5% sm:to-10% sm:justify-normal">
+            {getElements(upcomingConferencesList, activeIdx).map((item) => (
+              <ConferenceCard key={item.title} {...item} />
+            ))}
           </div>
         </div>
       </div>
@@ -79,10 +70,12 @@ const MovementsCarousel = () => {
   );
 };
 
-// `hidden` is used as a hack to show only one card if the breakpoint is `sm`
-const ConferenceCard = ({ title, subtitle, backgroundSrc, hidden }) => (
-  <article
-    className={`flex-col justify-end p-4 w-96 bg-gradient-to-b from-transparent from-65% to-black rounded-xl aspect-video sm:min-w-96 relative ${hidden ? "hidden sm:flex" : "flex"}`}
+const ConferenceCard = ({ title, subtitle, backgroundSrc, target }) => (
+  <a
+    className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl sm:flex first:flex from-black/50 to-50% aspect-video sm:min-w-96"
+    href={target}
+    rel="noreferrer noopener"
+    target="_blank"
   >
     <img
       src={backgroundSrc}
@@ -92,7 +85,7 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, hidden }) => (
       {title}
     </h2>
     <p className="text-xs italic text-white sm:text-base">{subtitle}</p>
-  </article>
+  </a>
 );
 
 const getElements = (arr, index) => {
@@ -101,6 +94,7 @@ const getElements = (arr, index) => {
   const start = ((index % len) + len) % len;
   let result = [];
 
+  // fetch only the first four since the rest aren't visible due to limited width
   for (let i = 0; i < 4; i++) {
     result.push(arr[(start + i) % len]);
   }

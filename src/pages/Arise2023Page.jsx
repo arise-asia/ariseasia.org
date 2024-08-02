@@ -28,12 +28,14 @@ const Arise2023Page = () => (
               The Recap
             </h3>
             <div className="flex flex-col justify-between py-6 px-8 h-full bg-yellow-700 [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
-              <p className="text-white prose prose-sm sm:prose-base">
-                On July 25-29, 1844 people from all across Asia attended the
-                first ever Arise Asia in Bangkok, Thailand. Praise God for all
-                He did during this conference. Check out the recap video about
-                Arise Asia 2023.
-              </p>
+              <div className="text-white prose prose-sm sm:prose-base">
+                <p>
+                  On July 25-29, 1844 people from all across Asia attended the
+                  first ever Arise Asia in Bangkok, Thailand. Praise God for all
+                  He did during this conference. Check out the recap video about
+                  Arise Asia 2023.
+                </p>
+              </div>
               <a
                 className="flex gap-x-2 items-center py-2 px-4 mt-6 ml-auto text-sm font-bold text-white bg-gray-700 rounded-full border-4 border-gray-700 sm:text-base hover:bg-gray-500 w-fit"
                 href="#conference-program"

@@ -12,18 +12,20 @@ const AboutArise = () => (
           alt="What is Arise? logo"
           className="hidden absolute right-6 -bottom-24 w-28 xl:block"
         />
-        <p className="text-white prose prose-sm sm:prose-base">
-          It is almost two millennia since Jesus called His first disciples to
-          follow Him. Since that time, many followers of Jesus have taken up the
-          call to take the Gospel to the ends of the earth. Now, in the 21 st
-          century, the need for the Gospel to be shared and lived out in Asia is
-          tremendous, and God is setting the hearts of people in Asia on fire
-          for His glory and purpose.{" "}
-          <span className="text-amber-300">
-            The time has come for Asia to arise and participate in God’s Great
-            Commission.
-          </span>
-        </p>
+        <div className="text-white prose prose-sm sm:prose-base">
+          <p>
+            It is almost two millennia since Jesus called His first disciples to
+            follow Him. Since that time, many followers of Jesus have taken up
+            the call to take the Gospel to the ends of the earth. Now, in the 21
+            st century, the need for the Gospel to be shared and lived out in
+            Asia is tremendous, and God is setting the hearts of people in Asia
+            on fire for His glory and purpose.{" "}
+            <span className="text-amber-300">
+              The time has come for Asia to arise and participate in God’s Great
+              Commission.
+            </span>
+          </p>
+        </div>
         <a
           className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base w-fit"
           href="https://goarise.org"

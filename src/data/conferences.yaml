@@ -4,6 +4,7 @@ upcomingConferencesList:
     subtitle: July 31 - August 3, 2024
     backgroundSrc: /locations/indonesia.png
     posterSrc: /movements/arise-indonesia.png
+    target: https://indo.ariseasia.org
     links:
       - title: Sign Up
         target: https://reborn.id/app/event?id=S85F-XYHS-MJRO
@@ -60,6 +61,7 @@ upcomingConferencesList:
     subtitle: November 11-14, 2024
     backgroundSrc: /locations/latino.png
     posterSrc: /movements/arise-latino.png
+    target: https://latino.ariseasia.org
     description: More information is coming soon. Stay tuned!
 
 pastConferencesList:

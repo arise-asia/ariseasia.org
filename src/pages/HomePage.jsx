@@ -28,21 +28,22 @@ const HomePage = () => (
         <div className="flex flex-col gap-y-4">
           <div className="relative">
             <div className="flex absolute inset-0 justify-center items-end">
-              <p className="my-5 mx-14 max-w-screen-lg text-xs italic text-center text-white sm:text-base sm:font-bold sm:rotate-2 md:rotate-1 lg:mx-28 lg:text-xl xl:mb-8">
-                However, I consider my life worth nothing to me; my only aim is
-                to finish the race and complete the task the Lord Jesus has
-                given me—the task of testifying to the good news of God’s grace.
-                <br />
-                <br />
-                Acts 20:24
-              </p>
+              <div className="mx-10 mb-4 max-w-screen-lg text-xs italic text-center text-white sm:mx-14 sm:text-base sm:font-bold sm:rotate-2 md:rotate-1 lg:mx-28 lg:text-xl xl:mb-8 prose prose-sm sm:prose-base">
+                <p>
+                  However, I consider my life worth nothing to me; my only aim
+                  is to finish the race and complete the task the Lord Jesus has
+                  given me—the task of testifying to the good news of God’s
+                  grace.
+                </p>
+                <p>Acts 20:24</p>
+              </div>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 18"
               fill="none"
               width="100%"
-              className="h-40 sm:h-48 lg:h-52"
+              className="h-44 sm:h-44 lg:h-52"
               preserveAspectRatio="none"
             >
               <path
@@ -100,12 +101,14 @@ const HomePage = () => (
             <h2 className="my-4 text-3xl font-bold uppercase font-heading">
               Arise Asia 2023
             </h2>
-            <p className="prose prose-sm sm:prose-base">
-              On July 25-29, 1844 people from all across Asia attended the first
-              ever Arise Asia in Bangkok, Thailand. Praise God for all He did
-              during this conference! Check out the recap page for the summary,
-              moments, and program.
-            </p>
+            <div className="prose prose-sm sm:prose-base">
+              <p>
+                On July 25-29, 1844 people from all across Asia attended the
+                first ever Arise Asia in Bangkok, Thailand. Praise God for all
+                He did during this conference! Check out the recap page for the
+                summary, moments, and program.
+              </p>
+            </div>
             <Link
               className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-amber-100 rounded-full border-4 border-black sm:text-base w-fit"
               to="/arise2023"
