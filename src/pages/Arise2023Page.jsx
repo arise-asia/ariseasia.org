@@ -1,4 +1,5 @@
 import { MdOpenInNew } from "react-icons/md";
+
 import MomentsCarousel from "../components/MomentsCarousel";
 
 const Arise2023Page = () => (

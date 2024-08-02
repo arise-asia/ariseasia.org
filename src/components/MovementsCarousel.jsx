@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import { Link } from "react-router-dom";
+
 import conferenceData from "../data/conferences.yaml";
 
 const { upcomingConferencesList } = conferenceData;

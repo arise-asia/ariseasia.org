@@ -1,5 +1,6 @@
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
+
 import AboutArise from "../components/AboutArise";
 import MovementsCarousel from "../components/MovementsCarousel";
 

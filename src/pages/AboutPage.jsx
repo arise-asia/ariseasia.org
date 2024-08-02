@@ -1,6 +1,7 @@
+import AboutArise from "../components/AboutArise";
+
 import aboutUsImg from "../../public/about-us.png";
 import partnersImg from "../../public/partners.png";
-import AboutArise from "../components/AboutArise";
 
 const AboutPage = () => (
   <>
