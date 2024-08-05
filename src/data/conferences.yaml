@@ -2,8 +2,8 @@ upcomingConferencesList:
   - country: Indonesia
     title: Arise Indonesia
     subtitle: July 31 - August 3, 2024
-    backgroundSrc: /locations/indonesia.png
-    posterSrc: /movements/arise-indonesia.png
+    backgroundSrc: /locations/indonesia.jpg
+    posterSrc: /movements/arise-indonesia.jpg
     donateTarget: https://www.totalideas.org/Arise-Indonesia
     signupTarget: https://reborn.id/app/event?id=S85F-XYHS-MJRO
     websiteTarget: https://indo.ariseasia.org
@@ -15,8 +15,8 @@ upcomingConferencesList:
   - country: Philippines
     title: Arise Bicol
     subtitle: August 16-17, 2024
-    backgroundSrc: /locations/bicol.png
-    posterSrc: /movements/arise-bicol.png
+    backgroundSrc: /locations/bicol.jpg
+    posterSrc: /movements/arise-bicol.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -27,7 +27,7 @@ upcomingConferencesList:
   - country: Philippines
     title: Arise Baguio
     subtitle: September 14, 2024
-    backgroundSrc: /locations/baguio.png
+    backgroundSrc: /locations/baguio.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -38,29 +38,29 @@ upcomingConferencesList:
   - country: Myanmar
     title: Arise Myanmar
     subtitle: October 15-17. 2024
-    backgroundSrc: /locations/myanmar.png
-    posterSrc: /movements/arise-myanmar.png
+    backgroundSrc: /locations/myanmar.jpg
+    posterSrc: /movements/arise-myanmar.jpg
     description: More information is coming soon. Stay tuned!
 
   - country: Nepal
     title: Arise Nepal
     subtitle: October 20-23, 2024
-    backgroundSrc: /locations/nepal.png
-    posterSrc: /movements/arise-nepal.png
+    backgroundSrc: /locations/nepal.jpg
+    posterSrc: /movements/arise-nepal.jpg
     description: More information is coming soon. Stay tuned!
 
   - country: Mongolia
     title: Arise Mongolia
     subtitle: October 2024
-    backgroundSrc: /locations/mongolia.png
-    posterSrc: /movements/arise-mongolia.png
+    backgroundSrc: /locations/mongolia.jpg
+    posterSrc: /movements/arise-mongolia.jpg
     description: More information is coming soon. Stay tuned!
 
   - country: Latin America
     title: Arise Latino
     subtitle: November 11-14, 2024
-    backgroundSrc: /locations/latino.png
-    posterSrc: /movements/arise-latino.png
+    backgroundSrc: /locations/latino.jpg
+    posterSrc: /movements/arise-latino.jpg
     websiteTarget: https://ariselatino.org
     description: More information is coming soon. Stay tuned!
 
@@ -68,7 +68,7 @@ pastConferencesList:
   - country: Philippines
     title: Arise Cebu
     subtitle: December 2, 2023
-    posterSrc: /movements/arise-cebu.png
+    posterSrc: /movements/arise-cebu.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -98,7 +98,7 @@ pastConferencesList:
   - country: Philippines
     title: Arise Cagayan De Oro
     subtitle: March 2, 2024
-    posterSrc: /movements/arise-cagayan-de-oro.png
+    posterSrc: /movements/arise-cagayan-de-oro.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -127,7 +127,7 @@ pastConferencesList:
   - country: Philippines
     title: Arise Butuan
     subtitle: May 26, 2024
-    posterSrc: /movements/arise-butuan.png
+    posterSrc: /movements/arise-butuan.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -141,7 +141,7 @@ pastConferencesList:
   - country: Philippines
     title: Arise Davao
     subtitle: June 1, 2024
-    posterSrc: /movements/arise-davao.png
+    posterSrc: /movements/arise-davao.jpg
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
@@ -155,7 +155,7 @@ pastConferencesList:
   - country: Hong Kong
     title: Arise Hong Kong
     subtitle: July 20-21, 2024
-    posterSrc: /movements/arise-hong-kong.png
+    posterSrc: /movements/arise-hong-kong.jpg
     description: |
       2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
       Emptiness and Despair are devouring our city.

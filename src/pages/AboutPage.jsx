@@ -7,7 +7,7 @@ const AboutPage = () => (
       <img
         alt="Image of Arise Asia 2023"
         className="object-cover rounded-3xl aspect-video"
-        src="/about/about-us.png"
+        src="/about/about-us.jpg"
       />
     </div>
 

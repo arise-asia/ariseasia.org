@@ -5,57 +5,57 @@ const moments = [
   {
     title: "IBIS Fellowship Night",
     subtitle: "Day 1",
-    image: "/images/DAY1_IBIS-Fellowship-Night.jpg",
+    image: "/moments/1.jpg",
   },
   {
     title: "Justice Issues Panel",
     subtitle: "Day 1",
-    image: "/images/DAY1_PANEL.jpg",
+    image: "/moments/2.jpg",
   },
   {
     title: "Night Session Worship",
     subtitle: "Day 1",
-    image: "/images/DAY1_WORSHIP.jpg",
+    image: "/moments/3.jpg",
   },
   {
     title: "Missional Partners and Organizations Exhibitors",
     subtitle: "Day 2",
-    image: "/images/DAY2_Exhibition.jpg",
+    image: "/moments/4.jpg",
   },
   {
     title: "Innovation Lab",
     subtitle: "Day 2",
-    image: "/images/DAY2_INNOVATION_LAB.jpg",
+    image: "/moments/5.jpg",
   },
   {
     title: "Performance from Mongolian Dance",
     subtitle: "Day 2",
-    image: "/images/DAY2_Performance-from-Mongolian-Dancers.jpg",
+    image: "/moments/6.jpg",
   },
   {
     title: "Workshops",
     subtitle: "Day 2",
-    image: "/images/DAY2_Workshops.jpg",
+    image: "/moments/7.jpg",
   },
   {
     title: "Morning Session Congregation",
     subtitle: "Day 3",
-    image: "/images/DAY3_Group-Picture-Morning-Session.jpg",
+    image: "/moments/8.jpg",
   },
   {
     title: "HISPOP Worship Session",
     subtitle: "Day 3",
-    image: "/images/DAY3_HISPOP.jpg",
+    image: "/moments/9.jpg",
   },
   {
     title: "Praying at Response Time",
     subtitle: "Day 4",
-    image: "/images/DAY4_Response-Time_Praying.jpg",
+    image: "/moments/10.jpg",
   },
   {
     title: "Closing Session Prayer",
     subtitle: "Day 5",
-    image: "/images/DAY5_Pray-Closing.jpg",
+    image: "/moments/11.jpg",
   },
 ];
 const numItems = moments.length;

@@ -109,23 +109,23 @@ const HomePage = () => (
           </div>
           <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96">
             <img
-              src="/images/DAY3_Group-Picture-Morning-Session.jpg"
+              src="/moments/8.jpg"
               className="object-cover col-start-1 col-end-3 row-start-1 row-end-4 rounded-xl size-full"
             />
             <img
-              src="/images/DAY2_Performance-from-Mongolian-Dancers.jpg"
+              src="/moments/6.jpg"
               className="hidden object-cover col-start-3 col-end-4 row-start-1 row-end-3 rounded-xl sm:block size-full"
             />
             <img
-              src="/images/DAY3_HISPOP.jpg"
+              src="/moments/9.jpg"
               className="object-cover col-start-1 col-end-2 row-start-4 row-end-6 rounded-xl size-full"
             />
             <img
-              src="/images/DAY2_Workshops.jpg"
+              src="/moments/7.jpg"
               className="object-cover col-start-2 col-end-3 row-start-4 row-end-6 rounded-xl size-full"
             />
             <img
-              src="/images/DAY1_WORSHIP.jpg"
+              src="/moments/3.jpg"
               className="hidden object-cover col-start-3 col-end-4 row-start-3 row-end-6 rounded-xl sm:block size-full"
             />
           </div>
