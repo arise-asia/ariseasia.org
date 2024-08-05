@@ -28,7 +28,7 @@ const HomePage = () => (
       <div className="container flex flex-col gap-y-10 -translate-y-24 sm:gap-y-20 sm:-translate-y-32">
         <div className="flex flex-col gap-y-4">
           <div className="relative">
-            <div className="flex absolute inset-0 justify-center items-end">
+            <div className="flex absolute inset-0 justify-center items-center translate-y-6">
               <div className="mx-10 mb-4 max-w-screen-lg text-xs italic text-center text-white sm:mx-14 sm:text-base sm:font-bold sm:rotate-2 md:rotate-1 lg:mx-28 lg:text-xl xl:mb-8 prose prose-sm sm:prose-base">
                 <p>
                   However, I consider my life worth nothing to me; my only aim

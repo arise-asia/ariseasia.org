@@ -58,11 +58,11 @@ const AboutPage = () => (
     </div>
 
     <svg
-      className="-mb-10 w-full h-10 text-red-100 bg-red-50 sm:h-20"
+      className="-mb-10 w-full h-10 text-red-100 bg-red-50 sm:h-16"
       preserveAspectRatio="none"
       viewBox="0 0 20 2"
     >
-      <path className="fill-current" d="M0 1Q6 3 12 1 18-1 20 2L0 2Z" />
+      <path className="fill-current" d="M20 1Q14 3 8 1 2-1 0 2L20 2Z" />
     </svg>
 
     <div className="py-10 px-4 bg-red-100">
@@ -102,11 +102,11 @@ const AboutPage = () => (
     </div>
 
     <svg
-      className="-mt-10 w-full h-10 text-red-50 bg-red-100 sm:h-20"
+      className="-mt-10 w-full h-10 text-red-50 bg-red-100 sm:h-16"
       preserveAspectRatio="none"
       viewBox="0 0 20 2"
     >
-      <path className="fill-current" d="M0 2Q6-1 12 1 18 3 20 1L20 2Z" />
+      <path className="fill-current" d="M20 2Q18-1 12 1 6 3 0 1L0 2Z" />
     </svg>
 
     <div className="py-10 px-4 bg-red-50">

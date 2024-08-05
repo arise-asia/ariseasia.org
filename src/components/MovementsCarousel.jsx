@@ -4,6 +4,7 @@ import { MdOutlineNotificationsActive } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 import conferenceData from "../data/conferences.yaml";
+import { getElements, getFragmentName } from "../utils";
 
 const MovementsCarousel = () => {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -71,12 +72,10 @@ const MovementsCarousel = () => {
   );
 };
 
-const ConferenceCard = ({ title, subtitle, backgroundSrc, target }) => (
-  <a
+const ConferenceCard = ({ title, subtitle, backgroundSrc }) => (
+  <Link
     className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl sm:flex first:flex from-black/50 to-50% aspect-video sm:min-w-96"
-    href={target}
-    rel="noreferrer noopener"
-    target="_blank"
+    to={{ pathname: "movements", hash: getFragmentName(title) }}
   >
     <img
       src={backgroundSrc}
@@ -84,21 +83,7 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, target }) => (
     />
     <h3 className="text-white uppercase text-h4">{title}</h3>
     <p className="italic text-white text-p">{subtitle}</p>
-  </a>
+  </Link>
 );
-
-const getElements = (arr, index) => {
-  const len = arr.length;
-  // Normalize the index to handle negative values
-  const start = ((index % len) + len) % len;
-  let result = [];
-
-  // fetch only the first four since the rest aren't visible due to limited width
-  for (let i = 0; i < 4; i++) {
-    result.push(arr[(start + i) % len]);
-  }
-
-  return result;
-};
 
 export default MovementsCarousel;

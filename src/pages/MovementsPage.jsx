@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   RiArrowDropDownLine,
   RiArrowDropRightLine,
@@ -6,8 +6,10 @@ import {
   RiGift2Line,
   RiGlobalLine,
 } from "react-icons/ri";
+import { Link, useLocation } from "react-router-dom";
 
 import conferenceData from "../data/conferences.yaml";
+import { getFragmentName } from "../utils";
 
 const tabs = [
   {
@@ -26,6 +28,14 @@ const tabs = [
 
 const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const e = document.querySelector(location.hash);
+      e?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
 
   return (
     <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
@@ -75,7 +85,7 @@ const MovementsPage = () => {
                 </button>
                 {tabIdx === idx && (
                   <MovementsDropdown
-                    data={tabs[tabIdx].data.map((item) => item.title)}
+                    data={tabs[tabIdx].data?.map((item) => item.title)}
                   />
                 )}
               </>
@@ -85,7 +95,7 @@ const MovementsPage = () => {
             <h2 className="text-center text-purple-900 lg:text-left text-h3">
               {tabs[tabIdx].title}
             </h2>
-            {tabs[tabIdx].data.map((item) => (
+            {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
             {tabIdx == 2 && (
@@ -110,14 +120,14 @@ const MovementsPage = () => {
 
 const MovementsDropdown = ({ data }) => (
   <div className="hidden py-4 px-10 ml-10 text-lg font-bold bg-white rounded-xl lg:flex lg:flex-col">
-    {data.map((item) => (
-      <a
+    {data?.map((item) => (
+      <Link
         className="py-1 border-b-2 last:border-0 hover:text-purple-500"
-        href={`#${getFragmentName(item)}`}
         key={item}
+        to={{ hash: getFragmentName(item) }}
       >
         {item}
-      </a>
+      </Link>
     ))}
   </div>
 );
@@ -199,7 +209,5 @@ const ConferenceCard = ({
     </article>
   );
 };
-
-const getFragmentName = (id) => id.toLowerCase().replace(/ /g, "-");
 
 export default MovementsPage;
