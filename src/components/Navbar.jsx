@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <div className="absolute z-10 pt-20 w-full">
-    <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-lg">
+    <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-2xl">
       <div className="hidden pl-16 lg:flex lg:flex-1">
         <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
@@ -21,13 +21,13 @@ const Navbar = () => (
         <Link to="/">
           <img
             alt="Arise logo"
-            className="absolute translate-x-1/2 -translate-y-1/3 lg:flex lg:-translate-x-1/2"
+            className="flex absolute -translate-y-1/4 lg:-translate-x-1/2 size-28 sm:size-32 lg:hover:size-36"
             src="/logo.svg"
           />
+          <p className="my-3.5 ml-32 text-white sm:text-xl lg:hidden font-heading">
+            Arise Asia
+          </p>
         </Link>
-        <p className="my-3.5 ml-32 text-white sm:text-xl lg:hidden font-heading">
-          Arise Asia
-        </p>
       </div>
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
         <Link
@@ -56,7 +56,7 @@ const Navbar = () => (
           </svg>
         </div>
         <ul
-          className="p-2 mt-16 bg-gray-500 shadow rounded-box menu dropdown-content"
+          className="p-2 mt-16 bg-gray-500 shadow-2xl rounded-box menu dropdown-content"
           tabIndex={0}
         >
           <li>

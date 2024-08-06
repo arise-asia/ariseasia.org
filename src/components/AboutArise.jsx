@@ -10,7 +10,7 @@ const AboutArise = () => (
         <img
           src="/logo.svg"
           alt="What is Arise? logo"
-          className="hidden absolute bottom-6 right-8 xl:right-6 w-12 sm:block xl:-bottom-24 xl:w-28"
+          className="hidden absolute bottom-6 right-8 w-12 sm:block xl:right-6 xl:-bottom-24 xl:w-28"
         />
         <div className="text-white prose prose-sm sm:prose-base">
           <p>
@@ -27,7 +27,7 @@ const AboutArise = () => (
           </p>
         </div>
         <a
-          className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base w-fit"
+          className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
           href="https://goarise.org"
           rel="noreferrer noopener"
           target="_blank"

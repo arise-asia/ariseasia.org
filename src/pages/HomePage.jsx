@@ -15,7 +15,7 @@ const HomePage = () => (
       </p>
       <video
         autoPlay
-        className="object-cover absolute inset-0 w-full h-full z-[-1]"
+        className="object-cover absolute inset-0 w-full h-full -z-10"
         loop
         muted
         playsInline
@@ -101,7 +101,7 @@ const HomePage = () => (
               </p>
             </div>
             <Link
-              className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-amber-100 rounded-full border-4 border-black sm:text-base w-fit"
+              className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-amber-100 rounded-full border-4 border-black sm:text-base hover:bg-amber-50 w-fit"
               to="/arise2023"
             >
               Arise Asia 2023 Recap <MdOpenInNew size={20} />
