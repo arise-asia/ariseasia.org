@@ -6,17 +6,18 @@ const Navbar = () => (
       <div className="hidden pl-16 lg:flex lg:flex-1">
         <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="/"
-        >
-          Home
-        </Link>
-        <Link
-          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
           to="/about"
         >
           About Us
         </Link>
+        <Link
+          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          to="/arise2023"
+        >
+          Arise 2023
+        </Link>
       </div>
+
       <div>
         <Link to="/">
           <img
@@ -29,18 +30,21 @@ const Navbar = () => (
           Arise Asia
         </p>
       </div>
+
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
-        <Link
-          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="/arise2023"
-        >
-          Arise 2023
-        </Link>
         <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
           to="/movements"
         >
           Movements
+        </Link>
+        <Link
+          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          to="https://www.totalideas.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Giving
         </Link>
       </div>
       <div className="flex dropdown dropdown-end">
@@ -87,6 +91,16 @@ const Navbar = () => (
               to="/movements"
             >
               Movements
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              to="https://www.totalideas.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Giving
             </Link>
           </li>
         </ul>
