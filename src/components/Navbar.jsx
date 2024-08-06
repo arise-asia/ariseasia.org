@@ -6,15 +6,15 @@ const Navbar = () => (
       <div className="hidden pl-16 lg:flex lg:flex-1">
         <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="/"
-        >
-          Home
-        </Link>
-        <Link
-          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
           to="/about"
         >
           About Us
+        </Link>
+        <Link
+          className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          to="/arise2023"
+        >
+          Arise 2023
         </Link>
       </div>
       <div>
@@ -32,16 +32,18 @@ const Navbar = () => (
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
         <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="/arise2023"
-        >
-          Arise 2023
-        </Link>
-        <Link
-          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
           to="/movements"
         >
           Movements
         </Link>
+        <a
+          className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="https://www.totalideas.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Giving
+        </a>
       </div>
       <div className="flex dropdown dropdown-end">
         <div
@@ -88,6 +90,16 @@ const Navbar = () => (
             >
               Movements
             </Link>
+          </li>
+          <li>
+            <a
+              className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="https://www.totalideas.org"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Giving
+            </a>
           </li>
         </ul>
       </div>

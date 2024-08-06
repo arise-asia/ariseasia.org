@@ -4,6 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
+import FloatingGivingButton from "./components/FloatingGivingButton";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
         <Navbar />
         <Outlet />
         <Footer />
+        <FloatingGivingButton />
         <Analytics />
         <SpeedInsights />
       </>
