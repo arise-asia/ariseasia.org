@@ -3,8 +3,16 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { MdOpenInNew, MdOutlineNotificationsActive } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-import conferenceData from "../data/conferences.yaml";
-import { getElements, getFragmentName } from "../utils";
+import { getConferenceMetadata, getElements, getFragmentName } from "../utils";
+
+const featuredMovements = [
+  "Arise Hong Kong",
+  "Arise Indonesia",
+  "Arise Myanmar",
+  "Arise Nepal",
+  "Arise Latino",
+];
+const conferenceData = getConferenceMetadata(featuredMovements);
 
 const MovementsCarousel = () => {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -48,11 +56,9 @@ const MovementsCarousel = () => {
             </div>
           </div>
           <div className="flex gap-x-10 mt-10 sm:-mr-10 sm:bg-gradient-to-l sm:from-black justify-center sm:via-black/50 sm:via-5% sm:to-10% sm:justify-normal">
-            {getElements(conferenceData.upcomingConferencesList, activeIdx).map(
-              (item) => (
-                <ConferenceCard key={item.title} {...item} />
-              ),
-            )}
+            {getElements(conferenceData, activeIdx).map((item) => (
+              <ConferenceCard key={item.title} {...item} />
+            ))}
           </div>
         </div>
       </div>
@@ -72,21 +78,38 @@ const MovementsCarousel = () => {
   );
 };
 
-const ConferenceCard = ({ title, subtitle, backgroundSrc }) => (
-  <Link
-    className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 from-black/50 to-50% aspect-video group sm:min-w-96"
-    to={{ pathname: "movements", hash: getFragmentName(title) }}
-  >
-    <p className="flex absolute -right-5 -bottom-5 gap-x-2 items-center py-2 px-4 text-sm font-bold bg-cyan-100 rounded-full border-4 border-cyan-900 opacity-0 transition sm:text-base group-hover:opacity-100 hover:bg-cyan-50">
-      Learn More <MdOpenInNew size={20} />
-    </p>
-    <img
-      src={backgroundSrc}
-      className="object-cover absolute inset-0 rounded-xl size-full -z-10"
-    />
-    <h3 className="text-white uppercase text-h4">{title}</h3>
-    <p className="italic text-white text-p">{subtitle}</p>
-  </Link>
-);
+const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
+  const contents = (
+    <>
+      <p className="flex absolute -right-5 -bottom-5 gap-x-2 items-center py-2 px-4 text-sm font-bold bg-cyan-100 rounded-full border-4 border-cyan-900 opacity-0 transition sm:text-base group-hover:opacity-100 hover:bg-cyan-50">
+        Learn More <MdOpenInNew size={20} />
+      </p>
+      <img
+        src={backgroundSrc}
+        className="object-cover absolute inset-0 rounded-xl size-full -z-10"
+      />
+      <h3 className="text-white uppercase text-h4">{title}</h3>
+      <p className="italic text-white text-p">{subtitle}</p>
+    </>
+  );
+
+  return websiteTarget ? (
+    <a
+      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 from-black/50 to-50% aspect-video group sm:min-w-96"
+      href={websiteTarget}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      {contents}
+    </a>
+  ) : (
+    <Link
+      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 from-black/50 to-50% aspect-video group sm:min-w-96"
+      to={{ pathname: "movements", hash: getFragmentName(title) }}
+    >
+      {contents}
+    </Link>
+  );
+};
 
 export default MovementsCarousel;

@@ -1,3 +1,15 @@
+import conferenceData from "./data/conferences.yaml";
+
+export const getConferenceMetadata = (conferenceNames) => {
+  const conferenceList = [
+    ...conferenceData.pastConferencesList,
+    ...conferenceData.upcomingConferencesList,
+    ...conferenceData.futureConferencesList,
+  ];
+
+  return conferenceList.filter((item) => conferenceNames.includes(item.title));
+};
+
 export const getElements = (arr, index) => {
   const len = arr.length;
   // Normalize the index to handle negative values

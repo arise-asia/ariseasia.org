@@ -1,4 +1,5 @@
 import { MdOpenInNew } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 import MomentsCarousel from "../components/MomentsCarousel";
 
@@ -33,14 +34,12 @@ const Arise2023Page = () => (
                   Arise Asia 2023.
                 </p>
               </div>
-              <a
+              <Link
                 className="flex gap-x-2 items-center py-2 px-4 mt-6 ml-auto text-sm font-bold text-white bg-gray-700 rounded-full border-4 border-gray-700 sm:text-base hover:bg-gray-500 w-fit"
-                href="#conference-program"
-                rel="noreferrer noopener"
-                target="_blank"
+                to={{ hash: "conference-program" }}
               >
                 Conference Program <MdOpenInNew size={20} />
-              </a>
+              </Link>
             </div>
           </div>
           <iframe

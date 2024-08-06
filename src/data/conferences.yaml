@@ -27,14 +27,14 @@ upcomingConferencesList:
     subtitle: October 15-17. 2024
     backgroundSrc: /locations/myanmar.jpg
     posterSrc: /movements/arise-myanmar.jpg
-    description: More information is coming soon. Stay tuned!
+    description: Looking to get involved or find out more? Please email info@ariseasia.org.
 
   - country: Nepal
     title: Arise Nepal
     subtitle: October 20-23, 2024
     backgroundSrc: /locations/nepal.jpg
     posterSrc: /movements/arise-nepal.jpg
-    description: More information is coming soon. Stay tuned!
+    description: Looking to get involved or find out more? Please email info@ariseasia.org.
 
   - country: Mongolia
     title: Arise Mongolia
@@ -142,7 +142,9 @@ pastConferencesList:
   - country: Hong Kong
     title: Arise Hong Kong
     subtitle: July 20-21, 2024
+    backgroundSrc: /locations/hong-kong.jpg
     posterSrc: /movements/arise-hong-kong.jpg
+    websiteTarget: https://hk.ariseasia.org
     description: |
       2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
       Emptiness and Despair are devouring our city.
@@ -150,15 +152,15 @@ pastConferencesList:
 
       Jesus, please lead our way…
 
-      📅 20-21 / July (Sat-Sun)
-      👥 Believers aged 18-29 (Mission-interested-newbies are welcomed!)
-      💬 Language in Cantonese/ Mandarin
-      📝 31/5 Early bird deadline`,
+      👥 Believers aged 18-29 (Mission-interested-newbies are welcome!)
+      💬 Language in Cantonese/Mandarin
 
   - country: Indonesia
     title: Arise Indonesia
     subtitle: July 31 - August 3, 2024
+    backgroundSrc: /locations/indonesia.jpg
     posterSrc: /movements/arise-indonesia.jpg
+    websiteTarget: https://indo.ariseasia.org
     links:
       - title: Instagram
         target: https://www.instagram.com/ariseindonesia

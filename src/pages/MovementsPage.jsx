@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   RiArrowDropDownLine,
   RiArrowDropRightLine,
@@ -6,7 +6,7 @@ import {
   RiGift2Line,
   RiGlobalLine,
 } from "react-icons/ri";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import conferenceData from "../data/conferences.yaml";
 import { getFragmentName } from "../utils";
@@ -28,14 +28,6 @@ const tabs = [
 
 const MovementsPage = () => {
   const [tabIdx, setTabIdx] = useState(0);
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const e = document.querySelector(location.hash);
-      e?.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [location]);
 
   return (
     <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
@@ -103,9 +95,9 @@ const MovementsPage = () => {
                 Don&apos;t see your country here? Contact
                 <a
                   className="mx-1 text-cyan-700 underline hover:text-cyan-500"
-                  href="mailto:admin@ariseasia.org"
+                  href="mailto:info@ariseasia.org"
                 >
-                  admin@ariseasia.org
+                  info@ariseasia.org
                 </a>
                 to find out more about hosting an Arise Movement in your
                 country/city!

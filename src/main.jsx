@@ -7,7 +7,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import FloatingGivingButton from "./components/FloatingGivingButton";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollBehavior from "./components/ScrollBehavior";
 import AboutPage from "./pages/AboutPage";
 import Arise2023Page from "./pages/Arise2023Page";
 import HomePage from "./pages/HomePage";
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-        <ScrollToTop />
+        <ScrollBehavior />
         <Navbar />
         <Outlet />
         <Footer />
