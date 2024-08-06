@@ -7,7 +7,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import GivingFloatingButton from "./components/GivingFloatingButton";
+import FloatingGivingButton from "./components/FloatingGivingButton";
 import AboutPage from "./pages/AboutPage";
 import Arise2023Page from "./pages/Arise2023Page";
 import HomePage from "./pages/HomePage";
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         <Navbar />
         <Outlet />
         <Footer />
-        <GivingFloatingButton />
+        <FloatingGivingButton />
         <Analytics />
         <SpeedInsights />
       </>
@@ -55,5 +55,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
