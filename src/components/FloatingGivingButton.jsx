@@ -10,4 +10,5 @@ const FloatingGivingButton = () => (
     <LiaDonateSolid size={24} />
   </a>
 );
+
 export default FloatingGivingButton;

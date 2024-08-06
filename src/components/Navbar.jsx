@@ -17,7 +17,6 @@ const Navbar = () => (
           Arise 2023
         </Link>
       </div>
-
       <div>
         <Link to="/">
           <img
@@ -30,7 +29,6 @@ const Navbar = () => (
           Arise Asia
         </p>
       </div>
-
       <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
         <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
@@ -38,14 +36,14 @@ const Navbar = () => (
         >
           Movements
         </Link>
-        <Link
+        <a
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+          href="https://www.totalideas.org"
           rel="noopener noreferrer"
           target="_blank"
-          to="https://www.totalideas.org"
         >
           Giving
-        </Link>
+        </a>
       </div>
       <div className="flex dropdown dropdown-end">
         <div
@@ -94,14 +92,14 @@ const Navbar = () => (
             </Link>
           </li>
           <li>
-            <Link
+            <a
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+              href="https://www.totalideas.org"
               rel="noopener noreferrer"
               target="_blank"
-              to="https://www.totalideas.org"
             >
               Giving
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
