@@ -1,17 +1,4 @@
 upcomingConferencesList:
-  - country: Indonesia
-    title: Arise Indonesia
-    subtitle: July 31 - August 3, 2024
-    backgroundSrc: /locations/indonesia.jpg
-    posterSrc: /movements/arise-indonesia.jpg
-    donateTarget: https://www.totalideas.org/Arise-Indonesia
-    signupTarget: https://reborn.id/app/event?id=S85F-XYHS-MJRO
-    websiteTarget: https://indo.ariseasia.org
-    links:
-      - title: Instagram
-        target: https://www.instagram.com/ariseindonesia
-    description: More information is coming soon. Stay tuned!
-
   - country: Philippines
     title: Arise Bicol
     subtitle: August 16-17, 2024
@@ -167,6 +154,14 @@ pastConferencesList:
       👥 Believers aged 18-29 (Mission-interested-newbies are welcomed!)
       💬 Language in Cantonese/ Mandarin
       📝 31/5 Early bird deadline`,
+
+  - country: Indonesia
+    title: Arise Indonesia
+    subtitle: July 31 - August 3, 2024
+    posterSrc: /movements/arise-indonesia.jpg
+    links:
+      - title: Instagram
+        target: https://www.instagram.com/ariseindonesia
 
 futureConferencesList:
   - title: Arise Bangladesh
