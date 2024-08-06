@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  RiArrowDropDownLine,
   RiArrowDropRightLine,
   RiFileList3Line,
   RiGift2Line,
@@ -63,23 +62,15 @@ const MovementsPage = () => {
                   <p className="text-xs font-bold text-black sm:text-base xl:text-xl">
                     {tabName}
                   </p>
-                  {tabIdx === idx ? (
-                    <RiArrowDropDownLine
-                      className="hidden lg:block"
-                      size={28}
-                    />
-                  ) : (
-                    <RiArrowDropRightLine
-                      className="hidden lg:block"
-                      size={28}
-                    />
-                  )}
-                </button>
-                {tabIdx === idx && (
-                  <MovementsDropdown
-                    data={tabs[tabIdx].data?.map((item) => item.title)}
+                  <RiArrowDropRightLine
+                    className={`hidden transition-transform duration-500 lg:block ${tabIdx === idx && "rotate-90"}`}
+                    size={28}
                   />
-                )}
+                </button>
+                <MovementsDropdown
+                  active={tabIdx === idx}
+                  data={tabs[idx].data?.map((item) => item.title)}
+                />
               </>
             ))}
           </div>
@@ -110,17 +101,21 @@ const MovementsPage = () => {
   );
 };
 
-const MovementsDropdown = ({ data }) => (
-  <div className="hidden py-4 px-10 ml-10 text-lg font-bold bg-white rounded-xl lg:flex lg:flex-col">
-    {data?.map((item) => (
-      <Link
-        className="py-1 border-b-2 last:border-0 hover:text-purple-500"
-        key={item}
-        to={{ hash: getFragmentName(item) }}
-      >
-        {item}
-      </Link>
-    ))}
+const MovementsDropdown = ({ active, data }) => (
+  <div
+    className={`grid transition-[grid-template-rows] duration-500 ${active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+  >
+    <div className="hidden overflow-hidden px-10 ml-10 text-lg font-bold bg-white rounded-xl lg:flex lg:flex-col">
+      {data?.map((item) => (
+        <Link
+          className="py-1 border-b-2 first:pt-4 last:pb-4 last:border-0 hover:text-purple-500"
+          key={item}
+          to={{ hash: getFragmentName(item) }}
+        >
+          {item}
+        </Link>
+      ))}
+    </div>
   </div>
 );
 
