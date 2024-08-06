@@ -40,9 +40,9 @@ const Navbar = () => (
         </Link>
         <Link
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          to="https://www.totalideas.org/"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
+          to="https://www.totalideas.org"
         >
           Giving
         </Link>
@@ -96,9 +96,9 @@ const Navbar = () => (
           <li>
             <Link
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              to="https://www.totalideas.org/"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
+              to="https://www.totalideas.org"
             >
               Giving
             </Link>

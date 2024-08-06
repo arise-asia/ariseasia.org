@@ -4,10 +4,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
+import FloatingGivingButton from "./components/FloatingGivingButton";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import FloatingGivingButton from "./components/FloatingGivingButton";
 import AboutPage from "./pages/AboutPage";
 import Arise2023Page from "./pages/Arise2023Page";
 import HomePage from "./pages/HomePage";
