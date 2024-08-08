@@ -142,7 +142,7 @@ const AboutPage = () => (
             <iframe
               allowFullScreen
               className="w-full rounded-xl aspect-video"
-              src="https://www.youtube.com/embed/-V6a5qnJI5Q"
+              src="https://www.youtube.com/embed/GwPLi5IUdkI"
               title="YouTube video explaining the Arise movement"
             />
           </div>

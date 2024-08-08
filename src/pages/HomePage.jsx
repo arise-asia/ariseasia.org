@@ -87,7 +87,7 @@ const HomePage = () => (
             <iframe
               allowFullScreen
               className="mb-4 w-full rounded-xl aspect-video"
-              src="https://www.youtube.com/embed/-V6a5qnJI5Q"
+              src="https://www.youtube.com/embed/GwPLi5IUdkI"
               title="YouTube video explaining the Arise movement"
             />
             <div className="flex gap-x-2 items-center">
@@ -123,14 +123,12 @@ const HomePage = () => (
                 </span>
               </p>
             </div>
-            <a
+            <Link
               className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
-              href="https://goarise.org"
-              rel="noreferrer noopener"
-              target="_blank"
+              to="/about"
             >
               More About Us <GrCircleInformation size={20} />
-            </a>
+            </Link>
           </div>
           <div className="p-4 w-full max-w-screen-sm text-red-700 rounded-3xl ring-2 ring-red-700 xl:w-1/3">
             <iframe
