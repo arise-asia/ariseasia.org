@@ -1,7 +1,6 @@
-import { MdOpenInNew } from "react-icons/md";
+import { GrCircleInformation, GrCirclePlay, GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
-import AboutArise from "../components/AboutArise";
 import MovementsCarousel from "../components/MovementsCarousel";
 
 const HomePage = () => (
@@ -83,7 +82,73 @@ const HomePage = () => (
 
         <MovementsCarousel />
 
-        <AboutArise />
+        <div className="flex flex-col gap-6 justify-center items-center xl:flex-row">
+          <div className="p-4 w-full max-w-screen-sm text-red-700 rounded-3xl ring-2 ring-red-700 xl:w-1/3">
+            <iframe
+              allowFullScreen
+              className="mb-4 w-full rounded-xl aspect-video"
+              src="https://www.youtube.com/embed/-V6a5qnJI5Q"
+              title="YouTube video explaining the Arise movement"
+            />
+            <div className="flex gap-x-2 items-center">
+              <GrCirclePlay className="mb-0.5 sm:mb-1" size={24} />
+              <h3 className="text-h4">What Is Arise Asia</h3>
+            </div>
+            <p className="text-p">
+              The Arise movement&apos;s mission and values, explained by our
+              cofounder, David Ro
+            </p>
+          </div>
+          <div className="relative order-first p-10 w-full max-w-screen-md bg-red-700 rounded-3xl xl:order-none xl:w-1/3">
+            <img
+              src="/logo.svg"
+              alt="What is Arise? logo"
+              className="hidden absolute bottom-2 right-8 w-12 sm:block xl:right-6 xl:-bottom-20 xl:w-24"
+            />
+            <h2 className="text-center text-white uppercase text-h3">
+              What Is Arise?
+            </h2>
+            <div className="text-white prose prose-sm sm:prose-base">
+              <p>
+                It is almost two millennia since Jesus called His first
+                disciples to follow Him. Since that time, many followers of
+                Jesus have taken up the call to take the Gospel to the ends of
+                the earth. Now, in the 21 st century, the need for the Gospel to
+                be shared and lived out in Asia is tremendous, and God is
+                setting the hearts of people in Asia on fire for His glory and
+                purpose.{" "}
+                <span className="text-amber-300">
+                  The time has come for Asia to arise and participate in God’s
+                  Great Commission.
+                </span>
+              </p>
+            </div>
+            <a
+              className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
+              href="https://goarise.org"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              More About Us <GrCircleInformation size={20} />
+            </a>
+          </div>
+          <div className="p-4 w-full max-w-screen-sm text-red-700 rounded-3xl ring-2 ring-red-700 xl:w-1/3">
+            <iframe
+              allowFullScreen
+              className="mb-4 w-full rounded-xl aspect-video"
+              src="https://www.youtube.com/embed/4G4fQidFXro"
+              title="YouTube video explaining the Arise movement"
+            />
+            <div className="flex gap-x-2 items-center">
+              <GrCirclePlay className="mb-0.5 sm:mb-1" size={24} />
+              <h3 className="text-h4">Arise Movement</h3>
+            </div>
+            <p className="text-p">
+              The importance of joining the movement now, shared by our
+              cofounder, Seth Kim
+            </p>
+          </div>
+        </div>
 
         <article className="flex relative flex-col gap-10 p-10 mt-6 bg-amber-300 rounded-3xl xl:flex-row">
           <div className="absolute left-0 -top-6 w-48 h-12 bg-amber-300 rounded-t-xl [clip-path:path('M173_10Q168_0_156_0H0L0_48_192_48Z')]" />
@@ -104,7 +169,7 @@ const HomePage = () => (
               className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-amber-100 rounded-full border-4 border-black sm:text-base hover:bg-amber-50 w-fit"
               to="/arise2023"
             >
-              Arise Asia 2023 Recap <MdOpenInNew size={20} />
+              Arise Asia 2023 Recap <GrHistory size={20} />
             </Link>
           </div>
           <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96">

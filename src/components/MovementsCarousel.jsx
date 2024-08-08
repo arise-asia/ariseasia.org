@@ -23,7 +23,7 @@ const MovementsCarousel = () => {
   return (
     <div className="flex flex-col gap-y-4">
       <div className="overflow-hidden relative">
-        <div className="absolute w-full h-full bg-cyan-700 rounded-3xl sm:max-w-lg -z-10" />
+        <div className="absolute w-full h-full bg-cyan-700 rounded-3xl sm:max-w-lg md:max-w-2xl -z-10 sm:[clip-path:path('M0_0H380q24_0_30_24L512_490V524H0Z')] md:[clip-path:path('M0_0H400Q424_0_440_24L664_471Q672_490_672_497V524H0Z')]" />
         <div className="p-8 sm:p-10">
           <div className="flex justify-between items-end">
             <div className="flex flex-col gap-y-1">
