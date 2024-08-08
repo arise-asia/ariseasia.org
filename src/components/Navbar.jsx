@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <div className="absolute z-10 pt-20 w-full">
-    <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl bg-gray-500 rounded-full shadow-2xl">
+    <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl rounded-full shadow-2xl bg-black/75">
       <div className="hidden pl-16 lg:flex lg:flex-1">
         <Link
           className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
@@ -38,7 +38,7 @@ const Navbar = () => (
         </Link>
         <a
           className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-          href="https://www.totalideas.org"
+          href="https://www.totalideas.org/projects"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -56,7 +56,7 @@ const Navbar = () => (
           </svg>
         </div>
         <ul
-          className="p-2 mt-16 bg-gray-500 shadow-2xl rounded-box menu dropdown-content"
+          className="p-2 mt-16 shadow-2xl bg-black/75 rounded-box menu dropdown-content"
           tabIndex={0}
         >
           <li>
@@ -94,7 +94,7 @@ const Navbar = () => (
           <li>
             <a
               className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-              href="https://www.totalideas.org"
+              href="https://www.totalideas.org/projects"
               rel="noopener noreferrer"
               target="_blank"
             >

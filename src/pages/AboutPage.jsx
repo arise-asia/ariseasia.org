@@ -29,7 +29,7 @@ const AboutPage = () => (
         <h2 className="text-center text-red-700 uppercase text-h2">
           About Arise Asia
         </h2>
-        <div className="mx-auto text-center text-black prose prose-sm sm:prose-base">
+        <div className="mx-auto text-justify text-black prose prose-sm sm:prose-base">
           <p>
             It started off with a question. We asked ourselves, &ldquo; What
             would it be like if we can see God ignite the hearts of this younger
@@ -39,8 +39,8 @@ const AboutPage = () => (
           <p>
             It is almost two millennia since Jesus called His first disciples to
             follow Him. Since that time, many followers of Jesus have taken up
-            the call to take the Gospel to the ends of the earth. Now, in the 21
-            st century, the need for the Gospel to be shared and lived out in
+            the call to take the Gospel to the ends of the earth. Now, in the
+            21st century, the need for the Gospel to be shared and lived out in
             Asia is tremendous, and God is setting the hearts of people in Asia
             on fire for His glory and purpose. The time has come for Asia to
             arise and participate in God&apos;s Great Commission.

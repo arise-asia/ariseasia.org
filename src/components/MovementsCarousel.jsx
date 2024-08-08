@@ -28,7 +28,7 @@ const MovementsCarousel = () => {
           <div className="flex justify-between items-end">
             <div className="flex flex-col gap-y-1">
               <h2 className="text-white uppercase text-h3">
-                Upcoming
+                Featured
                 <br />
                 Movements
               </h2>
@@ -81,8 +81,9 @@ const MovementsCarousel = () => {
 const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
   const contents = (
     <>
-      <p className="flex absolute -right-5 -bottom-5 gap-x-2 items-center py-2 px-4 text-sm font-bold bg-cyan-100 rounded-full border-4 border-cyan-900 opacity-0 transition sm:text-base group-hover:opacity-100 hover:bg-cyan-50">
-        Learn More <MdOpenInNew size={20} />
+      <p className="flex absolute -right-5 -bottom-5 gap-x-2 items-center p-2 text-sm font-bold bg-cyan-100 rounded-full border-4 border-cyan-900 opacity-0 transition sm:px-6 sm:text-base group-hover:opacity-100 hover:bg-cyan-50">
+        <span className="hidden sm:block">Learn More</span>{" "}
+        <MdOpenInNew size={20} />
       </p>
       <img
         src={backgroundSrc}
@@ -95,7 +96,7 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
 
   return websiteTarget ? (
     <a
-      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 from-black/50 to-50% aspect-video group sm:min-w-96"
+      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 hover:shadow-xl from-black/50 to-50% aspect-video group sm:min-w-96"
       href={websiteTarget}
       rel="noopener noreferrer"
       target="_blank"
@@ -104,7 +105,7 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
     </a>
   ) : (
     <Link
-      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 from-black/50 to-50% aspect-video group sm:min-w-96"
+      className="hidden relative flex-col justify-end p-4 w-96 bg-gradient-to-t rounded-xl transition sm:flex first:flex hover:ring-4 hover:ring-inset hover:ring-cyan-900 hover:shadow-xl from-black/50 to-50% aspect-video group sm:min-w-96"
       to={{ pathname: "movements", hash: getFragmentName(title) }}
     >
       {contents}

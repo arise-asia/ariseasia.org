@@ -2,8 +2,8 @@ import { LiaDonateSolid } from "react-icons/lia";
 
 const FloatingGivingButton = () => (
   <a
-    className="fixed right-4 bottom-4 text-white rounded-3xl duration-300 sm:right-10 sm:bottom-10 hover:bg-gray-500 transition-[background-color] bg-gray-500/75 group"
-    href="https://www.totalideas.org"
+    className="fixed right-4 bottom-4 text-white rounded-3xl transition duration-300 sm:right-10 sm:bottom-10 bg-black/75 group"
+    href="https://www.totalideas.org/projects"
     rel="noreferrer noopener"
     target="_blank"
   >

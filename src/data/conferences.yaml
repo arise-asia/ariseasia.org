@@ -15,18 +15,26 @@ upcomingConferencesList:
     title: Arise Baguio
     subtitle: September 14, 2024
     backgroundSrc: /locations/baguio.jpg
+    posterSrc: /movements/arise-baguio.jpg
+    signupTarget: https://ariseasia.regfox.com/arise-baguio
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
-    description: More information is coming soon. Stay tuned!
+    description: |
+      We're coming up NORTH to present you with the challenge to "Go where there is no Gospel!" Gear up for an electrifying youth missions conference on September 14th at the Philippine Baptist Theological Seminary, where you'll witness the incredible work God is doing through His fearless warrriors on the mission frontlines!
+
+      Do you have a passion for the lost? Are you eager to serve but unsure where to begin? Let's kick things off with fellowshipping and learning from the pros in the field. Get ready to be motivated. Get set for the challenge. For such a time as this... kita kits, Kakailians!
+
+      P.S. This conference is for the young ones, but "young once" who are passionate about missions are welcome to join this faith-filled event!
 
   - country: Myanmar
     title: Arise Myanmar
     subtitle: October 15-17. 2024
     backgroundSrc: /locations/myanmar.jpg
     posterSrc: /movements/arise-myanmar.jpg
+    donateTarget: https://www.totalideas.org/Arise-Yangon-1
     description: Looking to get involved or find out more? Please email info@ariseasia.org.
 
   - country: Nepal
@@ -34,6 +42,7 @@ upcomingConferencesList:
     subtitle: October 20-23, 2024
     backgroundSrc: /locations/nepal.jpg
     posterSrc: /movements/arise-nepal.jpg
+    donateTarget: https://www.totalideas.org/Arise-Nepal
     description: Looking to get involved or find out more? Please email info@ariseasia.org.
 
   - country: Mongolia
@@ -41,6 +50,7 @@ upcomingConferencesList:
     subtitle: October 2024
     backgroundSrc: /locations/mongolia.jpg
     posterSrc: /movements/arise-mongolia.jpg
+    donateTarget: https://www.totalideas.org/Arise-Mongolia
     description: More information is coming soon. Stay tuned!
 
   - country: Latin America
@@ -48,8 +58,29 @@ upcomingConferencesList:
     subtitle: November 11-14, 2024
     backgroundSrc: /locations/latino.jpg
     posterSrc: /movements/arise-latino.jpg
+    donateTarget: https://www.totalideas.org/Arise-Latino
     websiteTarget: https://ariselatino.org
-    description: More information is coming soon. Stay tuned!
+    description: |
+      The Arise Latino conference is calling young adults like you! The Arise movement began in Thailand in 2023, when it brought together 1,800 passionate young people from 37 countries, all eager to bring about change where it is needed most. Now it's your turn to take part in this incredible journey.
+
+      This conference is specifically designed for young people aged 18 to 35. It's not just another event – it's a launchpad for inspiration, training, and connection. Here's what you can look forward to:
+
+      - Inspiring Sessions: Hear from leaders who have firsthand experience in taking the Gospel to places it's never been.
+      - Practical Tools: Gain access to resources that will empower you to make a tangible impact.
+      - Collaborative Opportunities: Meet like-minded individuals and form networks that can amplify your efforts.
+      - Hands-On Workshops: Participate in interactive sessions that equip you with the skills you need to serve effectively.
+
+      Event Details
+
+      - Location: Orlando, Florida
+      - Dates: November 11-14, 2024
+      - Expected Participants: 500 energetic and passionate young adults
+
+      Throughout these four days, you'll engage in plenary sessions, workshops, and lectures covering a variety of topics related to the mission of bringing the Gospel to unreached places. This is more than just learning; it's about preparing to take action.
+
+      Don't Miss Out!
+
+      Seize this opportunity to be part of a global movement. Connect with others who share your passion and vision for making a difference. Your journey starts here. Register Now and Be part of this Global Community!
 
 pastConferencesList:
   - country: Philippines
@@ -135,7 +166,7 @@ pastConferencesList:
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
       - title: Praise Report
-        target: https://ariseevents.my.canva.site/arise-butuan-praise-report
+        target: https://ariseevents.my.canva.site/arise-davao-praise-report
       - title: Summary Video
         target: https://www.facebook.com/watch/?v=1121729785772125
 
@@ -160,10 +191,18 @@ pastConferencesList:
     subtitle: July 31 - August 3, 2024
     backgroundSrc: /locations/indonesia.jpg
     posterSrc: /movements/arise-indonesia.jpg
+    # donateTarget: https://www.totalideas.org/Arise-Indonesia
+    # signupTarget: https://reborn.id/app/event?id=S85F-XYHS-MJRO
     websiteTarget: https://indo.ariseasia.org
     links:
       - title: Instagram
         target: https://www.instagram.com/ariseindonesia
+    description: |
+      The Arise Indonesia conference is a gathering focused on the mission in Indonesia, with the goal of bringing the mission "Go to Where There is No Gospel" to the next generation. This conference specifically targets youth, students, and young professionals between the ages of 18 and 35.
+
+      The conference aims to ignite a passion for mission in the hearts of its participants by equipping them with the necessary tools, knowledge, and inspiration. It intends to empower and mobilize these young individuals to be catalysts for mission in their communities and beyond.
+
+      The event is scheduled to take place in Bali from July 31st to August 3rd, 2024. Attracting around 1000 participants. It will feature various sessions, workshops, and talks from experienced speakers, pastors, and missionaries. These sessions will cover a wide range of mission-related topics, such as evangelism, discipleship, leadership, and cross-cultural ministry.
 
 futureConferencesList:
   - title: Arise Bangladesh
