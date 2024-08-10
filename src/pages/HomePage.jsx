@@ -5,8 +5,8 @@ import MovementsCarousel from "../components/MovementsCarousel";
 
 const HomePage = () => (
   <>
-    <div className="relative px-4 pt-52 sm:pt-80">
-      <h1 className="text-center text-orange-500 uppercase text-h1">
+    <div className="relative px-4 pt-52 bg-gradient-to-t sm:pt-80 from-orange-500/75 to-40%">
+      <h1 className="mb-4 text-6xl font-bold text-center text-orange-500 uppercase md:text-7xl font-heading">
         Arise Asia
       </h1>
       <p className="pb-36 text-center text-white sm:pb-80 sm:text-xl font-heading">
@@ -103,7 +103,7 @@ const HomePage = () => (
             <img
               src="/logo.svg"
               alt="What is Arise? logo"
-              className="hidden absolute bottom-2 right-8 w-12 sm:block xl:right-6 xl:-bottom-20 xl:w-24"
+              className="absolute bottom-2 right-6 w-12 xl:-bottom-20 xl:w-24"
             />
             <h2 className="text-center text-white uppercase text-h3">
               What Is Arise?
