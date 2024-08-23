@@ -1,17 +1,5 @@
 upcomingConferencesList:
   - country: Philippines
-    title: Arise Bicol
-    subtitle: August 16-17, 2024
-    backgroundSrc: /locations/bicol.jpg
-    posterSrc: /movements/arise-bicol.jpg
-    links:
-      - title: Facebook
-        target: https://www.facebook.com/profile.php?id=61555870030732
-      - title: Instagram
-        target: https://www.instagram.com/arise.philippines
-    description: More information is coming soon. Stay tuned!
-
-  - country: Philippines
     title: Arise Baguio
     subtitle: September 14, 2024
     backgroundSrc: /locations/baguio.jpg
@@ -43,6 +31,9 @@ upcomingConferencesList:
     backgroundSrc: /locations/nepal.jpg
     posterSrc: /movements/arise-nepal.jpg
     donateTarget: https://www.totalideas.org/Arise-Nepal
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61560696147433
     description: Looking to get involved or find out more? Please email info@ariseasia.org.
 
   - country: Mongolia
@@ -87,88 +78,93 @@ pastConferencesList:
     title: Arise Cebu
     subtitle: December 2, 2023
     posterSrc: /movements/arise-cebu.jpg
+    # signupTarget: https://tinyurl.com/AriseCebuDec2
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
-      - title: Praise Report
-        target: https://ariseevents.my.canva.site/arise-cebu-praise-report
-      - title: Photos
-        target: https://drive.google.com/drive/folders/1wsxRdBJLDOWkq-LFIWC9XHDKm5t412jb
       - title: Summary Video
         target: https://drive.google.com/file/d/1VgGc-93P2JQAP32mQ97dsb6lL5M8sZVx
+      - title: Photos
+        target: https://drive.google.com/drive/folders/1wsxRdBJLDOWkq-LFIWC9XHDKm5t412jb
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-cebu-praise-report
     description: |
-      Praise Report:
+      This conference was organized by the Philippine Missions Association (PMA) and Haggai Cebu in partnership with Arise Asia.
 
-      Number of delegates: 202 Participants
-      Number of response: 12 Commitment Responses
-
-      Organized by the Philippine Missions Association (PMA) and Haggai Cebu in partnership with Arise Movement and 12 Mission Organizations.
-
-      Topics presented:
-      The Filipino Missionary Mandate
-      The Greatest Treasure
-      The Greatest Purpose
-      The Greatest Pursuit
-      Synthesis & Final Challenge
+      Youth below 35 yrs and mentors 35+ yrs old are invited.
 
   - country: Philippines
-    title: Arise Cagayan De Oro
+    title: Arise Cagayan de Oro
     subtitle: March 2, 2024
     posterSrc: /movements/arise-cagayan-de-oro.jpg
+    # signupTarget: https://ariseasia.regfox.com/arise-ph-cagayan-de-oro
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
-      - title: Praise Report
-        target: https://ariseevents.my.canva.site/arise-cagayan-de-oro-praise-report
+      - title: Promo Video
+        target: https://fb.watch/t_-3Lbclqq
       - title: Summary Video
         target: https://www.youtube.com/watch?v=e-UR-vODHd8
+      - title: Photos
+        target: https://www.facebook.com/media/set/?set=a.122128685822195667
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-cagayan-de-oro-praise-report
     description: |
-      Praise Report:
+      The Philippines Missions Association (PMA), Cagayan de Oro City Evangelical Ministers Association (COEMA), OM Philippines, YWAM, and partners are inviting you to the Arise Cagayan de Oro Youth Missions Conference.
 
-      Number of delegates: 222 Participants
-      Number of response: 40+ Responses to the Call
+      Youth below 35 yrs and mentors 35+ yrs old are invited.
 
-      Arise Philippines Citywide Youth Missions Conference went to Northern Mindanao!
-      Organized by the Philippine Missions Association (PMA), Cagayan De Oro City Evangelical Ministers Association, OM Philippines, YWAM and partners.
-
-      Topics presented:
-      The Filipino Missionary Mandate
-      The Greatest Treasure
-      The Greatest Purpose
-      The Greatest Pursuit
-      Synthesis & Final Challenge
+      Please pray for Arise CDO on March 2 that this will result in more commitment to pray, adopt and engage Muslim, Buddhist and Hindu communities in CDO.
 
   - country: Philippines
     title: Arise Butuan
     subtitle: May 26, 2024
     posterSrc: /movements/arise-butuan.jpg
+    # signupTarget: https://ariseasia.regfox.com/arise-ph-butuan
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
-      - title: Praise Report
-        target: https://ariseevents.my.canva.site/arise-butuan-praise-report
+      - title: Promo Video
+        target: https://fb.watch/t-2Z8pVOnz
       - title: Summary Video
         target: https://www.facebook.com/watch/?v=1123052522218073
+      - title: Photos
+        target: https://www.facebook.com/media/set/?set=a.122152030592195667
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-butuan-praise-report
+    description: |
+      We are back, Northern Mindanao!
+
+      The Arise Philippines Citywide Youth Missions Conference is heading your way, and it's about to get lit! The flame to boldly GO will blaze on! Join for a day of fellowship, empowerment, and fun-filled event that will leave you on fire for God and for His people. Don't miss this opportunity to take your calling to another level!
 
   - country: Philippines
     title: Arise Davao
     subtitle: June 1, 2024
     posterSrc: /movements/arise-davao.jpg
+    # signupTarget: https://ariseasia.regfox.com/arise-ph-davao
     links:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
-      - title: Praise Report
-        target: https://ariseevents.my.canva.site/arise-davao-praise-report
+      - title: Promo Video
+        target: https://fb.watch/t-3q-TFqlK
       - title: Summary Video
         target: https://www.facebook.com/watch/?v=1121729785772125
+      - title: Photos
+        target: https://www.facebook.com/media/set/?set=a.122153432294195667
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-davao-praise-report
+    description: |
+      We are coming, Southern Mindanao!
+
+      Calling all Game Changers of Davao! Are you ready to be equipped and be empowered? Mark your calendars because on June 1, we are coming to you! Ready your hearts as we learn more about transforming visions into reality, unlocking your true potential, and driving impactful change in our community! Join us for an unforgettable experience filled with inspiration, innovation, and the tools you need to become a true game changer. Don't miss out—this is your moment to shine and make a difference!
 
   - country: Hong Kong
     title: Arise Hong Kong
@@ -176,6 +172,9 @@ pastConferencesList:
     backgroundSrc: /locations/hong-kong.jpg
     posterSrc: /movements/arise-hong-kong.jpg
     websiteTarget: https://hk.ariseasia.org
+    links:
+      - title: Instagram
+        target: https://www.instagram.com/hkacm.mission
     description: |
       2024 Arise Hong Kong: Stay Alive🪫, Go Beyond🔋
       Emptiness and Despair are devouring our city.
@@ -192,7 +191,7 @@ pastConferencesList:
     backgroundSrc: /locations/indonesia.jpg
     posterSrc: /movements/arise-indonesia.jpg
     # donateTarget: https://www.totalideas.org/Arise-Indonesia
-    # signupTarget: https://reborn.id/app/event?id=S85F-XYHS-MJRO
+    # signupTarget: https://reborn.id/app/page/AriseIndonesia2024
     websiteTarget: https://indo.ariseasia.org
     links:
       - title: Instagram
@@ -203,6 +202,26 @@ pastConferencesList:
       The conference aims to ignite a passion for mission in the hearts of its participants by equipping them with the necessary tools, knowledge, and inspiration. It intends to empower and mobilize these young individuals to be catalysts for mission in their communities and beyond.
 
       The event is scheduled to take place in Bali from July 31st to August 3rd, 2024. Attracting around 1000 participants. It will feature various sessions, workshops, and talks from experienced speakers, pastors, and missionaries. These sessions will cover a wide range of mission-related topics, such as evangelism, discipleship, leadership, and cross-cultural ministry.
+
+  - country: Philippines
+    title: Arise Bicol
+    subtitle: August 16-17, 2024
+    backgroundSrc: /locations/bicol.jpg
+    posterSrc: /movements/arise-bicol.jpg
+    # signupTarget: https://ariseasia.regfox.com/arise-bicol
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Promo Video
+        target: https://fb.watch/t-a0cG0NtM/
+      - title: Summary Video
+        target: https://www.instagram.com/reel/C-VK4_kvsYj
+    description: |
+      Hey Game Changers of Bicol! This is your time to be equipped, empowered, and set ablaze for the mission! Prepare for an unforgettable day packed with wisdom-filled speakers, deep fellowship, transformative ministry time, and worship that will fuel your soul.
+
+      Let's rise boldly to bring the gospel to places it's never been before. Take the challenge and don't miss this chance, invite your friends and register now!
 
 futureConferencesList:
   - title: Arise Bangladesh
