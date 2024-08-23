@@ -18,8 +18,17 @@ This website was built with [React](https://react.dev/),
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/grenmester/ariseasia.org/`
+1. Clone the repository: `git clone https://github.com/arise-asia/ariseasia.org`
 2. Navigate to the project directory: `cd ariseasia.org`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm run dev`
-5. Open `http://localhost:5173/` in your browser to view the website.
+3. Install the dependencies: `pnpm install`
+4. Start the development server: `pnpm run dev`
+5. Open `http://localhost:5173` in your browser to view the website.
+
+## Data
+
+The conference data can be found in `src/data/conferences.yaml`.
+
+## Deployment
+
+Deployments are automatically managed through [Vercel's Git integration](https://vercel.com/docs/deployments/overview#git).
+Commits pushed to the `main` branch will be automatically deployed.

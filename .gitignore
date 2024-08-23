@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Use the pnpm package manager
+package-lock.json
+yarn.lock
