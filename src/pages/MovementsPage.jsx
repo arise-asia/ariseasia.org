@@ -139,7 +139,7 @@ const ConferenceCard = ({
     >
       {imgSrc && (
         <img
-          alt={`Image for the ${title} conference`}
+          alt={title}
           className="object-cover mx-auto w-full bg-gray-400 rounded-xl max-w-96 h-fit aspect-video"
           src={imgSrc}
         />
