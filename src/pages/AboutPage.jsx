@@ -18,9 +18,9 @@ const AboutPage = () => (
       </h2>
       <div className="relative p-10 mx-auto bg-red-700 rounded-3xl w-fit">
         <img
-          src="/logo.svg"
           alt="What is Arise? logo"
           className="hidden absolute bottom-2 right-8 w-12 sm:block xl:right-6 xl:-bottom-16 xl:w-24"
+          src="/logo.svg"
         />
         <div className="text-white prose prose-sm sm:prose-base">
           <p>
@@ -73,6 +73,7 @@ const AboutPage = () => (
         </h2>
         <div className="flex flex-col gap-10 justify-center items-center lg:flex-row lg:items-end">
           <img
+            alt="David Ro"
             className="w-full rounded-xl shadow max-w-64 aspect-square md:max-w-80"
             src="/about/david.jpg"
           />
@@ -95,6 +96,7 @@ const AboutPage = () => (
         </div>
         <div className="flex flex-col gap-10 justify-center items-center lg:flex-row-reverse lg:items-end">
           <img
+            alt="Seth Kim"
             className="w-full rounded-xl shadow max-w-64 aspect-square md:max-w-80"
             src="/about/seth.jpg"
           />
@@ -177,12 +179,12 @@ const AboutPage = () => (
           Endorsing Partners
         </h2>
         <img
-          alt="Logos of the endorsing partners of Arise Asia"
+          alt="Endorsing partners of Arise Asia"
           className="w-full md:hidden"
           src="/about/endorsing-partners-sm.png"
         />
         <img
-          alt="Logos of the endorsing partners of Arise Asia"
+          alt="Endorsing partners of Arise Asia"
           className="hidden w-full max-w-screen-xl md:block"
           src="/about/endorsing-partners.png"
         />
@@ -221,12 +223,12 @@ const AboutPage = () => (
           Sponsoring Partners
         </h2>
         <img
-          alt="Logos of the sponsoring partners of Arise Asia"
+          alt="Sponsoring partners of Arise Asia"
           className="w-full md:hidden"
           src="/about/sponsoring-partners-sm.png"
         />
         <img
-          alt="Logos of the sponsoring partners of Arise Asia"
+          alt="Sponsoring partners of Arise Asia"
           className="hidden w-full max-w-screen-xl md:block"
           src="/about/sponsoring-partners.png"
         />

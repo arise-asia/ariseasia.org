@@ -185,9 +185,9 @@ const Arise2023Page = () => (
             <div className="flex flex-col justify-between items-center p-4 bg-purple-200 rounded-3xl">
               <p className="text-center text-p">Arise Asia Responses</p>
               <img
-                src="respond-aa2023.svg"
-                alt="Arise Asia response logo"
+                alt="Arise Asia 123 GO logo"
                 className="w-36"
+                src="/123go-logo.svg"
               />
             </div>
             <div className="flex flex-col justify-between p-4 text-white bg-purple-500 rounded-3xl">

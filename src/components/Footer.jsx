@@ -49,7 +49,7 @@ const Footer = () => (
         </p>
       </div>
       <div className="mx-auto mt-6 sm:m-0">
-        <img src="/logo.svg" alt="Arise logo" className="mt-6 w-24" />
+        <img alt="Arise logo" className="mt-6 w-24" src="/logo.svg" />
       </div>
     </div>
   </footer>

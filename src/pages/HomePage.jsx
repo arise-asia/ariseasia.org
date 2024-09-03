@@ -101,9 +101,9 @@ const HomePage = () => (
           </div>
           <div className="relative order-first p-10 w-full max-w-screen-md bg-red-700 rounded-3xl xl:order-none xl:w-1/3">
             <img
-              src="/logo.svg"
               alt="What is Arise? logo"
               className="absolute bottom-2 right-6 w-12 xl:-bottom-20 xl:w-24"
+              src="/logo.svg"
             />
             <h2 className="text-center text-white uppercase text-h3">
               What Is Arise?
@@ -172,22 +172,27 @@ const HomePage = () => (
           </div>
           <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96">
             <img
+              alt="Morning session congregation"
               src="/moments/8.jpg"
               className="object-cover col-start-1 col-end-3 row-start-1 row-end-4 rounded-xl size-full"
             />
             <img
+              alt="Performance from Mongolian dance"
               src="/moments/6.jpg"
               className="hidden object-cover col-start-3 col-end-4 row-start-1 row-end-3 rounded-xl sm:block size-full"
             />
             <img
+              alt="HISPOP worship session"
               src="/moments/9.jpg"
               className="object-cover col-start-1 col-end-2 row-start-4 row-end-6 rounded-xl size-full"
             />
             <img
+              alt="Workshops"
               src="/moments/7.jpg"
               className="object-cover col-start-2 col-end-3 row-start-4 row-end-6 rounded-xl size-full"
             />
             <img
+              alt="Night session worship"
               src="/moments/3.jpg"
               className="hidden object-cover col-start-3 col-end-4 row-start-3 row-end-6 rounded-xl sm:block size-full"
             />

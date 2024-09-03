@@ -77,18 +77,21 @@ function MomentsCarousel() {
               size={48}
             />
             <img
-              src={moments[(activeIdx - 1 + numItems) % numItems].image}
+              alt={moments[(activeIdx - 1 + numItems) % numItems].title}
               className="w-72 rounded-3xl aspect-video"
+              src={moments[(activeIdx - 1 + numItems) % numItems].image}
             />
           </div>
           <img
-            src={moments[activeIdx].image}
+            alt={moments[activeIdx].title}
             className="w-96 rounded-3xl aspect-video"
+            src={moments[activeIdx].image}
           />
           <div className="relative">
             <img
-              src={moments[(activeIdx + 1) % numItems].image}
+              alt={moments[(activeIdx + 1) % numItems].title}
               className="w-72 rounded-3xl aspect-video"
+              src={moments[(activeIdx + 1) % numItems].image}
             />
             <IoIosArrowDropdown
               className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 drop-shadow-2xl"
@@ -105,8 +108,9 @@ function MomentsCarousel() {
               size={36}
             />
             <img
-              src={moments[activeIdx].image}
+              alt={moments[activeIdx].title}
               className="w-full max-w-screen-lg rounded-3xl aspect-video"
+              src={moments[activeIdx].image}
             />
             <IoIosArrowDropdown
               className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden drop-shadow-2xl"

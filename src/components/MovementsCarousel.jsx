@@ -86,8 +86,9 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
         <MdOpenInNew size={20} />
       </p>
       <img
-        src={backgroundSrc}
+        alt={title}
         className="object-cover absolute inset-0 rounded-xl size-full -z-10"
+        src={backgroundSrc}
       />
       <h3 className="text-white uppercase text-h4">{title}</h3>
       <p className="italic text-white text-p">{subtitle}</p>
