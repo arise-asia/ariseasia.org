@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { MdOpenInNew, MdOutlineNotificationsActive } from "react-icons/md";
@@ -112,6 +113,13 @@ const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
       {contents}
     </Link>
   );
+};
+
+ConferenceCard.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  backgroundSrc: PropTypes.string,
+  websiteTarget: PropTypes.string,
 };
 
 export default MovementsCarousel;

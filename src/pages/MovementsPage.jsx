@@ -1,4 +1,5 @@
-import { useState, Fragment } from "react";
+import PropTypes from "prop-types";
+import { Fragment, useState } from "react";
 import {
   RiArrowDropRightLine,
   RiFileList3Line,
@@ -13,16 +14,16 @@ import { getFragmentName } from "../utils";
 
 const tabs = [
   {
-    title: "Upcoming Movements",
     data: conferenceData.upcomingConferencesList,
+    title: "Upcoming Movements",
   },
   {
-    title: "Past Movements",
     data: conferenceData.pastConferencesList,
+    title: "Past Movements",
   },
   {
-    title: "Stay Tuned For...",
     data: conferenceData.futureConferencesList,
+    title: "Stay Tuned For...",
   },
 ];
 
@@ -43,7 +44,7 @@ const MovementsPage = () => {
           Movements in Asia
         </h2>
         <div className="my-10">
-          <AsiaMap />
+          <AsiaMap setTabIdx={setTabIdx} />
         </div>
         <div className="flex flex-col gap-y-1 gap-x-4 justify-center items-center py-2 px-10 mx-auto rounded-3xl border-2 border-cyan-500 md:flex-row w-fit">
           <p className="text-xs font-bold text-center text-cyan-700 uppercase sm:text-sm font-heading">
@@ -51,13 +52,15 @@ const MovementsPage = () => {
           </p>
           <div className="flex flex-col gap-y-1 gap-x-4 sm:flex-row">
             <Link
-              className="py-1 px-10 text-xs font-bold text-center text-white uppercase bg-orange-500 rounded-full sm:text-sm"
+              className="py-1 px-10 text-xs font-bold text-center text-white uppercase bg-orange-500 rounded-full sm:text-sm hover:bg-orange-400"
+              onClick={() => setTabIdx(0)}
               to={{ hash: "#arise-latino" }}
             >
               Latino
             </Link>
             <Link
-              className="py-1 px-10 text-xs font-bold text-center text-white uppercase bg-orange-500 rounded-full sm:text-sm"
+              className="py-1 px-10 text-xs font-bold text-center text-white uppercase bg-orange-500 rounded-full sm:text-sm hover:bg-orange-400"
+              onClick={() => setTabIdx(2)}
               to={{ hash: "#arise-mena" }}
             >
               Mena
@@ -102,7 +105,7 @@ const MovementsPage = () => {
             {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
-            {tabIdx == 2 && (
+            {tabIdx === 2 && (
               <p className="text-p">
                 Don&apos;t see your country here? Contact
                 <a
@@ -126,7 +129,7 @@ const MovementsDropdown = ({ active, data }) => (
   <div
     className={`grid transition-[grid-template-rows] duration-500 ${active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
   >
-    <div className="hidden overflow-hidden px-10 ml-10 text-lg font-bold bg-white rounded-xl lg:flex lg:flex-col">
+    <div className="hidden overflow-hidden px-10 ml-10 text-lg font-bold bg-white rounded-xl shadow lg:flex lg:flex-col">
       {data?.map((item) => (
         <Link
           className="py-1 border-b-2 first:pt-4 last:pb-4 last:border-0 hover:text-orange-500"
@@ -139,6 +142,11 @@ const MovementsDropdown = ({ active, data }) => (
     </div>
   </div>
 );
+
+MovementsDropdown.propTypes = {
+  active: PropTypes.bool,
+  data: PropTypes.arrayOf(PropTypes.string),
+};
 
 const ConferenceCard = ({
   title,
@@ -155,7 +163,7 @@ const ConferenceCard = ({
 
   return (
     <article
-      className="flex flex-col gap-6 p-6 bg-white rounded-3xl 2xl:flex-row"
+      className="flex flex-col gap-6 p-6 bg-white rounded-3xl shadow 2xl:flex-row"
       id={getFragmentName(title)}
     >
       {imgSrc && (
@@ -173,14 +181,14 @@ const ConferenceCard = ({
         {(donateTarget || signupTarget || websiteTarget) && (
           <div className="flex gap-x-4">
             {[
-              { title: "Donate", target: donateTarget, Icon: RiGift2Line },
-              { title: "Signup", target: signupTarget, Icon: RiFileList3Line },
-              { title: "Website", target: websiteTarget, Icon: RiGlobalLine },
+              { Icon: RiGift2Line, target: donateTarget, title: "Donate" },
+              { Icon: RiFileList3Line, target: signupTarget, title: "Signup" },
+              { Icon: RiGlobalLine, target: websiteTarget, title: "Website" },
             ].map(
-              ({ title, target, Icon }) =>
+              ({ Icon, target, title }) =>
                 target && (
                   <a
-                    className="flex gap-x-2 justify-center items-center py-1 w-full bg-cyan-500 rounded-full border border-cyan-500 sm:px-6 sm:border-2 hover:bg-cyan-100 max-w-72"
+                    className="flex gap-x-2 justify-center items-center py-1 w-full bg-cyan-500 rounded-full border border-cyan-500 sm:px-6 sm:border-2 hover:bg-cyan-50 max-w-72"
                     href={target}
                     key={title}
                     rel="noreferrer noopener"
@@ -216,6 +224,20 @@ const ConferenceCard = ({
       </div>
     </article>
   );
+};
+
+ConferenceCard.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  backgroundSrc: PropTypes.string,
+  posterSrc: PropTypes.string,
+  donateTarget: PropTypes.string,
+  signupTarget: PropTypes.string,
+  websiteTarget: PropTypes.string,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({ title: PropTypes.string, target: PropTypes.string }),
+  ),
+  description: PropTypes.string,
 };
 
 export default MovementsPage;
