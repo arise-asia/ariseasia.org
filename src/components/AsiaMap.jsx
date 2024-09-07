@@ -22,26 +22,37 @@ const movementsMetadata = [
 
 const AsiaMap = ({ setTabIdx }) => (
   <div className="relative mx-auto max-w-screen-lg">
-    <BaseAsiaMap />
-    {movementsMetadata.map(({ data, status }, idx) =>
-      data.map((item) => {
-        const mapMetadata = mapCountryMetadataList[item.title];
-        return (
-          mapMetadata && (
-            <LocationPin
-              FlagIcon={mapMetadata.FlagIcon}
-              className={`${mapMetadata.twMapOffset} ${mapMetadata.twVisibility}`}
-              clickHandler={() => setTabIdx(idx)}
-              key={item.title}
-              status={status}
-              title={mapMetadata.title}
-              to={{ hash: getFragmentName(item.title) }}
-              transformOrigin={mapMetadata.transformOrigin}
-            />
-          )
-        );
-      }),
-    )}
+    {/* overlay grid for testing */}
+    <div className="grid absolute inset-0 grid-cols-10 grid-rows-10">
+      {Array.from({ length: 100 }).map((_, idx) => (
+        <div key={idx} className="border border-gray-300" />
+      ))}
+    </div>
+
+    {/* temp div for overlay grid layering */}
+    <div className="relative">
+      <BaseAsiaMap />
+
+      {movementsMetadata.map(({ data, status }, idx) =>
+        data.map((item) => {
+          const mapMetadata = mapCountryMetadataList[item.title];
+          return (
+            mapMetadata && (
+              <LocationPin
+                FlagIcon={mapMetadata.FlagIcon}
+                className={`${mapMetadata.twMapOffset} ${mapMetadata.twVisibility}`}
+                clickHandler={() => setTabIdx(idx)}
+                key={item.title}
+                status={status}
+                title={mapMetadata.title}
+                to={{ hash: getFragmentName(item.title) }}
+                transformOrigin={mapMetadata.transformOrigin}
+              />
+            )
+          );
+        }),
+      )}
+    </div>
   </div>
 );
 
