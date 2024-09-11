@@ -22,37 +22,26 @@ const movementsMetadata = [
 
 const AsiaMap = ({ setTabIdx }) => (
   <div className="relative mx-auto max-w-screen-lg">
-    {/* overlay grid for testing */}
-    <div className="grid absolute inset-0 grid-cols-10 grid-rows-10">
-      {Array.from({ length: 100 }).map((_, idx) => (
-        <div key={idx} className="border border-gray-300" />
-      ))}
-    </div>
-
-    {/* temp div for overlay grid layering */}
-    <div className="relative">
-      <BaseAsiaMap />
-
-      {movementsMetadata.map(({ data, status }, idx) =>
-        data.map((item) => {
-          const mapMetadata = mapCountryMetadataList[item.title];
-          return (
-            mapMetadata && (
-              <LocationPin
-                FlagIcon={mapMetadata.FlagIcon}
-                className={`${mapMetadata.twMapOffset} ${mapMetadata.twVisibility}`}
-                clickHandler={() => setTabIdx(idx)}
-                key={item.title}
-                status={status}
-                title={mapMetadata.title}
-                to={{ hash: getFragmentName(item.title) }}
-                transformOrigin={mapMetadata.transformOrigin}
-              />
-            )
-          );
-        }),
-      )}
-    </div>
+    <BaseAsiaMap />
+    {movementsMetadata.map(({ data, status }, idx) =>
+      data.map((item) => {
+        const mapMetadata = mapCountryMetadataList[item.title];
+        return (
+          mapMetadata && (
+            <LocationPin
+              FlagIcon={mapMetadata.FlagIcon}
+              className={`${mapMetadata.twMapOffset} ${mapMetadata.twVisibility}`}
+              clickHandler={() => setTabIdx(idx)}
+              key={item.title}
+              status={status}
+              title={mapMetadata.title}
+              to={{ hash: getFragmentName(item.title) }}
+              transformOrigin={mapMetadata.transformOrigin}
+            />
+          )
+        );
+      }),
+    )}
   </div>
 );
 
@@ -71,9 +60,9 @@ const LocationPin = ({
 }) => {
   let dotStyle = "z-10 rounded -translate-x-1/2 -translate-y-1/2 size-2";
   let arrowStyle =
-    "hidden absolute z-10 w-3 h-8 -translate-x-1/2 -translate-y-1/2 sm:block";
+    "hidden absolute z-10 w-3 h-8 -translate-x-1/2 -translate-y-1/2 md:block";
   let contentStyle =
-    "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded-md sm:flex xl:px-2";
+    "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded-md md:flex lg:px-2";
 
   switch (status) {
     case "past":
@@ -134,7 +123,7 @@ const LocationPin = ({
       )}
       <div className={contentStyle}>
         <FlagIcon className="h-4 bg-white rounded-sm border border-white" />
-        <p className="hidden w-max text-xs font-bold text-white uppercase xl:inline">
+        <p className="hidden w-max text-xs font-bold text-white uppercase lg:inline">
           {title}
         </p>
       </div>
