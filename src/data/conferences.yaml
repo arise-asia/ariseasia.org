@@ -10,6 +10,8 @@ upcomingConferencesList:
         target: https://www.facebook.com/profile.php?id=61555870030732
       - title: Instagram
         target: https://www.instagram.com/arise.philippines
+      - title: Promo Video
+        target: https://fb.watch/uxqsPHaxs5
     description: |
       The Arise Philippines Regionwide Youth Missions Conference is heading to the north! Gear up for an electrifying conference at the Philippine Baptist Theological Seminary. This transformative event will ignite the passion of young people to boldly "Go to where there is no gospel." 🧨
 
@@ -23,9 +25,17 @@ upcomingConferencesList:
 
       Our desire is to activate more intercessors, raise proactive evangelists, inspire intentional discipleship, spur UPG adoption, and encourage missions involvement.
 
+  - country: India
+    title: Arise Mumbai
+    subtitle: October 11. 2024
+    backgroundSrc: /locations/mumbai.jpg
+    posterSrc: /movements/arise-mumbai.jpg
+    donateTarget: https://www.totalideas.org/Arise-Mumbai-1
+    description: Looking to get involved or find out more? Please email info@ariseasia.org.
+
   - country: Myanmar
     title: Arise Myanmar
-    subtitle: October 15-17. 2024
+    subtitle: October 15-16. 2024
     backgroundSrc: /locations/myanmar.jpg
     posterSrc: /movements/arise-myanmar.jpg
     donateTarget: https://www.totalideas.org/Arise-Yangon-1
@@ -225,14 +235,18 @@ pastConferencesList:
     posterSrc: /movements/arise-indonesia.jpg
     # donateTarget: https://www.totalideas.org/Arise-Indonesia
     # signupTarget: https://reborn.id/app/page/AriseIndonesia2024
-    websiteTarget: https://indo.ariseasia.org
+    websiteTarget: https://id.ariseasia.org
     links:
       - title: Instagram
         target: https://www.instagram.com/ariseindonesia
+      - title: Promo Video
+        target: https://www.instagram.com/reel/C6JBoV7Pnqm
       - title: Summary Video
         target: https://www.instagram.com/reel/C-VK4_kvsYj
       - title: Photos
         target: https://www.instagram.com/p/C-rc1hVPkxt
+      - title: Praise Report
+        target: https://drive.google.com/file/d/167qVzGVDJ33Hw3fY4IbZHksJEVXnBkYU
     description: |
       The Arise Indonesia conference is a gathering focused on the mission in Indonesia with the goal of bringing the mission of "Go to where there is no gospel" to the next generation. This conference specifically targets youth, students, and young professionals between the ages of 18 and 35. 🫵🏻
 
@@ -255,6 +269,8 @@ pastConferencesList:
         target: https://fb.watch/t-a0cG0NtM
       - title: Summary Video
         target: https://youtu.be/rL9DRZJuT1k
+      - title: Photos
+        target: https://www.facebook.com/media/set/?set=a.122177892362195667
       - title: Praise Report
         target: https://ariseevents.my.canva.site/arise-bicol-praise-report
     description: |
@@ -274,7 +290,6 @@ futureConferencesList:
   - title: Arise Bangladesh
   - title: Arise Japan
   - title: Arise Macau
-  - title: Arise Mumbai
   - title: Arise Sri Lanka
   - title: Arise Cambodia
   - title: Arise Philippines
