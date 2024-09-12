@@ -135,12 +135,12 @@ LocationPin.propTypes = {
   FlagIcon: PropTypes.elementType.isRequired,
   className: PropTypes.string,
   clickHandler: PropTypes.func,
-  status: PropTypes.string,
+  status: PropTypes.oneOf(["upcoming", "past", "future"]),
   title: PropTypes.string,
   to: PropTypes.object,
   transformOrigin: PropTypes.shape({
-    horizontal: PropTypes.string,
-    vertical: PropTypes.string,
+    horizontal: PropTypes.oneOf(["left", "middle", "right"]),
+    vertical: PropTypes.oneOf(["top", "bottom"]),
   }),
 };
 
