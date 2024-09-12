@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { GrCircleInformation, GrCirclePlay, GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 import MovementsCarousel from "../components/MovementsCarousel";
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="relative px-4 pt-52 bg-gradient-to-t sm:pt-80 from-orange-500/75 to-40%">
@@ -30,13 +33,8 @@ const HomePage = () => {
             <div className="relative">
               <div className="flex absolute inset-0 justify-center items-center translate-y-6">
                 <div className="mx-10 mb-4 max-w-screen-lg text-xs italic text-center text-white sm:mx-14 sm:text-base sm:font-bold sm:rotate-2 md:rotate-1 lg:mx-28 lg:text-xl xl:mb-8 prose prose-sm sm:prose-base">
-                  <p>
-                    However, I consider my life worth nothing to me; my only aim
-                    is to finish the race and complete the task the Lord Jesus
-                    has given me—the task of testifying to the good news of
-                    God’s grace.
-                  </p>
-                  <p>Acts 20:24</p>
+                  <p>{t("home.verse")}</p>
+                  <p>{t("home.verseReference")}</p>
                 </div>
               </div>
               <svg
@@ -57,11 +55,10 @@ const HomePage = () => {
             <div className="relative">
               <div className="flex absolute inset-0 flex-col">
                 <h2 className="-m-1 ml-10 text-white uppercase sm:ml-20 lg:ml-36 text-h2">
-                  Mission
+                  {t("home.mission.heading")}
                 </h2>
                 <p className="self-center mx-16 mt-4 text-xs italic text-center text-white sm:mx-36 sm:mt-6 sm:text-base sm:font-bold sm:-rotate-3 md:-rotate-2 lg:text-xl">
-                  To inspire the next generation to take the gospel throughout
-                  Asia and to the world.
+                  {t("home.mission.text")}
                 </p>
               </div>
               <svg
@@ -105,27 +102,22 @@ const HomePage = () => {
                 src="/logo.svg"
               />
               <h2 className="text-center text-white uppercase text-h3">
-                What Is Arise?
+                {t("home.arise.heading")}
               </h2>
               <div className="text-white prose prose-sm sm:prose-base">
                 <p>
-                  Arise Asia is a missions movement launched in 2023 to{" "}
+                  {t("home.arise.text") + " "}
                   <span className="text-amber-300">
-                    inspire young adults across Asia and beyond to take the
-                    gospel where it has never been heard.{" "}
+                    {t("home.arise.orangeText") + " "}
                   </span>
-                  Join our events to be part of a generation committed to
-                  sharing the gospel and planting churches in unreached areas.
-                  Discover how you can make a difference with the Arise movement
-                  by attending our conferences and partnering with us through
-                  our mentoring and internship programs.
+                  {t("home.arise.text2")}
                 </p>
               </div>
               <Link
                 className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
                 to="/about"
               >
-                More About Us <GrCircleInformation size={20} />
+                {t("home.arise.buttonText")} <GrCircleInformation size={20} />
               </Link>
             </div>
             <div className="p-4 w-full max-w-screen-sm text-red-700 rounded-3xl ring-2 ring-red-700 xl:w-1/3">

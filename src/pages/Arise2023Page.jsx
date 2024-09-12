@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 import MomentsCarousel from "../components/MomentsCarousel";
 
 const Arise2023Page = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="pt-60 bg-yellow-50">
       <h1 className="pb-20 text-center text-yellow-700 uppercase text-h1">
-        Arise 2023
+        {t("arise2023.title")}
       </h1>
       <div className="py-10 px-4 bg-amber-300 sm:py-10 md:px-20 rounded-tl-[2.5rem] md:rounded-tl-[5rem]">
         <div className="container flex flex-col gap-y-6">

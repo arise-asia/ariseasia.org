@@ -14,6 +14,7 @@ import HomePage from "./pages/HomePage";
 import MovementsPage from "./pages/MovementsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
+import "./i18n";
 import "./index.css";
 
 const router = createBrowserRouter([

@@ -1,7 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 const AboutPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col pt-60 bg-red-50">
-      <h1 className="text-center text-red-700 uppercase text-h1">About Us</h1>
+      <h1 className="text-center text-red-700 uppercase text-h1">
+        {t("about.title")}
+      </h1>
 
       <div className="container px-4 my-10">
         <h2 className="text-center text-red-700 uppercase translate-y-4 sm:translate-y-6 text-h2">
