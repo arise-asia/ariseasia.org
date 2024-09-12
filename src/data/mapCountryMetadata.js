@@ -18,7 +18,6 @@ import {
   PH,
   SG,
   TH,
-  TW,
   VN,
 } from "country-flag-icons/react/3x2";
 
@@ -31,7 +30,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[54%] left-[44%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#bd:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#bd:not(:hover)]:hidden",
   },
   "Arise Brunei": {
     FlagIcon: BN,
@@ -41,7 +40,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[80%] left-[68.5%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#bn:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#bn:not(:hover)]:hidden",
   },
   "Arise Bhutan": {
     FlagIcon: BT,
@@ -51,7 +50,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[49%] left-[44%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#bt:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#bt:not(:hover)]:hidden",
   },
   "Arise Hong Kong": {
     FlagIcon: HK,
@@ -61,7 +60,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[56%] left-[68%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:hidden",
   },
   "Arise Indonesia": {
     FlagIcon: ID,
@@ -71,7 +70,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[94%] left-[61%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#id:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#id:not(:hover)]:hidden",
   },
   "Arise Mumbai": {
     FlagIcon: IN,
@@ -81,7 +80,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[65%] left-[28%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#in:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#in:not(:hover)]:hidden",
   },
   "Arise Japan": {
     FlagIcon: JP,
@@ -91,7 +90,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[36%] left-[94%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#jp:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#jp:not(:hover)]:hidden",
   },
   "Arise Cambodia": {
     FlagIcon: KH,
@@ -101,7 +100,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[70%] left-[60%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#kh:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#kh:not(:hover)]:hidden",
   },
   "Arise Korea": {
     FlagIcon: KR,
@@ -112,7 +111,7 @@ const mapCountryMetadataList = {
     },
     twMapOffset: "top-[34%] left-[81%]",
     twVisibility:
-      "peer-has-[:hover]:peer-has-[#kp:not(:hover)]:peer-has-[#kr:not(:hover)]:opacity-50",
+      "peer-has-[:hover]:peer-has-[#kp:not(:hover)]:peer-has-[#kr:not(:hover)]:hidden",
   },
   "Arise Laos": {
     FlagIcon: LA,
@@ -122,7 +121,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[61.5%] left-[56.5%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#la:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#la:not(:hover)]:hidden",
   },
   "Arise Sri Lanka": {
     FlagIcon: LK,
@@ -132,7 +131,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[77%] left-[34%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#lk:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#lk:not(:hover)]:hidden",
   },
   "Arise Myanmar": {
     FlagIcon: MM,
@@ -142,7 +141,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[64%] left-[50%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#mm:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#mm:not(:hover)]:hidden",
   },
   "Arise Mongolia": {
     FlagIcon: MN,
@@ -152,7 +151,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[18%] left-[60%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#mn:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#mn:not(:hover)]:hidden",
   },
   "Arise Macau": {
     FlagIcon: MO,
@@ -162,7 +161,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[56%] left-[67%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:hidden",
   },
   "Arise Malaysia": {
     FlagIcon: MY,
@@ -172,7 +171,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[82%] left-[55.5%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#my:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#my:not(:hover)]:hidden",
   },
   "Arise Nepal": {
     FlagIcon: NP,
@@ -182,7 +181,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[48.8%] left-[39%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#np:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#np:not(:hover)]:hidden",
   },
   "Arise Philippines": {
     FlagIcon: PH,
@@ -192,7 +191,7 @@ const mapCountryMetadataList = {
       vertical: "top",
     },
     twMapOffset: "top-[70%] left-[78%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#ph:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#ph:not(:hover)]:hidden",
   },
   "Arise Singapore": {
     FlagIcon: SG,
@@ -202,7 +201,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[84%] left-[58%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#sg:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#sg:not(:hover)]:hidden",
   },
   "Arise Thailand": {
     FlagIcon: TH,
@@ -212,17 +211,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[68%] left-[54%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#th:not(:hover)]:opacity-50",
-  },
-  "Arise Taiwan": {
-    FlagIcon: TW,
-    title: "Taiwan",
-    transformOrigin: {
-      horizontal: "right",
-      vertical: "top",
-    },
-    twMapOffset: "top-[54%] left-[75%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#tw:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#th:not(:hover)]:hidden",
   },
   "Arise Vietnam": {
     FlagIcon: VN,
@@ -232,7 +221,7 @@ const mapCountryMetadataList = {
       vertical: "bottom",
     },
     twMapOffset: "top-[59.5%] left-[59.5%]",
-    twVisibility: "peer-has-[:hover]:peer-has-[#vn:not(:hover)]:opacity-50",
+    twVisibility: "peer-has-[:hover]:peer-has-[#vn:not(:hover)]:hidden",
   },
 };
 
