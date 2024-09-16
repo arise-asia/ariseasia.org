@@ -62,7 +62,7 @@ const LocationPin = ({
   let arrowStyle =
     "hidden absolute z-10 w-3 h-8 -translate-x-1/2 -translate-y-1/2 md:block";
   let contentStyle =
-    "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded md:flex lg:px-2";
+    "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded-md md:flex lg:px-2";
   let badgeStyle =
     "hidden absolute right-0.5 px-1 font-bold uppercase rounded-full text-[0.45rem]";
   let badgeContent;
