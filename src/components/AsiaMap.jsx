@@ -64,7 +64,7 @@ const LocationPin = ({
   let contentStyle =
     "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded-md md:flex lg:px-2";
   let badgeStyle =
-    "hidden absolute right-1 px-1 font-bold uppercase rounded-full text-[0.35rem]";
+    "hidden absolute right-1 px-1 font-bold uppercase rounded-full text-[0.4rem]";
   let badgeContent;
 
   switch (status) {
@@ -103,13 +103,13 @@ const LocationPin = ({
     case "bottom":
       arrowStyle += " [clip-path:path('M0_33V32l6-8_6_8v1Z')]";
       contentStyle += " -bottom-8";
-      badgeStyle += " bottom-0 translate-y-1/2";
+      badgeStyle += " bottom-0 translate-y-2/3";
       break;
     case "top":
     default:
       arrowStyle += " [clip-path:path('M0-1V0l6_8_6-8v-1Z')]";
       contentStyle += " -top-10";
-      badgeStyle += " top-0 -translate-y-1/2";
+      badgeStyle += " top-0 -translate-y-2/3";
   }
 
   return (
