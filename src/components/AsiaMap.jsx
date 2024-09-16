@@ -63,6 +63,9 @@ const LocationPin = ({
     "hidden absolute z-10 w-3 h-8 -translate-x-1/2 -translate-y-1/2 md:block";
   let contentStyle =
     "hidden absolute gap-x-2 items-center py-1 px-1 h-6 rounded-md md:flex lg:px-2";
+  let badgeStyle =
+    "hidden absolute right-1 px-1 font-bold uppercase rounded-full text-[0.35rem]";
+  let badgeContent;
 
   switch (status) {
     case "past":
@@ -74,12 +77,16 @@ const LocationPin = ({
       dotStyle += " bg-orange-500";
       arrowStyle += " bg-orange-500";
       contentStyle += " bg-orange-500";
+      badgeStyle += " bg-yellow-300 lg:block";
+      badgeContent = "Upcoming";
       break;
     case "future":
     default:
       dotStyle += " bg-orange-700";
       arrowStyle += " bg-orange-700";
       contentStyle += " bg-orange-700";
+      badgeStyle += " bg-red-300 lg:block";
+      badgeContent = "Stay Tuned";
   }
   switch (transformOrigin?.horizontal) {
     case "left":
@@ -96,11 +103,13 @@ const LocationPin = ({
     case "bottom":
       arrowStyle += " [clip-path:path('M0_33V32l6-8_6_8v1Z')]";
       contentStyle += " -bottom-8";
+      badgeStyle += " bottom-0 translate-y-1/2";
       break;
     case "top":
     default:
       arrowStyle += " [clip-path:path('M0-1V0l6_8_6-8v-1Z')]";
       contentStyle += " -top-10";
+      badgeStyle += " top-0 -translate-y-1/2";
   }
 
   return (
@@ -126,6 +135,7 @@ const LocationPin = ({
         <p className="hidden w-max text-xs font-bold text-white uppercase lg:inline">
           {title}
         </p>
+        <div className={badgeStyle}>{badgeContent}</div>
       </div>
     </Link>
   );
