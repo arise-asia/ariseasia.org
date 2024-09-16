@@ -6,6 +6,18 @@ export default {
       center: true,
     },
     extend: {
+      keyframes: {
+        "ping-dot": {
+          "50%": {
+            transform: "scale(3)",
+            opacity: 0.8,
+          },
+          "100%": {
+            transform: "scale(5)",
+            opacity: 0,
+          },
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
