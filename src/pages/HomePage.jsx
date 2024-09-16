@@ -10,7 +10,7 @@ const HomePage = () => (
         Arise Asia
       </h1>
       <p className="pb-36 text-center text-white sm:pb-80 sm:text-xl font-heading">
-        Go to where there is no Gospel
+        Go where there is no Gospel
       </p>
       <video
         autoPlay
