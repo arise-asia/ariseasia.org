@@ -80,8 +80,6 @@ const HomePage = () => (
           </div>
         </div>
 
-        <MovementsCarousel />
-
         <div className="flex flex-col gap-6 justify-center items-center xl:flex-row">
           <div className="p-4 w-full max-w-screen-sm text-red-700 rounded-3xl ring-2 ring-red-700 xl:w-1/3">
             <iframe
@@ -92,11 +90,11 @@ const HomePage = () => (
             />
             <div className="flex gap-x-2 items-center">
               <GrCirclePlay className="mb-0.5 sm:mb-1" size={24} />
-              <h3 className="text-h4">What Is Arise Asia</h3>
+              <h3 className="text-h4">Who We Are</h3>
             </div>
             <p className="text-p">
-              The Arise movement&apos;s mission and values, explained by our
-              cofounder, David Ro
+              Discover the mission and values of the Arise movement, as
+              explained by co-founder, David Ro
             </p>
           </div>
           <div className="relative order-first p-10 w-full max-w-screen-md bg-red-700 rounded-3xl xl:order-none xl:w-1/3">
@@ -139,14 +137,16 @@ const HomePage = () => (
             />
             <div className="flex gap-x-2 items-center">
               <GrCirclePlay className="mb-0.5 sm:mb-1" size={24} />
-              <h3 className="text-h4">Arise Movement</h3>
+              <h3 className="text-h4">Why Join Us</h3>
             </div>
             <p className="text-p">
-              The importance of joining the movement now, shared by our
-              cofounder, Seth Kim
+              Understand the importance of the Arise movement, as explained by
+              co-founder, Seth Kim
             </p>
           </div>
         </div>
+
+        <MovementsCarousel />
 
         <article className="flex relative flex-col gap-10 p-10 mt-6 bg-amber-300 rounded-3xl xl:flex-row">
           <div className="absolute left-0 -top-6 w-48 h-12 bg-amber-300 rounded-t-xl [clip-path:path('M173_10Q168_0_156_0H0L0_48_192_48Z')]" />
@@ -155,12 +155,28 @@ const HomePage = () => (
               <p>Check out what happened in...</p>
             </div>
             <h2 className="uppercase text-h3">Arise Asia 2023</h2>
-            <div className="prose prose-sm sm:prose-base">
+            <div className="prose prose-xs sm:prose-sm">
               <p>
-                On July 25-29, 1844 people from all across Asia attended the
-                first ever Arise Asia in Bangkok, Thailand. Praise God for all
-                He did during this conference! Check out the recap page for the
-                summary, moments, and program.
+                On 25 July 2023, over 1800 participants from across Asia
+                gathered in Bangkok, Thailand, for the inaugural Arise Asia
+                conference. This historic event was organized to unite and equip
+                believers with a shared vision of advancing the gospel
+                throughout Asia. We praise God for the powerful work He
+                accomplished during these five days, as lives were transformed,
+                faith was strengthened, and a renewed passion for cross-cultural
+                missions was ignited.
+                <br />
+                <br />
+                This conference was created to inspire and mobilize a new
+                generation of leaders, fostering collaboration beyond cultural
+                and national boundaries. As we look to the future, we hope to
+                see the impact of this gathering continue to grow as
+                participants return to their communities, empowered to make a
+                lasting difference.
+                <br />
+                <br />
+                For a recap of the conference, including key moments and session
+                summaries, visit our recap page.
               </p>
             </div>
             <Link
