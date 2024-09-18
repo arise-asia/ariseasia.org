@@ -105,7 +105,6 @@ const MovementsPage = () => {
             {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
-            {tabIdx === 2 && (
               <p className="text-p">
                 Don&apos;t see your country here? Contact
                 <a
@@ -117,7 +116,6 @@ const MovementsPage = () => {
                 to find out more about hosting an Arise Movement in your
                 country/city!
               </p>
-            )}
           </div>
         </div>
       </div>
