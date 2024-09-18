@@ -19,6 +19,15 @@ const Footer = () => (
             <Link to="/movements" className="hover:text-orange-500">
               Movements
             </Link>
+            <span>|</span>
+            <a
+              className="hover:text-orange-500"
+              href="https://www.totalideas.org/projects"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Giving
+            </a>
           </div>
           <div className="flex gap-x-4 justify-center mb-6 sm:justify-start">
             <a
