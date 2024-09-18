@@ -4,13 +4,17 @@ const AboutPage = () => (
   <div className="flex flex-col pt-60 bg-red-50">
     <h1 className="text-center text-red-700 uppercase text-h1">About Us</h1>
 
-    <div className="relative px-4 mx-auto mt-10 w-full max-w-screen-lg sm:mt-20">
+    <figure className="relative px-4 mx-auto mt-10 w-full max-w-screen-lg sm:mt-20">
       <img
         alt="Image of Arise Asia 2023"
         className="object-cover rounded-xl aspect-video"
         src="/about/about-us.jpg"
       />
-    </div>
+      <figcaption className="text-center pt-2">
+        Together for His mission: All 1,844 participants gathered at the closing
+        of Arise Asia 2023.
+      </figcaption>
+    </figure>
 
     <div className="container px-4 my-10">
       <h2 className="text-center text-red-700 uppercase translate-y-4 sm:translate-y-6 text-h2">
