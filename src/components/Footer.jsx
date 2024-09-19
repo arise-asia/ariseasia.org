@@ -6,7 +6,9 @@ const Footer = () => (
     <div className="container flex flex-col justify-between p-12 sm:flex-row sm:px-20">
       <div className="flex flex-col justify-between text-center sm:text-left">
         <div>
-          <h2 className="text-orange-500 text-h4">Arise Asia</h2>
+          <a className="text-orange-500 text-h4 hover:underline" href="#">
+            Arise Asia
+          </a>
           <div className="flex gap-1 justify-center mb-4 text-p sm:justify-normal">
             <Link to="/about" className="hover:text-orange-500">
               About Us
@@ -57,12 +59,9 @@ const Footer = () => (
           Copyright &copy;2022-2024 Arise Asia. All rights reserved.
         </p>
       </div>
-      <a
-        className="md:absolute md:right-20 lg:right-40 mx-auto mt-6 sm:m-0"
-        href="#"
-      >
-        <img alt="Arise logo" className="w-24 hover:w-28" src="/logo.svg" />
-      </a>
+      <div className="mx-auto mt-6 sm:m-0">
+        <img alt="Arise logo" className="mt-6 w-24" src="/logo.svg" />
+      </div>
     </div>
   </footer>
 );
