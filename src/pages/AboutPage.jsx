@@ -10,7 +10,7 @@ const AboutPage = () => (
         className="object-cover rounded-xl aspect-video"
         src="/about/about-us.jpg"
       />
-      <figcaption className="text-center pt-2">
+      <figcaption className="text-center pt-2 italic">
         Together for His mission: All 1,844 participants gathered at the closing
         of Arise Asia 2023.
       </figcaption>
@@ -84,7 +84,7 @@ const AboutPage = () => (
           <div>
             <h3 className="text-red-700 uppercase text-h3">David Ro</h3>
             <p className="text-red-900 text-h5">
-              Cofounder and Executive Director
+              Co-founder and Executive Director
             </p>
             <p className="italic font-bold text-red-900 text-p">
               Regional Director for East Asia, Lausanne Movement
@@ -114,7 +114,9 @@ const AboutPage = () => (
           />
           <div>
             <h3 className="text-red-700 uppercase text-h3">Seth Kim</h3>
-            <p className="text-red-900 text-h5">Cofounder and Vice President</p>
+            <p className="text-red-900 text-h5">
+              Co-founder and Vice President
+            </p>
             <p className="italic font-bold text-red-900 text-p">
               Lead Pastor, Harvest Mission Community Church
             </p>
