@@ -108,17 +108,16 @@ const HomePage = () => (
             </h2>
             <div className="text-white prose prose-sm sm:prose-base">
               <p>
-                It is almost two millennia since Jesus called His first
-                disciples to follow Him. Since that time, many followers of
-                Jesus have taken up the call to take the Gospel to the ends of
-                the earth. Now, in the 21 st century, the need for the Gospel to
-                be shared and lived out in Asia is tremendous, and God is
-                setting the hearts of people in Asia on fire for His glory and
-                purpose.{" "}
+                Arise Asia is a missions movement launched in 2023 to{" "}
                 <span className="text-amber-300">
-                  The time has come for Asia to arise and participate in God’s
-                  Great Commission.
+                  inspire young adults across Asia and beyond to take the gospel
+                  where it has never been heard.{" "}
                 </span>
+                Join our events to be part of a generation committed to sharing
+                the gospel and planting churches in unreached areas. Discover
+                how you can make a difference with the Arise movement by
+                attending our conferences and partnering with us through our
+                mentoring and internship program.
               </p>
             </div>
             <Link
@@ -186,7 +185,7 @@ const HomePage = () => (
               Arise Asia 2023 Recap <GrHistory size={20} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96">
+          <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 /sm:grid-cols-3 sm:h-96">
             <img
               alt="Morning session congregation"
               src="/moments/8.jpg"
