@@ -57,9 +57,12 @@ const Footer = () => (
           Copyright &copy;2022-2024 Arise Asia. All rights reserved.
         </p>
       </div>
-      <div className="mx-auto mt-6 sm:m-0">
-        <img alt="Arise logo" className="mt-6 w-24" src="/logo.svg" />
-      </div>
+      <a
+        className="md:absolute md:right-20 lg:right-40 mx-auto mt-6 sm:m-0"
+        href="#"
+      >
+        <img alt="Arise logo" className="w-24 hover:w-28" src="/logo.svg" />
+      </a>
     </div>
   </footer>
 );
