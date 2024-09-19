@@ -102,6 +102,12 @@ const MovementsPage = () => {
             <h2 className="text-center text-orange-700 lg:text-left text-h3">
               {tabs[tabIdx].title}
             </h2>
+            {tabIdx === 2 && (
+              <p className="text-p">
+                These movements are currently in preparation stage - more
+                details to be released soon.
+              </p>
+            )}
             {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
