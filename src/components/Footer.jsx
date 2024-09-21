@@ -9,19 +9,19 @@ const Footer = () => (
           <a className="text-orange-500 text-h4 hover:underline" href="#">
             Arise Asia
           </a>
-          <div className="flex gap-1 justify-center mb-4 text-p sm:justify-normal">
+          <div className="flex flex-col md:flex-row gap-1 justify-center mb-4 text-p sm:justify-normal">
             <Link to="/about" className="hover:text-orange-500">
               About Us
             </Link>
-            <span>|</span>
+            <span className="hidden md:block">|</span>
             <Link to="/arise2023" className="hover:text-orange-500">
               Arise 2023
             </Link>
-            <span>|</span>
+            <span className="hidden md:block">|</span>
             <Link to="/movements" className="hover:text-orange-500">
               Movements
             </Link>
-            <span>|</span>
+            <span className="hidden md:block">|</span>
             <a
               className="hover:text-orange-500"
               href="https://www.totalideas.org/projects"
