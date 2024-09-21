@@ -154,7 +154,7 @@ const HomePage = () => (
               <p>Check out what happened in...</p>
             </div>
             <h2 className="uppercase text-h3">Arise Asia 2023</h2>
-            <div className="prose prose-sm sm:prose-base">
+            <div className="w-full mx-auto lg:prose lg:prose-sm">
               <p>
                 On 25 July 2023, over 1800 participants from across Asia
                 gathered in Bangkok, Thailand, for the inaugural Arise Asia
@@ -185,7 +185,7 @@ const HomePage = () => (
               Arise Asia 2023 Recap <GrHistory size={20} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96">
+          <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96 lg:my-auto">
             <img
               alt="Morning session congregation"
               src="/moments/8.jpg"
