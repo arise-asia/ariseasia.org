@@ -87,7 +87,9 @@ const MovementsPage = () => {
                     {tabName}
                   </p>
                   <RiArrowDropRightLine
-                    className={`hidden transition-transform duration-500 lg:block ${tabIdx === idx && tabActive && "rotate-90"}`}
+                    className={`hidden transition-transform duration-500 lg:block ${
+                      tabIdx === idx && tabActive && "rotate-90"
+                    }`}
                     size={28}
                   />
                 </button>
@@ -104,24 +106,24 @@ const MovementsPage = () => {
             </h2>
             {tabIdx === 2 && (
               <p className="text-p">
-                These movements are currently in preparation stage - more
-                details to be released soon.
+                These movements are currently in the preparation stage. More
+                details will be released soon.
               </p>
             )}
             {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
-              <p className="text-p">
-                Don&apos;t see your country here? Contact
-                <a
-                  className="mx-1 text-cyan-700 underline hover:text-cyan-500"
-                  href="mailto:info@ariseasia.org"
-                >
-                  info@ariseasia.org
-                </a>
-                to find out more about hosting an Arise Movement in your
-                country/city!
-              </p>
+            <p className="text-p">
+              Don&apos;t see your country here? Contact
+              <a
+                className="mx-1 text-cyan-700 underline hover:text-cyan-500"
+                href="mailto:info@ariseasia.org"
+              >
+                info@ariseasia.org
+              </a>
+              to find out more about hosting an Arise Movement in your
+              country/city!
+            </p>
           </div>
         </div>
       </div>
@@ -131,7 +133,9 @@ const MovementsPage = () => {
 
 const MovementsDropdown = ({ active, data }) => (
   <div
-    className={`grid transition-[grid-template-rows] duration-500 ${active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+    className={`grid transition-[grid-template-rows] duration-500 ${
+      active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+    }`}
   >
     <div className="hidden overflow-hidden px-10 ml-10 text-lg font-bold bg-white rounded-xl shadow lg:flex lg:flex-col">
       {data?.map((item) => (
@@ -201,7 +205,7 @@ const ConferenceCard = ({
                     <Icon className="hidden sm:block" size={24} />
                     <p className="text-xs font-bold sm:text-base">{title}</p>
                   </a>
-                ),
+                )
             )}
           </div>
         )}
@@ -239,7 +243,7 @@ ConferenceCard.propTypes = {
   signupTarget: PropTypes.string,
   websiteTarget: PropTypes.string,
   links: PropTypes.arrayOf(
-    PropTypes.shape({ title: PropTypes.string, target: PropTypes.string }),
+    PropTypes.shape({ title: PropTypes.string, target: PropTypes.string })
   ),
   description: PropTypes.string,
 };
