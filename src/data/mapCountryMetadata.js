@@ -29,7 +29,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "bottom",
     },
-    twMapOffset: "top-[54%] left-[44%]",
+    twMapOffset: "top-[54%] left-[50%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#bd:not(:hover)]:hidden",
   },
   "Arise Brunei": {
@@ -49,7 +49,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "top",
     },
-    twMapOffset: "top-[49%] left-[44%]",
+    twMapOffset: "top-[49%] left-[50%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#bt:not(:hover)]:hidden",
   },
   "Arise Hong Kong": {
@@ -59,7 +59,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "bottom",
     },
-    twMapOffset: "top-[56%] left-[68%]",
+    twMapOffset: "top-[55.5%] left-[72%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:hidden",
   },
   "Arise Indonesia": {
@@ -69,7 +69,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "bottom",
     },
-    twMapOffset: "top-[94%] left-[61%]",
+    twMapOffset: "top-[96.5%] left-[72.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#id:not(:hover)]:hidden",
   },
   "Arise Mumbai": {
@@ -79,7 +79,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "top",
     },
-    twMapOffset: "top-[65%] left-[28%]",
+    twMapOffset: "top-[65%] left-[36%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#in:not(:hover)]:hidden",
   },
   "Arise Japan": {
@@ -99,7 +99,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "bottom",
     },
-    twMapOffset: "top-[70%] left-[60%]",
+    twMapOffset: "top-[70%] left-[64.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#kh:not(:hover)]:hidden",
   },
   "Arise Korea": {
@@ -120,7 +120,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "top",
     },
-    twMapOffset: "top-[61.5%] left-[56.5%]",
+    twMapOffset: "top-[61.5%] left-[61.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#la:not(:hover)]:hidden",
   },
   "Arise Sri Lanka": {
@@ -130,7 +130,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "bottom",
     },
-    twMapOffset: "top-[77%] left-[34%]",
+    twMapOffset: "top-[76.5%] left-[41.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#lk:not(:hover)]:hidden",
   },
   "Arise Myanmar": {
@@ -140,7 +140,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "bottom",
     },
-    twMapOffset: "top-[64%] left-[50%]",
+    twMapOffset: "top-[63.5%] left-[55.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#mm:not(:hover)]:hidden",
   },
   "Arise Mongolia": {
@@ -150,7 +150,7 @@ const mapCountryMetadataList = {
       horizontal: "middle",
       vertical: "top",
     },
-    twMapOffset: "top-[18%] left-[60%]",
+    twMapOffset: "top-[18%] left-[64%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#mn:not(:hover)]:hidden",
   },
   "Arise Macau": {
@@ -160,7 +160,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "top",
     },
-    twMapOffset: "top-[56%] left-[67%]",
+    twMapOffset: "top-[56%] left-[71%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#cn:not(:hover)]:hidden",
   },
   "Arise Malaysia": {
@@ -170,7 +170,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "top",
     },
-    twMapOffset: "top-[82%] left-[55.5%]",
+    twMapOffset: "top-[81%] left-[60.5%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#my:not(:hover)]:hidden",
   },
   "Arise Nepal": {
@@ -180,7 +180,7 @@ const mapCountryMetadataList = {
       horizontal: "left",
       vertical: "top",
     },
-    twMapOffset: "top-[48.8%] left-[39%]",
+    twMapOffset: "top-[48.8%] left-[46%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#np:not(:hover)]:hidden",
   },
   "Arise Philippines": {
@@ -190,7 +190,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "top",
     },
-    twMapOffset: "top-[70%] left-[78%]",
+    twMapOffset: "top-[70%] left-[80%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#ph:not(:hover)]:hidden",
   },
   "Arise Singapore": {
@@ -200,7 +200,7 @@ const mapCountryMetadataList = {
       horizontal: "middle",
       vertical: "bottom",
     },
-    twMapOffset: "top-[84%] left-[58%]",
+    twMapOffset: "top-[84%] left-[63%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#sg:not(:hover)]:hidden",
   },
   "Arise Thailand": {
@@ -220,7 +220,7 @@ const mapCountryMetadataList = {
       horizontal: "right",
       vertical: "bottom",
     },
-    twMapOffset: "top-[59.5%] left-[59.5%]",
+    twMapOffset: "top-[59.5%] left-[64%]",
     twVisibility: "peer-has-[:hover]:peer-has-[#vn:not(:hover)]:hidden",
   },
 };
