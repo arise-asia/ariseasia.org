@@ -81,6 +81,14 @@ upcomingConferencesList:
 
       Don't Miss Out! Seize this opportunity to be part of a global movement. Connect with others who share your passion and vision for making a difference. We're expecting over 500 energetic and passionate young adults to join us. Your journey starts here.
 
+  - country: Bangladesh
+    title: Arise Bangladesh
+    subtitle: March 12-15, 2025
+    backgroundSrc: /locations/bangladesh.jpg
+    posterSrc: /movements/arise-bangladesh.jpg
+    donateTarget: https://www.totalideas.org/Arise-Bangladesh
+    description: More information is coming soon. Stay tuned!
+
 pastConferencesList:
   - country: Philippines
     title: Arise Cebu
@@ -287,7 +295,6 @@ pastConferencesList:
       Our desire is to activate more intercessors, raise proactive evangelists, inspire intentional discipleship, spur UPG adoption, and encourage missions involvement.
 
 futureConferencesList:
-  - title: Arise Bangladesh
   - title: Arise Japan
   - title: Arise Macau
   - title: Arise Sri Lanka
