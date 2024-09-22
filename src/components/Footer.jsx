@@ -7,37 +7,50 @@ const Footer = () => (
       <div className="flex flex-col justify-between text-center sm:text-left">
         <div>
           <h2 className="text-orange-500 text-h4">Arise Asia</h2>
-          <div className="flex gap-1 justify-center mb-4 text-p sm:justify-normal">
+          <div className="flex flex-col gap-1 justify-center mb-4 md:flex-row text-p sm:justify-normal">
+            <Link to="/" className="hover:text-orange-500">
+              Home
+            </Link>
+            <span className="hidden md:block">|</span>
             <Link to="/about" className="hover:text-orange-500">
               About Us
             </Link>
-            <span>|</span>
+            <span className="hidden md:block">|</span>
             <Link to="/arise2023" className="hover:text-orange-500">
               Arise 2023
             </Link>
-            <span>|</span>
+            <span className="hidden md:block">|</span>
             <Link to="/movements" className="hover:text-orange-500">
               Movements
             </Link>
+            <span className="hidden md:block">|</span>
+            <a
+              className="hover:text-orange-500"
+              href="https://www.totalideas.org/projects"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Giving
+            </a>
           </div>
           <div className="flex gap-x-4 justify-center mb-6 sm:justify-start">
             <a
               href="https://www.instagram.com/ariseasia.movement"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaInstagram className="hover:text-yellow-500" size={32} />
             </a>
             <a
               href="https://www.youtube.com/@AriseAsiaMovement"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaYoutube className="hover:text-red-500" size={32} />
             </a>
             <a
               href="https://www.facebook.com/ariseasia2023"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaFacebook className="hover:text-blue-500" size={32} />

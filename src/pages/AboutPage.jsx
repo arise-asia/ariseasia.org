@@ -4,13 +4,17 @@ const AboutPage = () => (
   <div className="flex flex-col pt-60 bg-red-50">
     <h1 className="text-center text-red-700 uppercase text-h1">About Us</h1>
 
-    <div className="relative px-4 mx-auto mt-10 w-full max-w-screen-lg sm:mt-20">
+    <figure className="relative px-4 mx-auto mt-10 w-full max-w-screen-lg sm:mt-20">
       <img
         alt="Image of Arise Asia 2023"
         className="object-cover rounded-xl aspect-video"
         src="/about/about-us.jpg"
       />
-    </div>
+      <figcaption className="pt-2 italic text-center">
+        Together for His mission: All 1,844 participants gathered at the closing
+        of Arise Asia 2023.
+      </figcaption>
+    </figure>
 
     <div className="container px-4 my-10">
       <h2 className="text-center text-red-700 uppercase translate-y-4 sm:translate-y-6 text-h2">
@@ -50,7 +54,7 @@ const AboutPage = () => (
         <a
           className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
           href="https://goarise.org"
-          rel="noreferrer noopener"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Learn more at goarise.org <MdOpenInNew size={20} />
@@ -80,18 +84,26 @@ const AboutPage = () => (
           <div>
             <h3 className="text-red-700 uppercase text-h3">David Ro</h3>
             <p className="text-red-900 text-h5">
-              Cofounder and Executive Director
+              Co-founder and Executive Director
             </p>
             <p className="italic font-bold text-red-900 text-p">
               Regional Director for East Asia, Lausanne Movement
             </p>
-            <p className="mt-6 prose prose-sm sm:prose-base">
-              My challenge to this generation: You have one life. The one
-              challenge, find a people &quot;where Christ is not known&quot; and
-              boldly go to &quot;where there is no gospel&quot; and lay down
-              your life for another people in the footsteps of our Lord Jesus
-              Christ.
-            </p>
+            <div className="relative py-8 px-10 mt-6 max-w-screen-sm bg-red-200 rounded-xl">
+              <p className="italic text-justify text-red-900 text-p">
+                My challenge to this generation: You have one life. The one
+                challenge, find a people &quot;where Christ is not known&quot;
+                and boldly go to &quot;where there is no gospel&quot; and lay
+                down your life for another people in the footsteps of our Lord
+                Jesus Christ.
+              </p>
+              <span className="absolute top-0 left-0 text-8xl font-bold text-red-700 translate-x-1/4 -translate-y-6 font-heading">
+                &ldquo;
+              </span>
+              <span className="absolute right-0 bottom-0 text-8xl font-bold text-red-700 -translate-x-1/4 translate-y-16 font-heading">
+                &rdquo;
+              </span>
+            </div>
           </div>
         </div>
         <div className="flex flex-col gap-10 justify-center items-center lg:flex-row-reverse lg:items-end">
@@ -102,20 +114,30 @@ const AboutPage = () => (
           />
           <div>
             <h3 className="text-red-700 uppercase text-h3">Seth Kim</h3>
-            <p className="text-red-900 text-h5">Cofounder and Vice President</p>
+            <p className="text-red-900 text-h5">
+              Co-founder and Vice President
+            </p>
             <p className="italic font-bold text-red-900 text-p">
               Lead Pastor, Harvest Mission Community Church
             </p>
-            <p className="mt-6 prose prose-sm sm:prose-base">
-              Throughout history God has used different generations to fulfill
-              His purposes. We are on the precipice of God doing something great
-              with this generation. My hope and prayer is that we will see a
-              generation who is transformed by the Gospel and who will then
-              proclaim the Gospel to transform the world. May we &quot;risk it
-              all for the One who gave His all&quot; so that we will see every
-              nation, tribe, people, and language worshiping the King of Kings
-              and Lord of Lords.
-            </p>
+            <div className="relative py-8 px-10 mt-6 max-w-screen-sm bg-red-200 rounded-xl">
+              <p className="italic text-justify text-red-900 text-p">
+                Throughout history God has used different generations to fulfill
+                His purposes. We are on the precipice of God doing something
+                great with this generation. My hope and prayer is that we will
+                see a generation who is transformed by the Gospel and who will
+                then proclaim the Gospel to transform the world. May we
+                &quot;risk it all for the One who gave His all&quot; so that we
+                will see every nation, tribe, people, and language worshiping
+                the King of Kings and Lord of Lords.
+              </p>
+              <span className="absolute top-0 left-0 text-8xl font-bold text-red-700 translate-x-1/4 -translate-y-6 font-heading">
+                &ldquo;
+              </span>
+              <span className="absolute right-0 bottom-0 text-8xl font-bold text-red-700 -translate-x-1/4 translate-y-16 font-heading">
+                &rdquo;
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -188,24 +210,6 @@ const AboutPage = () => (
           className="hidden w-full max-w-screen-xl md:block"
           src="/about/endorsing-partners.png"
         />
-        <div className="text-center prose prose-sm sm:prose-base">
-          <p>
-            A3 (formerly Asian Access), Asia Evangelical Alliance (AEA), Asia
-            Theological Association (ATA), Campus Crusade for Christ (Cru),
-            Chinese Coordination Centre of World Evangelism (CCCOWE), Gather25,
-            Global Mission Mobilization Initiative (GMMI), HK Association of
-            Christian Missions (HKACM), India Missions Association,
-            International Fellowship of Evangelical Students (IFES),
-            InterVarsity, Korea World Mission Association (KWMA), Lausanne
-            Movement, Movement Day, Navigators, Perspectives Global, Philippine
-            Missions Association (PMA), REAH International, Radical, Send
-            International, Singapore Centre for Global Missions (SCGM), SIM
-            Pacific Asia, The Evangelical Alliance Mission (TEAM), The
-            Evangelical Fellowship of Thailand (EFT), Worldwide Evangelization
-            for Christ (WEC), World Evangelical Alliance (WEA), Youth for Christ
-            (YFC).
-          </p>
-        </div>
       </div>
     </div>
 
@@ -232,17 +236,6 @@ const AboutPage = () => (
           className="hidden w-full max-w-screen-xl md:block"
           src="/about/sponsoring-partners.png"
         />
-        <div className="text-center prose prose-sm sm:prose-base">
-          <p>
-            China Evangelical Seminary, Every Nation, Frontiers, Interserve,
-            International Mission Board (IMB), Kids International Ministries
-            (KIDSIM), One Hope, OMF International, Operation Mobilisation (OM),
-            Pioneers, Radius Asia, Serving in Mission (SIM), Singapore Bible
-            College, SIL International, Wheaton College, Worldwide
-            Evangelization for Christ (WEC), Wycliffe Global Alliance, Youth
-            Leaders Summit.
-          </p>
-        </div>
       </div>
     </div>
   </div>

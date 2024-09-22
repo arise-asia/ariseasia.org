@@ -23,7 +23,7 @@ const tabs = [
   },
   {
     data: conferenceData.futureConferencesList,
-    title: "Stay Tuned For...",
+    title: "Stay Tuned",
   },
 ];
 
@@ -102,22 +102,26 @@ const MovementsPage = () => {
             <h2 className="text-center text-orange-700 lg:text-left text-h3">
               {tabs[tabIdx].title}
             </h2>
+            {tabIdx === 2 && (
+              <p className="text-p">
+                These movements are currently in the preparation stage. More
+                details will be released soon.
+              </p>
+            )}
             {tabs[tabIdx].data?.map((item) => (
               <ConferenceCard key={item.title} {...item} />
             ))}
-            {tabIdx === 2 && (
-              <p className="text-p">
-                Don&apos;t see your country here? Contact
-                <a
-                  className="mx-1 text-cyan-700 underline hover:text-cyan-500"
-                  href="mailto:info@ariseasia.org"
-                >
-                  info@ariseasia.org
-                </a>
-                to find out more about hosting an Arise Movement in your
-                country/city!
-              </p>
-            )}
+            <p className="text-p">
+              Don&apos;t see your country here? Contact
+              <a
+                className="mx-1 text-cyan-700 underline hover:text-cyan-500"
+                href="mailto:info@ariseasia.org"
+              >
+                info@ariseasia.org
+              </a>
+              to find out more about hosting an Arise Movement in your
+              country/city!
+            </p>
           </div>
         </div>
       </div>
@@ -191,7 +195,7 @@ const ConferenceCard = ({
                     className="flex gap-x-2 justify-center items-center py-1 w-full bg-cyan-500 rounded-full border border-cyan-500 sm:px-6 sm:border-2 hover:bg-cyan-50 max-w-72"
                     href={target}
                     key={title}
-                    rel="noreferrer noopener"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     <Icon className="hidden sm:block" size={24} />
@@ -208,7 +212,7 @@ const ConferenceCard = ({
                 className="py-1 px-4 text-xs font-bold bg-cyan-50 rounded-full border border-cyan-500 sm:px-6 sm:text-base sm:border-2 hover:bg-cyan-500"
                 href={item.target}
                 key={item.title}
-                rel="noreferrer noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 {item.title}
