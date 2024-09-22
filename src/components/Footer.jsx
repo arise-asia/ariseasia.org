@@ -6,10 +6,12 @@ const Footer = () => (
     <div className="container flex flex-col justify-between p-12 sm:flex-row sm:px-20">
       <div className="flex flex-col justify-between text-center sm:text-left">
         <div>
-          <a className="text-orange-500 text-h4 hover:underline" href="#">
-            Arise Asia
-          </a>
+          <h2 className="text-orange-500 text-h4">Arise Asia</h2>
           <div className="flex flex-col md:flex-row gap-1 justify-center mb-4 text-p sm:justify-normal">
+            <Link to="/" className="hover:text-orange-500">
+              Home
+            </Link>
+            <span className="hidden md:block">|</span>
             <Link to="/about" className="hover:text-orange-500">
               About Us
             </Link>

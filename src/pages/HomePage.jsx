@@ -117,7 +117,7 @@ const HomePage = () => (
                 the gospel and planting churches in unreached areas. Discover
                 how you can make a difference with the Arise movement by
                 attending our conferences and partnering with us through our
-                mentoring and internship program.
+                mentoring and internship programs.
               </p>
             </div>
             <Link
@@ -156,7 +156,7 @@ const HomePage = () => (
             <h2 className="uppercase text-h3">Arise Asia 2023</h2>
             <div className="w-full mx-auto lg:prose lg:prose-sm">
               <p>
-                On 25 July 2023, over 1800 participants from across Asia
+                On 25-29 July 2023, over 1800 participants from across Asia
                 gathered in Bangkok, Thailand, for the inaugural Arise Asia
                 conference. This historic event was organized to unite and equip
                 believers with a shared vision of advancing the gospel
