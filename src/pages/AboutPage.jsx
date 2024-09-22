@@ -54,7 +54,7 @@ const AboutPage = () => (
         <a
           className="flex gap-x-2 items-center py-2 px-4 mt-6 text-sm font-bold bg-red-100 rounded-full border-4 border-black sm:text-base hover:bg-red-50 w-fit"
           href="https://goarise.org"
-          rel="noreferrer noopener"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Learn more at goarise.org <MdOpenInNew size={20} />

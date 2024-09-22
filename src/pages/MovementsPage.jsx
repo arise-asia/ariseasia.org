@@ -23,7 +23,7 @@ const tabs = [
   },
   {
     data: conferenceData.futureConferencesList,
-    title: "Stay Tuned For...",
+    title: "Stay Tuned",
   },
 ];
 
@@ -195,7 +195,7 @@ const ConferenceCard = ({
                     className="flex gap-x-2 justify-center items-center py-1 w-full bg-cyan-500 rounded-full border border-cyan-500 sm:px-6 sm:border-2 hover:bg-cyan-50 max-w-72"
                     href={target}
                     key={title}
-                    rel="noreferrer noopener"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     <Icon className="hidden sm:block" size={24} />
@@ -212,7 +212,7 @@ const ConferenceCard = ({
                 className="py-1 px-4 text-xs font-bold bg-cyan-50 rounded-full border border-cyan-500 sm:px-6 sm:text-base sm:border-2 hover:bg-cyan-500"
                 href={item.target}
                 key={item.title}
-                rel="noreferrer noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 {item.title}

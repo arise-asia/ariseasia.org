@@ -4,7 +4,7 @@ const FloatingGivingButton = () => (
   <a
     className="fixed right-4 bottom-4 text-white rounded-3xl transition duration-300 sm:right-10 sm:bottom-10 bg-black/75 group"
     href="https://www.totalideas.org/projects"
-    rel="noreferrer noopener"
+    rel="noopener noreferrer"
     target="_blank"
   >
     <div className="flex items-center p-3 duration-300 sm:p-4 hover:px-6 transition-[padding]">

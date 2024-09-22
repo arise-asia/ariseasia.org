@@ -36,21 +36,21 @@ const Footer = () => (
           <div className="flex gap-x-4 justify-center mb-6 sm:justify-start">
             <a
               href="https://www.instagram.com/ariseasia.movement"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaInstagram className="hover:text-yellow-500" size={32} />
             </a>
             <a
               href="https://www.youtube.com/@AriseAsiaMovement"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaYoutube className="hover:text-red-500" size={32} />
             </a>
             <a
               href="https://www.facebook.com/ariseasia2023"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaFacebook className="hover:text-blue-500" size={32} />
