@@ -10,7 +10,7 @@ const AboutPage = () => (
         className="object-cover rounded-xl aspect-video"
         src="/about/about-us.jpg"
       />
-      <figcaption className="text-center pt-2 italic">
+      <figcaption className="pt-2 italic text-center">
         Together for His mission: All 1,844 participants gathered at the closing
         of Arise Asia 2023.
       </figcaption>

@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="flex flex-col justify-between text-center sm:text-left">
         <div>
           <h2 className="text-orange-500 text-h4">Arise Asia</h2>
-          <div className="flex flex-col md:flex-row gap-1 justify-center mb-4 text-p sm:justify-normal">
+          <div className="flex flex-col gap-1 justify-center mb-4 md:flex-row text-p sm:justify-normal">
             <Link to="/" className="hover:text-orange-500">
               Home
             </Link>

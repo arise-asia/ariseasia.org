@@ -154,7 +154,7 @@ const HomePage = () => (
               <p>Check out what happened in...</p>
             </div>
             <h2 className="uppercase text-h3">Arise Asia 2023</h2>
-            <div className="w-full mx-auto lg:prose lg:prose-sm">
+            <div className="mx-auto prose prose-sm sm:prose-base">
               <p>
                 On 25-29 July 2023, over 1800 participants from across Asia
                 gathered in Bangkok, Thailand, for the inaugural Arise Asia
@@ -164,16 +164,16 @@ const HomePage = () => (
                 accomplished during these five days, as lives were transformed,
                 faith was strengthened, and a renewed passion for cross-cultural
                 missions was ignited.
-                <br />
-                <br />
+              </p>
+              <p>
                 This conference was created to inspire and mobilize a new
                 generation of leaders, fostering collaboration beyond cultural
                 and national boundaries. As we look to the future, we hope to
                 see the impact of this gathering continue to grow as
                 participants return to their communities, empowered to make a
                 lasting difference.
-                <br />
-                <br />
+              </p>
+              <p>
                 For a recap of the conference, including key moments and session
                 summaries, visit our recap page.
               </p>
@@ -185,7 +185,7 @@ const HomePage = () => (
               Arise Asia 2023 Recap <GrHistory size={20} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 grid-rows-5 gap-4 w-full h-60 sm:grid-cols-3 sm:h-96 lg:my-auto">
+          <div className="grid grid-cols-2 grid-rows-5 gap-4 my-auto w-full h-60 sm:grid-cols-3 sm:h-96">
             <img
               alt="Morning session congregation"
               src="/moments/8.jpg"
