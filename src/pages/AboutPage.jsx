@@ -14,7 +14,7 @@ const AboutPage = () => (
         />
         <div className="text-white prose prose-sm sm:prose-base">
           <p>
-            It started off with a question. We asked ourselves, &ldquo; What
+            It started off with a question. We asked ourselves, &ldquo;What
             would it be like if we can see God ignite the hearts of this younger
             generation throughout Asia to bring the Gospel where there is no
             Gospel witness in Asia and beyond?&rdquo;
