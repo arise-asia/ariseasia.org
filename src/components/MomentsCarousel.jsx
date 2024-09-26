@@ -3,57 +3,68 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 const moments = [
   {
-    title: "IBIS Fellowship Night",
+    title:
+      "Fellowship Night – A lively evening of fellowship, performances, and snacks, bringing people together in the hotel lounge",
     subtitle: "Day 1",
     image: "/moments/1.jpg",
   },
   {
-    title: "Justice Issues Panel",
+    title:
+      "Afternoon Panel – Panelists shared their perspectives on key justice challenges in the world today, focusing on their impact in global missions",
     subtitle: "Day 1",
     image: "/moments/2.jpg",
   },
   {
-    title: "Night Session Worship",
+    title:
+      "Session Worship – An evening of worship led by Awaken Generation, a worship group from Singapore",
     subtitle: "Day 1",
     image: "/moments/3.jpg",
   },
   {
-    title: "Missional Partners and Organizations Exhibitors",
+    title:
+      "Missions Booths – Missions partners and organizations showcased their ministries in booths surrounding the main hall",
     subtitle: "Day 2",
     image: "/moments/4.jpg",
   },
   {
-    title: "Innovation Lab",
+    title:
+      "Innovation Lab – Participants collaborated with their teams during the Innovation Lab, a hackathon for pitching innovative ideas for global missions",
     subtitle: "Day 2",
     image: "/moments/5.jpg",
   },
   {
-    title: "Performance from Mongolian Dance",
+    title:
+      "Mongolian Dance Performance – Brothers and sisters in Christ from Mongolia performed a traditional dance before the plenary session",
     subtitle: "Day 2",
     image: "/moments/6.jpg",
   },
   {
-    title: "Workshops",
+    title:
+      "Afternoon Workshops – Engaging workshops featuring speakers on diverse topics such as tech, business, and justice",
     subtitle: "Day 2",
     image: "/moments/7.jpg",
   },
   {
-    title: "Morning Session Congregation",
+    title:
+      "Group Photo – A photo of the entire Arise Asia congregation gathered in the main conference room",
     subtitle: "Day 3",
     image: "/moments/8.jpg",
   },
   {
-    title: "HISPOP Worship Session",
+    title:
+      "Worship Performance – A worship session led by HISPOP, a Christian Korean band and missionary group",
     subtitle: "Day 3",
     image: "/moments/9.jpg",
   },
   {
-    title: "Praying at Response Time",
+    title:
+      "Response Time – A powerful moment of reflection and prayer as attendees sought clarity on their missions calling during the final evening",
     subtitle: "Day 4",
     image: "/moments/10.jpg",
   },
   {
-    title: "Closing Session Prayer",
+    title:
+      "Closing Prayer – Representatives from each country gathered on stage for a collective prayer for Asia during the closing session",
     subtitle: "Day 5",
     image: "/moments/11.jpg",
   },

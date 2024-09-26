@@ -28,10 +28,13 @@ const Arise2023Page = () => (
             <div className="flex flex-col justify-between py-6 px-8 h-full bg-yellow-700 [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
               <div className="text-white prose prose-sm sm:prose-base">
                 <p>
-                  On July 25-29, 1844 people from all across Asia attended the
-                  first ever Arise Asia in Bangkok, Thailand. Praise God for all
-                  He did during this conference. Check out the recap video about
-                  Arise Asia 2023.
+                  This historic event was organized to unite and equip believers
+                  with a shared vision of advancing the gospel throughout Asia.
+                  We praise God for the powerful work He accomplished during
+                  these five days, as lives were transformed, faith was
+                  strengthened, and a renewed passion for cross-cultural
+                  missions was ignited. Check out the summary video for a recap
+                  of the conference.
                 </p>
               </div>
               <Link
