@@ -147,7 +147,7 @@ const AboutPage = () => (
           <div className="flex flex-col w-32 text-center sm:w-40">
             <div className="relative">
               <img
-                alt="Jun Escobar"
+                alt="Jun Escosar"
                 className="absolute rounded-full aspect-square"
                 src="/about/jun.png"
               />
@@ -156,7 +156,7 @@ const AboutPage = () => (
             <h3 className="mt-4 text-red-700 uppercase text-h5">
               Jun
               <br />
-              Escobar
+              Escosar
             </h3>
             <p className="font-bold leading-5 text-red-900 text-p">
               Board Member
