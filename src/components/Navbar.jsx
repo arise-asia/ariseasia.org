@@ -19,7 +19,7 @@ const Navbar = () => {
             className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
             to="/arise2023"
           >
-            Arise 2023
+            {t("arise2023.title")}
           </Link>
         </div>
         <div>
@@ -39,7 +39,7 @@ const Navbar = () => {
             className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
             to="/movements"
           >
-            Movements
+            {t("movements.title")}
           </Link>
           <a
             className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
@@ -47,7 +47,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Giving
+            {t("giving")}
           </a>
           <div className="px-10">
             <TranslationButton />
@@ -72,7 +72,7 @@ const Navbar = () => {
                 className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
                 to="/"
               >
-                Home
+                {t("home.title")}
               </Link>
             </li>
             <li>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
                 to="/about"
               >
-                About Us
+                {t("about.title")}
               </Link>
             </li>
             <li>
@@ -88,7 +88,7 @@ const Navbar = () => {
                 className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
                 to="/arise2023"
               >
-                Arise 2023
+                {t("arise2023.title")}
               </Link>
             </li>
             <li>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 className="text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
                 to="/movements"
               >
-                Movements
+                {t("movements.title")}
               </Link>
             </li>
             <li>
@@ -106,7 +106,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Giving
+                {t("giving")}
               </a>
             </li>
           </ul>
