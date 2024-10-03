@@ -4,6 +4,7 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { MdOpenInNew, MdOutlineNotificationsActive } from "react-icons/md";
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
 import { getConferenceMetadata, getElements, getFragmentName } from "../utils";
 
 const featuredMovements = [
@@ -16,6 +17,8 @@ const featuredMovements = [
 const conferenceData = getConferenceMetadata(featuredMovements);
 
 const MovementsCarousel = () => {
+  const { t } = useTranslation();
+
   const [activeIdx, setActiveIdx] = useState(0);
 
   const handleLeft = () => setActiveIdx(activeIdx - 1);
@@ -28,19 +31,18 @@ const MovementsCarousel = () => {
         <div className="p-8 sm:p-10">
           <div className="flex justify-between items-end">
             <div className="flex flex-col gap-y-1">
-              <h2 className="text-white uppercase text-h3">
-                Featured
-                <br />
-                Movements
+              <h2 className="text-white uppercase text-h3 text-wrap w-1/2">
+                {t("featuredMovements.title")}
               </h2>
               <p className="text-white text-p">
-                Check out where Arise Asia is heading to next!
+                {t("featuredMovements.subtitle")}
               </p>
               <Link
                 className="flex gap-x-2 items-center py-2 px-4 mt-4 text-sm font-bold bg-cyan-100 rounded-full border-4 border-black sm:text-base hover:bg-cyan-50 w-fit"
                 to="/movements"
               >
-                Upcoming Events <MdOutlineNotificationsActive size={20} />
+                {t("featuredMovements.buttonText")}
+                <MdOutlineNotificationsActive size={20} />
               </Link>
             </div>
             <div className="hidden gap-x-4 md:flex">
@@ -80,10 +82,13 @@ const MovementsCarousel = () => {
 };
 
 const ConferenceCard = ({ title, subtitle, backgroundSrc, websiteTarget }) => {
+  const { t } = useTranslation();
   const contents = (
     <>
       <p className="flex absolute -right-5 -bottom-5 gap-x-2 items-center p-2 text-sm font-bold bg-cyan-100 rounded-full border-4 border-cyan-900 opacity-0 transition sm:px-6 sm:text-base group-hover:opacity-100 hover:bg-cyan-50">
-        <span className="hidden sm:block">Learn More</span>{" "}
+        <span className="hidden sm:block">
+          {t("featuredMovements.hoverText")}
+        </span>
         <MdOpenInNew size={20} />
       </p>
       <img
