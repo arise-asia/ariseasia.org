@@ -1,15 +1,52 @@
 home:
+  title: Home
   subtitle: Go to where there is no Gospel
-  verse: However, I consider my life worth nothing to me; my only aim is to finish the race and complete the task the Lord Jesus has given me—the task of testifying to the good news of God’s grace.
+  verse: However, I consider my life worth nothing to me; my only aim is to finish the race and complete the task the Lord Jesus has given me—the task of testifying to the good news of God's grace.
   verseReference: Acts 20:24
   mission:
     heading: Mission
-    text: To inspire the next generation to take the gospel throughout Asia and to the world.
+    text: To inspire the next generation to take the Gospel throughout Asia and to the world.
   arise:
+    altLogo: What is Arise? logo
     heading: What is Arise?
-    text: It is almost two millennia since Jesus called His first disciples to follow Him. Since that time, many followers of Jesus have taken up the call to take the Gospel to the ends of the earth. Now, in the 21 st century, the need for the Gospel to be shared and lived out in Asia is tremendous, and God is setting the hearts of people in Asia on fire for His glory and purpose.
-    orangeText: The time has come for Asia to arise and participate in God’s Great Commission.
+    text: Arise Asia is a missions movement launched in 2023 to inspire young adults across Asia and beyond to take the Gospel where it has never been heard. Join our events to be part of a generation committed to sharing the gospel and planting churches in unreached areas. Discover how you can make a difference with the Arise movement by attending our conferences and partnering with us through our mentoring and internship programs.
     buttonText: More About Us
+    whoTitle: Who We Are
+    whoText: Discover the mission and values of the Arise movement, as explained by co-founder, David Ro
+    whyTitle: Why Join Us
+    whyText: Understand the importance of the Arise movement, as explained by co-founder, Seth Kim
+    videoTitle: YouTube video explaining the Arise movement
+  recap:
+    subtitle: Check out what happened in...
+    title: Arise Asia 2023
+    text1: On 25-29 July 2023, over 1800 participants from across Asia
+      gathered in Bangkok, Thailand, for the inaugural Arise Asia
+      conference. This historic event was organized to unite and
+      equip believers with a shared vision of advancing the gospel
+      throughout Asia. We praise God for the powerful work He
+      accomplished during these five days, as lives were
+      transformed, faith was strengthened, and a renewed passion for
+      cross-cultural missions was ignited.
+    text2: This conference was created to inspire and mobilize a new
+      generation of leaders, fostering collaboration beyond cultural
+      and national boundaries. As we look to the future, we hope to
+      see the impact of this gathering continue to grow as
+      participants return to their communities, empowered to make a
+      lasting difference.
+    text3: For a recap of the conference, including key moments and
+      session summaries, visit our recap page.
+    buttonText: Arise Asia 2023 Recap
+    alt1: Morning session congregation
+    alt2: Performance from Mongolian dance
+    alt3: HISPOP worship session
+    alt4: Workshops
+    alt5: Night session worship
+
+featuredMovements:
+  title: Featured Movements
+  subtitle: Check out where Arise Asia is heading to next!
+  buttonText: Upcoming Events
+  hoverText: Learn More
 
 about:
   title: About Us
@@ -19,3 +56,7 @@ arise2023:
 
 movements:
   title: Movements
+
+giving: Giving
+
+copyright: Copyright ©2022-2024 Arise Asia. All rights reserved.
