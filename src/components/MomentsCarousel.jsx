@@ -94,7 +94,7 @@ function MomentsCarousel() {
         <div className="hidden gap-y-4 items-center lg:flex lg:flex-col">
           <div className="relative">
             <IoIosArrowDropup
-              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl"
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleUp}
               size={48}
             />
@@ -116,7 +116,7 @@ function MomentsCarousel() {
               src={moments[(activeIdx + 1) % numItems].image}
             />
             <IoIosArrowDropdown
-              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 drop-shadow-2xl"
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleDown}
               size={48}
             />
@@ -125,7 +125,7 @@ function MomentsCarousel() {
         <div className="flex flex-col gap-y-8 items-center mt-2 max-w-screen-lg lg:mt-0 lg:w-3/4">
           <div className="relative">
             <IoIosArrowDropup
-              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden drop-shadow-2xl"
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleUp}
               size={36}
             />
@@ -135,7 +135,7 @@ function MomentsCarousel() {
               src={moments[activeIdx].image}
             />
             <IoIosArrowDropdown
-              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden drop-shadow-2xl"
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleDown}
               size={36}
             />

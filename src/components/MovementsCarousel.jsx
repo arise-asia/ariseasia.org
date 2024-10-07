@@ -45,12 +45,12 @@ const MovementsCarousel = () => {
             </div>
             <div className="hidden gap-x-4 md:flex">
               <IoIosArrowDropleft
-                className="text-white bg-cyan-700 rounded-full drop-shadow-2xl"
+                className="text-white bg-cyan-700 rounded-full hover:bg-cyan-900 drop-shadow-2xl"
                 onClick={handleLeft}
                 size={48}
               />
               <IoIosArrowDropright
-                className="text-white bg-cyan-700 rounded-full drop-shadow-2xl"
+                className="text-white bg-cyan-700 rounded-full hover:bg-cyan-900 drop-shadow-2xl"
                 onClick={handleRight}
                 size={48}
               />
@@ -65,12 +65,12 @@ const MovementsCarousel = () => {
       </div>
       <div className="flex gap-x-20 self-center md:hidden">
         <IoIosArrowDropleft
-          className="text-white bg-cyan-700 rounded-full drop-shadow-2xl"
+          className="text-white bg-cyan-700 rounded-full hover:bg-cyan-900 drop-shadow-2xl"
           onClick={handleLeft}
           size={48}
         />
         <IoIosArrowDropright
-          className="text-white bg-cyan-700 rounded-full drop-shadow-2xl"
+          className="text-white bg-cyan-700 rounded-full hover:bg-cyan-900 drop-shadow-2xl"
           onClick={handleRight}
           size={48}
         />
