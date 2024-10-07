@@ -1,38 +1,4 @@
 upcomingConferencesList:
-  - country: Philippines
-    title: Arise Baguio
-    subtitle: September 14, 2024
-    backgroundSrc: /locations/baguio.jpg
-    posterSrc: /movements/arise-baguio.jpg
-    signupTarget: https://ariseasia.regfox.com/arise-baguio
-    links:
-      - title: Facebook
-        target: https://www.facebook.com/profile.php?id=61555870030732
-      - title: Instagram
-        target: https://www.instagram.com/arise.philippines
-      - title: Promo Video
-        target: https://fb.watch/uxqsPHaxs5
-    description: |
-      The Arise Philippines Regionwide Youth Missions Conference is heading to the north! Gear up for an electrifying conference at the Philippine Baptist Theological Seminary. This transformative event will ignite the passion of young people to boldly "Go to where there is no gospel." 🧨
-
-      This conference is organized by the Philippine Missions Association (PMA), Haggai Cordillera, GO Movement, Association of Metro Baguio Christian Ministers, OVRFLW Ministries, UnScene LBC Multimedia Ministry, Philippine Council of Evangelical Churches, and other partners.
-
-      We are excited to feature pre-recorded sessions from three esteemed speakers who were highlights of the Arise Asia 2023 conference:
-
-      * Wayne Chen, Director of Radius Asia, with a session titled The Greatest Treasure
-      * Tom Lin, President & CEO of InterVarsity Christian Fellowship, presenting The Greatest Pursuit
-      * Sarah Bruel, Director of Revive Europe, sharing insights on The Greatest Purpose
-
-      Our desire is to activate more intercessors, raise proactive evangelists, inspire intentional discipleship, spur UPG adoption, and encourage missions involvement.
-
-  - country: India
-    title: Arise Mumbai
-    subtitle: October 11. 2024
-    backgroundSrc: /locations/mumbai.jpg
-    posterSrc: /movements/arise-mumbai.jpg
-    donateTarget: https://www.totalideas.org/Arise-Mumbai-1
-    description: Looking to get involved or find out more? Please email info@ariseasia.org.
-
   - country: Myanmar
     title: Arise Myanmar
     subtitle: October 15-16. 2024
@@ -51,14 +17,6 @@ upcomingConferencesList:
       - title: Facebook
         target: https://www.facebook.com/profile.php?id=61560696147433
     description: Looking to get involved or find out more? Please email info@ariseasia.org.
-
-  - country: Mongolia
-    title: Arise Mongolia
-    subtitle: October 2024
-    backgroundSrc: /locations/mongolia.jpg
-    posterSrc: /movements/arise-mongolia.jpg
-    donateTarget: https://www.totalideas.org/Arise-Mongolia
-    description: More information is coming soon. Stay tuned!
 
   - country: Latin America
     title: Arise Latino
@@ -293,8 +251,41 @@ pastConferencesList:
 
       Our desire is to activate more intercessors, raise proactive evangelists, inspire intentional discipleship, spur UPG adoption, and encourage missions involvement.
 
+  - country: Philippines
+    title: Arise Baguio
+    subtitle: September 14, 2024
+    backgroundSrc: /locations/baguio.jpg
+    posterSrc: /movements/arise-baguio.jpg
+    # signupTarget: https://ariseasia.regfox.com/arise-baguio
+    links:
+      - title: Facebook
+        target: https://www.facebook.com/profile.php?id=61555870030732
+      - title: Instagram
+        target: https://www.instagram.com/arise.philippines
+      - title: Promo Video
+        target: https://fb.watch/uxqsPHaxs5
+      - title: Summary Video
+        target: https://www.facebook.com/reel/1177140733362353
+      - title: Photos
+        target: https://www.facebook.com/media/set/?set=a.122180835770195667
+      - title: Praise Report
+        target: https://ariseevents.my.canva.site/arise-baguio-praise-report
+    description: |
+      The Arise Philippines Regionwide Youth Missions Conference is heading to the north! Gear up for an electrifying conference at the Philippine Baptist Theological Seminary. This transformative event will ignite the passion of young people to boldly "Go to where there is no gospel." 🧨
+
+      This conference is organized by the Philippine Missions Association (PMA), Haggai Cordillera, GO Movement, Association of Metro Baguio Christian Ministers, OVRFLW Ministries, UnScene LBC Multimedia Ministry, Philippine Council of Evangelical Churches, and other partners.
+
+      We are excited to feature pre-recorded sessions from three esteemed speakers who were highlights of the Arise Asia 2023 conference:
+
+      * Wayne Chen, Director of Radius Asia, with a session titled The Greatest Treasure
+      * Tom Lin, President & CEO of InterVarsity Christian Fellowship, presenting The Greatest Pursuit
+      * Sarah Bruel, Director of Revive Europe, sharing insights on The Greatest Purpose
+
+      Our desire is to activate more intercessors, raise proactive evangelists, inspire intentional discipleship, spur UPG adoption, and encourage missions involvement.
+
 futureConferencesList:
   - title: Arise Japan
+  - title: Arise Mongolia
   - title: Arise Macau
   - title: Arise Sri Lanka
   - title: Arise Cambodia
