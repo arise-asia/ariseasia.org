@@ -3,58 +3,80 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 const moments = [
   {
-    title: "IBIS Fellowship Night",
-    subtitle: "Day 1",
+    day: "Day 1",
+    title: "Fellowship Night",
+    description:
+      "A lively evening of fellowship, performances, and snacks, bringing people together in the hotel lounge",
     image: "/moments/1.jpg",
   },
   {
-    title: "Justice Issues Panel",
-    subtitle: "Day 1",
+    day: "Day 1",
+    title: "Afternoon Panel",
+    description:
+      "Panelists shared their perspectives on key justice challenges in the world today, focusing on their impact in global missions",
     image: "/moments/2.jpg",
   },
   {
-    title: "Night Session Worship",
-    subtitle: "Day 1",
+    day: "Day 1",
+    title: "Session Worship",
+    description:
+      "An evening of worship led by Awaken Generation, a worship group from Singapore",
     image: "/moments/3.jpg",
   },
   {
-    title: "Missional Partners and Organizations Exhibitors",
-    subtitle: "Day 2",
+    day: "Day 2",
+    title: "Missions Booths",
+    description:
+      "Missions partners and organizations showcased their ministries in booths surrounding the main hall",
     image: "/moments/4.jpg",
   },
   {
+    day: "Day 2",
     title: "Innovation Lab",
-    subtitle: "Day 2",
+    description:
+      "Participants collaborated with their teams during the Innovation Lab, a hackathon for pitching innovative ideas for global missions",
     image: "/moments/5.jpg",
   },
   {
-    title: "Performance from Mongolian Dance",
-    subtitle: "Day 2",
+    day: "Day 2",
+    title: "Mongolian Dance Performance",
+    description:
+      "Brothers and sisters in Christ from Mongolia performed a traditional dance before the plenary session",
     image: "/moments/6.jpg",
   },
   {
-    title: "Workshops",
-    subtitle: "Day 2",
+    day: "Day 2",
+    title: "Afternoon Workshops",
+    description:
+      "Engaging workshops featuring speakers on diverse topics such as tech, business, and justice",
     image: "/moments/7.jpg",
   },
   {
-    title: "Morning Session Congregation",
-    subtitle: "Day 3",
+    day: "Day 3",
+    title: "Group Photo",
+    description:
+      "A photo of the entire Arise Asia congregation gathered in the main conference room",
     image: "/moments/8.jpg",
   },
   {
-    title: "HISPOP Worship Session",
-    subtitle: "Day 3",
+    day: "Day 3",
+    title: "Worship Performance",
+    description:
+      "A worship session led by HISPOP, a Christian Korean band and missionary group",
     image: "/moments/9.jpg",
   },
   {
-    title: "Praying at Response Time",
-    subtitle: "Day 4",
+    day: "Day 4",
+    title: "Response Time",
+    description:
+      "A powerful moment of reflection and prayer as attendees sought clarity on their missions calling during the final evening",
     image: "/moments/10.jpg",
   },
   {
-    title: "Closing Session Prayer",
-    subtitle: "Day 5",
+    day: "Day 5",
+    title: "Closing Prayer",
+    description:
+      "Representatives from each country gathered on stage for a collective prayer for Asia during the closing session",
     image: "/moments/11.jpg",
   },
 ];
@@ -72,7 +94,7 @@ function MomentsCarousel() {
         <div className="hidden gap-y-4 items-center lg:flex lg:flex-col">
           <div className="relative">
             <IoIosArrowDropup
-              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl"
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleUp}
               size={48}
             />
@@ -94,16 +116,16 @@ function MomentsCarousel() {
               src={moments[(activeIdx + 1) % numItems].image}
             />
             <IoIosArrowDropdown
-              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 drop-shadow-2xl"
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleDown}
               size={48}
             />
           </div>
         </div>
-        <div className="flex flex-col gap-y-8 items-center mt-2 lg:mt-0">
+        <div className="flex flex-col gap-y-8 items-center mt-2 max-w-screen-lg lg:mt-0 lg:w-3/4">
           <div className="relative">
             <IoIosArrowDropup
-              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden drop-shadow-2xl"
+              className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleUp}
               size={36}
             />
@@ -113,19 +135,22 @@ function MomentsCarousel() {
               src={moments[activeIdx].image}
             />
             <IoIosArrowDropdown
-              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden drop-shadow-2xl"
+              className="absolute bottom-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 translate-y-1/2 lg:hidden hover:bg-purple-700 drop-shadow-2xl"
               onClick={handleDown}
               size={36}
             />
           </div>
-          <article className="py-4 sm:py-8 pr-20 pl-6 sm:pl-8 w-full bg-purple-500 rounded-xl [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_60%,_100%_0)]">
-            <p className="italic text-white text-p">
-              {moments[activeIdx].subtitle}
-            </p>
-            <h4 className="font-bold leading-tight text-white sm:text-2xl">
-              {moments[activeIdx].title}
-            </h4>
-          </article>
+          <div className="w-full h-40">
+            <article className="py-4 pr-16 pl-5 text-white bg-purple-500 rounded-xl sm:py-6 sm:pl-8 [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_75%,_100%_0)]">
+              <p className="italic text-p">{moments[activeIdx].day}</p>
+              <h4 className="mb-1 font-bold leading-tight sm:mb-2 sm:text-2xl">
+                {moments[activeIdx].title}
+              </h4>
+              <p className="text-white text-p">
+                {moments[activeIdx].description}
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </div>
