@@ -122,7 +122,7 @@ function MomentsCarousel() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-y-8 items-center mt-2 lg:mt-0 lg:w-3/4">
+        <div className="flex flex-col gap-y-8 items-center mt-2 max-w-screen-lg lg:mt-0 lg:w-3/4">
           <div className="relative">
             <IoIosArrowDropup
               className="absolute top-0 inset-x-1/2 text-white bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 lg:hidden drop-shadow-2xl"
@@ -140,15 +140,17 @@ function MomentsCarousel() {
               size={36}
             />
           </div>
-          <article className="py-4 sm:py-8 pr-20 pl-6 sm:pl-8 w-full bg-purple-500 rounded-xl [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_60%,_100%_0)] h-40 lg:h-44">
-            <p className="italic text-white text-p">{moments[activeIdx].day}</p>
-            <h4 className="font-bold leading-tight text-white sm:text-2xl">
-              {moments[activeIdx].title}
-            </h4>
-            <p className="text-white text-p">
-              {moments[activeIdx].description}
-            </p>
-          </article>
+          <div className="w-full h-40">
+            <article className="py-4 pr-16 pl-5 text-white bg-purple-500 rounded-xl sm:py-6 sm:pl-8 [clip-path:polygon(0_0,_0_100%,_80%_100%,_100%_75%,_100%_0)]">
+              <p className="italic text-p">{moments[activeIdx].day}</p>
+              <h4 className="mb-1 font-bold leading-tight sm:mb-2 sm:text-2xl">
+                {moments[activeIdx].title}
+              </h4>
+              <p className="text-white text-p">
+                {moments[activeIdx].description}
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </div>

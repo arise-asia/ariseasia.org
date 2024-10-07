@@ -69,9 +69,9 @@ const LocationPin = ({
 
   switch (status) {
     case "past":
-      dotStyle += " bg-gray-500";
-      arrowStyle += " bg-gray-500";
-      contentStyle += " bg-gray-500";
+      dotStyle += " bg-cyan-900";
+      arrowStyle += " bg-cyan-900";
+      contentStyle += " bg-cyan-900";
       break;
     case "upcoming":
       dotStyle += " bg-orange-500";
