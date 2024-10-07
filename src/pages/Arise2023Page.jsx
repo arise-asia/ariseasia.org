@@ -25,18 +25,15 @@ const Arise2023Page = () => (
               </span>
             </div>
             <h3 className="uppercase text-h4">The Recap</h3>
-            <div className="flex flex-col justify-between py-6 px-8 h-full bg-yellow-700 [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
-              <div className="text-white prose prose-sm sm:prose-base">
-                <p>
-                  This historic event was organized to unite and equip believers
-                  with a shared vision of advancing the gospel throughout Asia.
-                  We praise God for the powerful work He accomplished during
-                  these five days, as lives were transformed, faith was
-                  strengthened, and a renewed passion for cross-cultural
-                  missions was ignited. Check out the summary video for a recap
-                  of the conference.
-                </p>
-              </div>
+            <div className="flex flex-col justify-between py-6 px-8 mx-auto h-full bg-yellow-700 w-fit [clip-path:polygon(0_0,_0_85%,_15%_100%,_100%_100%,_100%_0)]">
+              <p className="text-white prose prose-sm sm:prose-base">
+                This historic event was organized to unite and equip believers
+                with a shared vision of advancing the gospel throughout Asia. We
+                praise God for the powerful work He accomplished during these
+                five days, as lives were transformed, faith was strengthened,
+                and a renewed passion for cross-cultural missions was ignited.
+                Check out the summary video for a recap of the conference.
+              </p>
               <Link
                 className="flex gap-x-2 items-center py-2 px-4 mt-6 ml-auto text-sm font-bold text-white bg-gray-700 rounded-full border-4 border-gray-700 sm:text-base hover:bg-gray-500 w-fit"
                 to={{ hash: "conference-program" }}
@@ -47,7 +44,7 @@ const Arise2023Page = () => (
           </div>
           <iframe
             allowFullScreen
-            className="w-full rounded-xl sm:rounded-3xl aspect-video"
+            className="mt-auto w-full rounded-xl sm:rounded-3xl aspect-video h-fit"
             src="https://www.youtube.com/embed/-V6a5qnJI5Q"
             title="YouTube recap video of the Arise Asia conference"
           />
