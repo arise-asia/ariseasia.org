@@ -82,7 +82,7 @@ const moments = [
 ];
 const numItems = moments.length;
 
-function MomentsCarousel() {
+const MomentsCarousel = () => {
   const [activeIdx, setActiveIdx] = useState(0);
 
   const handleDown = () => setActiveIdx((activeIdx + 1) % numItems);
@@ -155,6 +155,6 @@ function MomentsCarousel() {
       </div>
     </div>
   );
-}
+};
 
 export default MomentsCarousel;
