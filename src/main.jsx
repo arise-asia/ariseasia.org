@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import FloatingGivingButton from "./components/FloatingGivingButton";
@@ -22,10 +23,12 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollBehavior />
-        <Navbar />
-        <Outlet />
-        <Footer />
-        <FloatingGivingButton />
+        <HelmetProvider>
+          <Navbar />
+          <Outlet />
+          <Footer />
+          <FloatingGivingButton />
+        </HelmetProvider>
         <Analytics />
         <SpeedInsights />
       </>
@@ -55,5 +58,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
