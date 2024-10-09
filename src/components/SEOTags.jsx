@@ -19,6 +19,7 @@ const SEOTags = ({ title, description, type }) => {
       <meta name="twitter:card" content={type} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content="/thumbnail.jpg" />
       <meta name="twitter:image:alt" content="Arise Asia" />
     </Helmet>
   );
