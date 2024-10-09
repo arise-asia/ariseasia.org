@@ -2,10 +2,16 @@ import { GrCircleInformation, GrCirclePlay, GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 import MovementsCarousel from "../components/MovementsCarousel";
+import SEOTags from "../components/SEOTags";
 
 const HomePage = () => {
   return (
     <>
+      <SEOTags
+        title="Arise Asia"
+        description="Arise Asia is a missions movement launched in 2023 to inspire young adults across Asia and beyond to take the gospel where it has never been heard. Join our events to be part of a generation committed to sharing the gospel and planting churches in unreached areas. Discover how you can make a difference with the Arise movement by attending our conferences and partnering with us through our mentoring and internship programs."
+        type="website"
+      />
       <div className="relative px-4 pt-52 bg-gradient-to-t sm:pt-80 from-orange-500/75 to-40%">
         <h1 className="mb-4 text-6xl font-bold text-center text-orange-500 uppercase md:text-7xl font-heading">
           Arise Asia

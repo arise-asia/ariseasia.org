@@ -1,6 +1,16 @@
+import SEOTags from "../components/SEOTags";
+
 const AboutPage = () => {
   return (
     <div className="flex flex-col pt-60 bg-red-50">
+      <SEOTags
+        title="About Us"
+        description='It started off with a question. We asked ourselves, "What
+              would it be like if we can see God ignite the hearts of this
+              younger generation throughout Asia to bring the Gospel where there
+              is no Gospel witness in Asia and beyond?"'
+        type="website"
+      />
       <h1 className="text-center text-red-700 uppercase text-h1">About Us</h1>
 
       <div className="container px-4 my-10">

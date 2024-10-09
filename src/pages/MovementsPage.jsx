@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 
 import AsiaMap from "../components/AsiaMap";
+import SEOTags from "../components/SEOTags";
 import conferenceData from "../data/conferences.yaml";
 import { getFragmentName } from "../utils";
 
@@ -33,6 +34,11 @@ const MovementsPage = () => {
 
   return (
     <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
+      <SEOTags
+        title="Arise Movements"
+        description="Check out where Arise movements are taking place!"
+        type="website"
+      />
       <div className="container">
         <h1 className="text-center text-cyan-700 uppercase text-h1">
           Movements
@@ -87,7 +93,9 @@ const MovementsPage = () => {
                     {tabName}
                   </p>
                   <RiArrowDropRightLine
-                    className={`hidden transition-transform duration-500 lg:block ${tabIdx === idx && tabActive && "rotate-90"}`}
+                    className={`hidden transition-transform duration-500 lg:block ${
+                      tabIdx === idx && tabActive && "rotate-90"
+                    }`}
                     size={28}
                   />
                 </button>
@@ -131,7 +139,9 @@ const MovementsPage = () => {
 
 const MovementsDropdown = ({ active, data }) => (
   <div
-    className={`grid transition-[grid-template-rows] duration-500 ${active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+    className={`grid transition-[grid-template-rows] duration-500 ${
+      active ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+    }`}
   >
     <div className="hidden overflow-hidden px-10 ml-10 text-lg font-bold bg-white rounded-xl shadow lg:flex lg:flex-col">
       {data?.map((item) => (
@@ -201,7 +211,7 @@ const ConferenceCard = ({
                     <Icon className="hidden sm:block" size={24} />
                     <p className="text-xs font-bold sm:text-base">{title}</p>
                   </a>
-                ),
+                )
             )}
           </div>
         )}
@@ -239,7 +249,7 @@ ConferenceCard.propTypes = {
   signupTarget: PropTypes.string,
   websiteTarget: PropTypes.string,
   links: PropTypes.arrayOf(
-    PropTypes.shape({ title: PropTypes.string, target: PropTypes.string }),
+    PropTypes.shape({ title: PropTypes.string, target: PropTypes.string })
   ),
   description: PropTypes.string,
 };
