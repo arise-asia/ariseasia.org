@@ -5,17 +5,17 @@ const Navbar = () => {
     <div className="absolute z-10 pt-20 w-full">
       <nav className="container flex justify-between mx-auto w-11/12 max-w-4xl rounded-full shadow-2xl bg-black/75">
         <div className="hidden pl-16 lg:flex lg:flex-1">
-          <Link
-            className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-            to="/about"
-          >
-            About Us
+          <Link className="py-4 w-44 text-white font-heading" to="/about">
+            <div className="relative w-fit group">
+              <p>About Us</p>
+              <span className="hidden absolute w-full h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 group-hover:block" />
+            </div>
           </Link>
-          <Link
-            className="py-4 w-44 text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-            to="/arise2023"
-          >
-            Arise 2023
+          <Link className="py-4 w-44 text-white font-heading" to="/arise2023">
+            <div className="relative w-fit group">
+              <p>Arise 2023</p>
+              <span className="hidden absolute w-full h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 group-hover:block" />
+            </div>
           </Link>
         </div>
         <div>
@@ -31,19 +31,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden pr-16 lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
-            to="/movements"
-          >
-            Movements
+          <Link className="py-4 w-44 text-white font-heading" to="/movements">
+            <div className="relative ml-auto w-fit group">
+              <p>Movements</p>
+              <span className="hidden absolute w-full h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 group-hover:block" />
+            </div>
           </Link>
           <a
-            className="py-4 w-44 text-right text-white hover:underline font-heading underline-offset-4 decoration-orange-500"
+            className="py-4 w-44 text-white font-heading"
             href="https://www.totalideas.org/projects"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Giving
+            <div className="relative ml-auto w-fit group">
+              <p>Giving</p>
+              <span className="hidden absolute w-full h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 group-hover:block" />
+            </div>
           </a>
         </div>
         <div className="flex dropdown dropdown-end">
