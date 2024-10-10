@@ -1,22 +1,26 @@
+import { Helmet } from "react-helmet-async";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import SEOTags from "../components/SEOTags";
 
 import MomentsCarousel from "../components/MomentsCarousel";
 
 const Arise2023Page = () => {
   return (
     <div className="pt-60 bg-yellow-50">
-      <SEOTags
-        title="Arise 2023 Recap"
-        description="This historic event was organized to unite and equip believers
+      <Helmet>
+        <meta property="og:title" content="Arise 2023 Recap - Arise Asia" />
+        <meta property="og:url" content="https://ariseasia.org/arise2023" />
+        <meta
+          property="og:description"
+          content="This historic event was organized to unite and equip believers
                   with a shared vision of advancing the gospel throughout Asia.
                   We praise God for the powerful work He accomplished during
                   these five days, as lives were transformed, faith was
                   strengthened, and a renewed passion for cross-cultural
                   missions was ignited."
-        type="website"
-      />
+        />
+      </Helmet>
+
       <h1 className="pb-20 text-center text-yellow-700 uppercase text-h1">
         Arise 2023
       </h1>
