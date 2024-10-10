@@ -23,12 +23,12 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollBehavior />
+        <Navbar />
         <HelmetProvider>
-          <Navbar />
           <Outlet />
-          <Footer />
-          <FloatingGivingButton />
         </HelmetProvider>
+        <Footer />
+        <FloatingGivingButton />
         <Analytics />
         <SpeedInsights />
       </>
