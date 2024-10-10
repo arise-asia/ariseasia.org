@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Fragment, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   RiArrowDropRightLine,
   RiFileList3Line,
@@ -33,6 +34,15 @@ const MovementsPage = () => {
 
   return (
     <div className="py-60 px-4 bg-cyan-50 bg-[url('/backgrounds/bg-movements-page.svg')] bg-contain">
+      <Helmet>
+        <meta property="og:title" content="Movements - Arise Asia" />
+        <meta property="og:url" content="https://ariseasia.org/movements" />
+        <meta
+          property="og:description"
+          content="Check out where Arise movements are taking place!"
+        />
+      </Helmet>
+
       <div className="container">
         <h1 className="text-center text-cyan-700 uppercase text-h1">
           Movements
